@@ -177,8 +177,30 @@ function buildSections(data, mode) {
   let html = '';
   data.forEach(sec => {
     if (!sec.rows.length) return;
-    const thStart = mode==='soon' ? `<th style="width:88px">Starts</th>` : '';
-    const thSt = mode==='soon' ? 'Priority' : 'Status';
+
+    // Build header row based on mode
+    let thead = '';
+    if (mode === 'progress') {
+      thead = `<th style="width:52px">ID</th>
+               <th>Action</th>
+               <th style="width:140px">Owner</th>
+               <th style="width:96px;text-align:center">Priority</th>
+               <th style="width:110px;text-align:center">Days remaining</th>`;
+    } else if (mode === 'delayed') {
+      thead = `<th style="width:52px">ID</th>
+               <th>Action</th>
+               <th style="width:140px">Owner</th>
+               <th style="width:88px">Due date</th>
+               <th style="width:96px;text-align:center">Status</th>`;
+    } else if (mode === 'soon') {
+      thead = `<th style="width:52px">ID</th>
+               <th>Action</th>
+               <th style="width:140px">Owner</th>
+               <th style="width:88px">Starts</th>
+               <th style="width:88px">Due date</th>
+               <th style="width:96px;text-align:center">Priority</th>`;
+    }
+
     html += `<div class="l2-section">
       <div class="l2-hdr" onclick="toggleL2(this)">
         <span class="l2-name">${sec.l2}</span>
@@ -188,29 +210,53 @@ function buildSections(data, mode) {
       </div>
       <div class="l2-body">
         <table class="action-table">
-          <thead><tr>
-            <th style="width:52px">ID</th>
-            <th>Action</th>
-            <th style="width:140px">Owner</th>
-            ${thStart}
-            <th style="width:88px">Due date</th>
-            <th style="width:96px;text-align:center">${thSt}</th>
-          </tr></thead><tbody>`;
+          <thead><tr>${thead}</tr></thead><tbody>`;
+
     sec.rows.forEach(r => {
-      let badge = '';
-      if (mode==='progress') badge = `<span class="badge b-prog">In progress</span>`;
-      if (mode==='delayed')  badge = `<span class="badge b-delay">Overdue ${r.days}d</span>`;
-      if (mode==='soon')     badge = `<span class="badge ${r.p==='High'?'b-high':r.p==='Medium'?'b-med':'b-low'}">${r.p}</span>`;
-      const startCell = mode==='soon' ? `<td class="col-date">${r.start}</td>` : '';
-      html += `<tr class="${mode==='delayed'?'overdue-row':''}">
-        <td class="col-id">${r.id}</td>
-        <td><span class="col-txt">${r.action}</span></td>
-        <td class="col-owner">${r.owner}</td>
-        ${startCell}
-        <td class="col-date">${r.due}</td>
-        <td class="col-sc">${badge}</td>
-      </tr>`;
+      if (mode === 'progress') {
+        // Calculate days remaining from due date
+        let daysCell = '<td class="col-date" style="text-align:center">—</td>';
+        if (r.due) {
+          const mon={'Jan':0,'Feb':1,'Mar':2,'Apr':3,'May':4,'Jun':5,'Jul':6,'Aug':7,'Sep':8,'Oct':9,'Nov':10,'Dec':11};
+          const dp=r.due.split(' '); const due=new Date(dp[2],mon[dp[1]],+dp[0]);
+          const today = new Date(); today.setHours(0,0,0,0);
+          const diff = Math.round((due - today) / 86400000);
+          const colour = diff <= 7 ? '#B03030' : diff <= 14 ? '#B07820' : '#3A8C65';
+          const label = diff < 0 ? `${Math.abs(diff)}d overdue` : diff === 0 ? 'Due today' : `${diff} days`;
+          daysCell = `<td style="text-align:center"><span class="badge" style="background:${colour}15;color:${colour};border:.5px solid ${colour}40">${label}</span></td>`;
+        }
+        const priBadge = r.p ? `<span class="badge ${r.p==='High'?'b-high':r.p==='Medium'?'b-med':'b-low'}">${r.p}</span>` : '<span style="color:#BABABA;font-size:11px">—</span>';
+        html += `<tr>
+          <td class="col-id">${r.id}</td>
+          <td><span class="col-txt">${r.action}</span></td>
+          <td class="col-owner">${r.owner}</td>
+          <td class="col-sc">${priBadge}</td>
+          ${daysCell}
+        </tr>`;
+
+      } else if (mode === 'delayed') {
+        const badge = `<span class="badge b-delay">Overdue ${r.days}d</span>`;
+        html += `<tr class="overdue-row">
+          <td class="col-id">${r.id}</td>
+          <td><span class="col-txt">${r.action}</span></td>
+          <td class="col-owner">${r.owner}</td>
+          <td class="col-date">${r.due}</td>
+          <td class="col-sc">${badge}</td>
+        </tr>`;
+
+      } else if (mode === 'soon') {
+        const badge = `<span class="badge ${r.p==='High'?'b-high':r.p==='Medium'?'b-med':'b-low'}">${r.p||'—'}</span>`;
+        html += `<tr>
+          <td class="col-id">${r.id}</td>
+          <td><span class="col-txt">${r.action}</span></td>
+          <td class="col-owner">${r.owner}</td>
+          <td class="col-date">${r.start||'—'}</td>
+          <td class="col-date">${r.due}</td>
+          <td class="col-sc">${badge}</td>
+        </tr>`;
+      }
     });
+
     html += `</tbody></table></div></div>`;
   });
   return html || '<div style="padding:20px;text-align:center;color:#7B8FA6;font-size:13px">No items in this category.</div>';
