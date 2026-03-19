@@ -262,9 +262,7 @@ function buildSections(data, mode) {
   return html || '<div style="padding:20px;text-align:center;color:#7B8FA6;font-size:13px">No items in this category.</div>';
 }
 
-document.getElementById('tab-progress').innerHTML = buildSections(IP, 'progress');
-document.getElementById('tab-delayed').innerHTML  = buildSections(DL, 'delayed');
-document.getElementById('tab-soon').innerHTML     = buildSections(SN, 'soon');
+// Tab content populated above via SCAP data
 
 function switchTab(name, btn) {
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('show'));
