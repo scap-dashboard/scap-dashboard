@@ -303,6 +303,16 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
 .gt-lcol-hdr{height:2rem;border-bottom:1px solid #E2EAF2;background:#F2F6FA;flex-shrink:0;padding:0 0.8rem;display:flex;align-items:center;font-size:0.6rem;font-weight:700;color:#9BAABB;text-transform:uppercase;letter-spacing:.06em}
 .gt-lcol-hdr2{height:1.4rem;border-bottom:2px solid #C8D8E8;background:#F8FAFC;flex-shrink:0}
 
+/* ── Gantt multi-select status filter ── */
+.gt-status-wrap{position:relative}
+.gt-ms-btn{font-family:'Open Sans',sans-serif;font-size:0.68rem;font-weight:600;padding:0.22rem 0.7rem;border:1.5px solid #DDE3EA;border-radius:1rem;background:#fff;color:#555;cursor:pointer;display:flex;align-items:center;white-space:nowrap;min-width:7rem}
+.gt-ms-btn:hover{border-color:#5B9BD5}
+.gt-ms-menu{position:absolute;top:calc(100% + 0.3rem);left:0;background:#fff;border:1.5px solid #DDE3EA;border-radius:0.5rem;box-shadow:0 4px 14px rgba(0,0,0,.12);z-index:100;min-width:10rem;padding:0.35rem 0;overflow:hidden}
+.gt-ms-item{display:flex;align-items:center;gap:0.4rem;padding:0.32rem 0.75rem;font-size:0.7rem;color:#2C3E50;cursor:pointer;white-space:nowrap}
+.gt-ms-item:hover{background:#F0F6FD}
+.gt-ms-item input[type=checkbox]{cursor:pointer;accent-color:#5B9BD5;flex-shrink:0}
+.gt-ms-dot{width:0.55rem;height:0.55rem;border-radius:0.1rem;flex-shrink:0}
+
 </style>
 </head>
 <body>
@@ -858,7 +868,8 @@ const GANTT_DATA=[
 
 const L2_IDS={'Set up a project management structure':'0.1','Develop a detailed implementation plan (work plan)':'0.2','Approve and publish a formal SC action plan':'0.3','Develop a communication plan':'0.4','Funding model and resource allocation':'0.5','Develop and execute a global SC training plan':'0.6','Establish SC Governance':'1.1','Establish the SC orchestration team (CSLO)':'1.2','Develop SC expertise at DOs':'1.3','Review corporate policies and manual':'1.4','Develop SC SOPs and guidelines':'1.5','Review of SC operating models at CO level':'1.6','Integrate SC expertise in project formulation':'2.1','Establish cross-functional SC coordination mechanisms at HQ level':'2.2','Establish cross-functional SC coordination mechanisms at CO level':'2.3','Establish a SC control tower':'2.4','Develop a KPI framework and establish targets':'2.5','Improve distribution and dispatch planning':'2.6','Dissemination and socialization of the logistics policy , operating model, and guidelines':'3.1','Development of foundational resources and tools to support logistics operations across COs':'3.2','Develop a repository for techinical specifications':'3.3','Streamline procurement procedures for regular items':'3.4','Sustainable supply chains':'3.5','Develop a SCM data management and interoperability plan':'4.1','Roll out a corporate SCM integration platform (to be defined further)':'4.2','Develop and roll out interim SCM tools and transition plan':'4.3','External communication and positioning':'5.1','Lead an operational-multi stakeholder coordination mechanism for the distribution of agricultural inputs (to be defined ':'5.2','Establish/strenghten strategic SC partnerships (to be defined further)':'5.3','Design projects with SC expertise as programmatic input (to be defined further)':'5.4'};
 function l2Label(name){return(L2_IDS[name]?L2_IDS[name]+' ':'')+name;}
-let gtBuilt=false, gView='l2', gZoom='year', gL1='', gL2='', gStatus='all';
+let gtBuilt=false, gView='l2', gZoom='year', gL1='', gL2='';
+let gStatusSet=new Set(['all']); // 'all' means no filter active
 let gResizeTimer=null;
 window.addEventListener('resize',function(){
   if(document.getElementById('page-timeline')&&document.getElementById('page-timeline').classList.contains('show')){
@@ -916,8 +927,8 @@ function buildGantt(){
   const rows=[];
   // Filter helper: does this L3 row match the active status filter?
   function matchesStatus(r){
-    if(gStatus==='all')return true;
-    return effStatus(r)===gStatus;
+    if(gStatusSet.has('all'))return true;
+    return gStatusSet.has(effStatus(r));
   }
 
   src.forEach(l1=>{
@@ -925,7 +936,7 @@ function buildGantt(){
     const l1Open = gView!=='l1' || gExp.has(l1.id);
 
     // For L1: only push if it has at least one matching descendant (or no filter)
-    const l1HasMatch = gStatus==='all' || (l1.children||[]).some(l2=>
+    const l1HasMatch = gStatusSet.has('all') || (l1.children||[]).some(l2=>
       (l2.children||[]).some(l3=>matchesStatus(l3))
     );
     if(!l1HasMatch)return;
@@ -935,7 +946,7 @@ function buildGantt(){
     (l1.children||[]).forEach(l2=>{
       if(gL2&&l2.id!==gL2)return;
       // Only push L2 if it has at least one matching L3
-      const l2HasMatch = gStatus==='all' || (l2.children||[]).some(l3=>matchesStatus(l3));
+      const l2HasMatch = gStatusSet.has('all') || (l2.children||[]).some(l3=>matchesStatus(l3));
       if(!l2HasMatch)return;
       rows.push(l2);
       const l2Open = gView==='all' || gExp.has(l2.id);
@@ -1088,15 +1099,13 @@ function buildGantt(){
   </div>
   <button class="gt-tbtn" onclick="gReset()">&#x21BA; Reset</button>
   <button class="gt-tbtn" onclick="ganttScrollToday()">&#x2197; Today</button>
-  <div class="gt-bg"><span class="gt-lbl">Status</span>
-    <select class="gt-sel" onchange="gSetStatus(this.value)">
-      <option value="all"${gStatus==='all'?' selected':''}>All statuses</option>
-      <option value="In progress"${gStatus==='In progress'?' selected':''}>In progress</option>
-      <option value="Starting soon"${gStatus==='Starting soon'?' selected':''}>Starting soon</option>
-      <option value="Delayed"${gStatus==='Delayed'?' selected':''}>Delayed</option>
-      <option value="Completed"${gStatus==='Completed'?' selected':''}>Completed</option>
-      <option value="Not started"${gStatus==='Not started'?' selected':''}>Not started</option>
-    </select>
+  <div class="gt-bg gt-status-wrap">
+    <span class="gt-lbl">Status</span>
+    <div class="gt-ms-btn" onclick="gToggleStatusMenu(event)">
+      <span id="gt-status-label">${gStatusLabel()}</span>
+      <span style="margin-left:0.3rem;font-size:0.6rem;color:#9BAABB">&#9660;</span>
+    </div>
+    <div class="gt-ms-menu" id="gt-status-menu" style="display:none">${buildStatusMenuHtml()}</div>
   </div>
   <div class="gt-legend">
     <div class="gt-leg"><div class="gt-ldot gc-done"></div>Completed</div>
@@ -1175,8 +1184,73 @@ function _buildKeepScroll(){
   });
 }
 function gTog(id){if(gExp.has(id))gExp.delete(id);else gExp.add(id);_buildKeepScroll();}
-function gReset(){gView='l2';gZoom='year';gL1='';gL2='';gStatus='all';gExp.clear();buildGantt();}
-function gSetStatus(v){gStatus=v;buildGantt();}
+function gReset(){gView='l2';gZoom='year';gL1='';gL2='';gStatusSet=new Set(['all']);gExp.clear();buildGantt();}
+
+function gStatusLabel(){
+  if(gStatusSet.has('all'))return 'All statuses';
+  const items=[...gStatusSet];
+  if(items.length===1)return items[0];
+  return items.length+' selected';
+}
+
+function buildStatusMenuHtml(){
+  var statuses=[
+    {val:'all',    lbl:'All statuses',  cls:''},
+    {val:'In progress',  lbl:'In progress',  cls:'gc-prog'},
+    {val:'Starting soon',lbl:'Starting soon',cls:'gc-soon'},
+    {val:'Delayed',      lbl:'Delayed',       cls:'gc-delay'},
+    {val:'Completed',    lbl:'Completed',     cls:'gc-done'},
+    {val:'Not started',  lbl:'Not started',   cls:'gc-ns'},
+  ];
+  return statuses.map(function(s){
+    var chk=(gStatusSet.has(s.val)||(gStatusSet.has('all')&&s.val==='all'))?'checked':'';
+    var dot=s.cls?'<span class="gt-ms-dot '+s.cls+'"></span>':'';
+    return '<label class="gt-ms-item"><input type="checkbox" value="'+s.val+'" '+chk+' onchange="gToggleStatus(this)">'+dot+s.lbl+'</label>';
+  }).join('');
+}
+
+function gToggleStatusMenu(e){
+  e.stopPropagation();
+  const m=document.getElementById('gt-status-menu');
+  if(m)m.style.display=m.style.display==='none'?'block':'none';
+}
+
+// Close menu when clicking outside
+document.addEventListener('click',function(){
+  const m=document.getElementById('gt-status-menu');
+  if(m)m.style.display='none';
+});
+
+function gToggleStatus(cb){
+  const val=cb.value;
+  if(val==='all'){
+    // All statuses selected — reset to all
+    gStatusSet=new Set(['all']);
+    // Uncheck all others
+    const menu=document.getElementById('gt-status-menu');
+    if(menu)menu.querySelectorAll('input[type=checkbox]').forEach(function(el){
+      el.checked=(el.value==='all');
+    });
+  } else {
+    gStatusSet.delete('all');
+    if(cb.checked){
+      gStatusSet.add(val);
+    } else {
+      gStatusSet.delete(val);
+      if(gStatusSet.size===0)gStatusSet.add('all');
+    }
+    // Sync 'all' checkbox
+    const menu=document.getElementById('gt-status-menu');
+    if(menu){
+      const allCb=menu.querySelector('input[value="all"]');
+      if(allCb)allCb.checked=gStatusSet.has('all');
+    }
+  }
+  // Update label
+  const lbl=document.getElementById('gt-status-label');
+  if(lbl)lbl.textContent=gStatusLabel();
+  _buildKeepScroll();
+}
 function gDrillTo(wsId,depth){gL1=wsId;gView=depth;gL2='';gExp.clear();buildGantt();}
 function gSetV(v){gView=v;if(v==='all')gExp.clear();buildGantt();}
 function gSetZ(z){gZoom=z;buildGantt();}
@@ -1187,7 +1261,7 @@ function ganttScrollToday(){buildGantt();}
 
 // ── Auto-refresh: checks for a new version every 5 minutes ───────────────────
 (function(){
-  var CHECK_INTERVAL = 5 * 60 * 1000; // 5 minutes in ms
+  var CHECK_INTERVAL = 60 * 60 * 1000; // 1 hour in ms
 
   function getCurrentDate(){
     var el = document.querySelector('.hdr-sub');
