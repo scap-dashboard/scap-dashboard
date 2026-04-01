@@ -4,7 +4,18 @@
       "id": "log_1775076366148",
       "date": "2026-04-01",
       "desc": "Agenda for CLSO meeting: \n- Ask for an update on meeting with OER on SCM task force and CSLO support\n- Reflect back on Oracle presentation and agree on plan forward\n- Check with Mohammed on guest pass for Laura and Vincenzo\n- etc.",
-      "status": "open",
+      "status": "inprogress",
+      "owner": "Vincenzo",
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-01",
+      "updated": "2026-04-01"
+    },
+    {
+      "id": "log_1775076714272",
+      "date": "2026-04-01",
+      "desc": "Prioritize development of CSLO's operating model - tentative deadline for 1st review: 17/04",
+      "status": "inprogress",
       "owner": "Vincenzo",
       "author": "Vincenzo",
       "linked": [],
@@ -13,5 +24,5 @@
     }
   ],
   "version": 1,
-  "sha": null
+  "sha": "d2550e733cf99593c43306e8afcc4890149fabba"
 }
