@@ -21,8 +21,41 @@
       "linked": [],
       "created": "2026-04-01",
       "updated": "2026-04-01"
+    },
+    {
+      "id": "log_1775076889693",
+      "date": "2026-04-01",
+      "desc": "Pilot Countries: Let’s wait until the meeting with Marta and colleagues on SCM AA – as the desk officers are also present, I assume we can explore the pilot countries during this meeting as well.",
+      "status": "inprogress",
+      "owner": "Tim",
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-01",
+      "updated": "2026-04-01"
+    },
+    {
+      "id": "log_1775076927289",
+      "date": "2026-04-01",
+      "desc": "Control Tower: I’ll continue the work as planned; next step will be to put together the functional requirements and present a comprehensive package.",
+      "status": "inprogress",
+      "owner": "Tim",
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-01",
+      "updated": "2026-04-01"
+    },
+    {
+      "id": "log_1775076979210",
+      "date": "2026-04-01",
+      "desc": "KPIs: Given all the other new work areas, I propose we postpone this discussion",
+      "status": "inprogress",
+      "owner": "Tim",
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-01",
+      "updated": "2026-04-01"
     }
   ],
   "version": 1,
-  "sha": "d2550e733cf99593c43306e8afcc4890149fabba"
+  "sha": "b386b10345fd309bc7bb3406e19e05a41b39b849"
 }
