@@ -313,6 +313,25 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
 .gt-ms-item input[type=checkbox]{cursor:pointer;accent-color:#5B9BD5;flex-shrink:0}
 .gt-ms-dot{width:0.55rem;height:0.55rem;border-radius:0.1rem;flex-shrink:0}
 
+/* ══ LOG / NOTEBOOK ══════════════════════════════════════════════ */
+.log-th{font-size:0.63rem;font-weight:700;color:#9BAABB;text-transform:uppercase;letter-spacing:.07em;padding:0.4rem 0.6rem;border-bottom:2px solid #E2EAF2;text-align:left;white-space:nowrap;background:#F7F9FC}
+.log-td{font-size:0.73rem;color:#2C3E50;padding:0.5rem 0.6rem;border-bottom:.5px solid #EDF0F4;vertical-align:top}
+.log-tr:hover td{background:#F6FAFD}
+.log-date-cell{font-size:0.68rem;color:#7B8FA6;white-space:nowrap;font-weight:600;min-width:5rem}
+.log-status-badge{display:inline-flex;align-items:center;gap:0.25rem;font-size:0.65rem;font-weight:700;padding:0.15rem 0.5rem;border-radius:0.8rem;white-space:nowrap}
+.log-s-open{background:#EEF3F9;color:#3A78B5}
+.log-s-inprogress{background:#DDEAF7;color:#2F72B3}
+.log-s-done{background:#E3F4EC;color:#2E7D52}
+.log-s-onhold{background:#F5F0FB;color:#6B5BA8}
+.log-s-carried{background:#FDF8EE;color:#9A7B30}
+.log-link-chip{display:inline-flex;align-items:center;gap:0.25rem;font-size:0.62rem;font-weight:600;padding:0.12rem 0.4rem;border-radius:0.4rem;background:#EEF3F9;color:#3A78B5;border:.5px solid #B8D0EC;cursor:default}
+.log-action-opt{padding:0.3rem 0.6rem;font-size:0.7rem;cursor:pointer;color:#2C3E50;border-bottom:.5px solid #F0F3F6}
+.log-action-opt:hover{background:#EEF3F9;color:#3A78B5}
+.log-edit-btn{background:none;border:none;cursor:pointer;color:#9BAABB;font-size:0.7rem;padding:0.1rem 0.3rem;border-radius:0.2rem}
+.log-edit-btn:hover{color:#5B9BD5;background:#EEF3F9}
+.log-date-group{background:#FAFBFC;border-top:1.5px solid #E2EAF2}
+.log-date-label{font-size:0.7rem;font-weight:700;color:#5B9BD5;padding:0.35rem 0.6rem;letter-spacing:.03em}
+
 </style>
 </head>
 <body>
@@ -335,6 +354,7 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
   <button class="nav-btn" onclick="showPage('overall',this)">Overall</button>
   <button class="nav-btn" onclick="showPage('workstreams',this)">Workstreams</button>
   <button class="nav-btn" onclick="showPage('timeline',this)">Timeline</button>
+  <button class="nav-btn" onclick="showPage('log',this)">Log</button>
 </div>
 
 <!-- APP SHELL -->
@@ -425,6 +445,80 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
   <!-- PAGE: Timeline -->
   <div id="page-timeline" class="page" style="padding:0">
     <div id="gt-root" style="display:flex;flex-direction:column;width:100%;height:100%;min-height:0;overflow:hidden"></div>
+  </div>
+
+
+  <!-- PAGE: Log / Notebook -->
+  <div id="page-log" class="page" style="padding:0;flex-direction:column;background:#F7F9FC">
+
+    <!-- Settings bar (hidden until opened) -->
+    <div id="log-setup-bar" style="display:none;background:#FFF8E7;border-bottom:1.5px solid #F0D060;padding:0.6rem 1.4rem;align-items:center;gap:1rem;flex-wrap:wrap">
+      <span style="font-size:0.72rem;font-weight:700;color:#7A6020">&#9881; Log Settings</span>
+      <label style="font-size:0.7rem;color:#555;display:flex;align-items:center;gap:0.4rem">
+        Your name: <input id="log-author-input" type="text" placeholder="e.g. Vincenzo" style="font-family:'Open Sans',sans-serif;font-size:0.7rem;padding:0.2rem 0.5rem;border:1px solid #DDE3EA;border-radius:0.3rem;width:9rem">
+      </label>
+      <label style="font-size:0.7rem;color:#555;display:flex;align-items:center;gap:0.4rem">
+        GitHub token: <input id="log-token-input" type="password" placeholder="ghp_xxxx" style="font-family:'Open Sans',sans-serif;font-size:0.7rem;padding:0.2rem 0.5rem;border:1px solid #DDE3EA;border-radius:0.3rem;width:14rem">
+      </label>
+      <button onclick="logSaveSettings()" style="font-family:'Open Sans',sans-serif;font-size:0.7rem;font-weight:600;padding:0.22rem 0.8rem;border-radius:1rem;border:1.5px solid #5B9BD5;background:#5B9BD5;color:#fff;cursor:pointer">Save settings</button>
+      <span id="log-setup-msg" style="font-size:0.68rem;color:#4A8A4A"></span>
+    </div>
+
+    <!-- Toolbar -->
+    <div style="display:flex;align-items:center;gap:0.6rem;padding:0.65rem 1.4rem;border-bottom:1.5px solid #E2EAF2;background:#fff;flex-wrap:wrap;flex-shrink:0">
+      <button class="gt-tbtn" onclick="logPrevWeek()" title="Previous week">&#8592;</button>
+      <span id="log-week-label" style="font-size:0.78rem;font-weight:700;color:#1A2E44;min-width:12rem;text-align:center"></span>
+      <button class="gt-tbtn" onclick="logNextWeek()" title="Next week">&#8594;</button>
+      <button class="gt-tbtn" onclick="logGoToday()">Today</button>
+      <button onclick="logNewItem()" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;font-weight:600;padding:0.28rem 0.9rem;border-radius:1rem;border:none;background:#5B9BD5;color:#fff;cursor:pointer;margin-left:0.5rem">+ New item</button>
+      <button id="log-save-btn" onclick="logSave()" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;font-weight:600;padding:0.28rem 0.9rem;border-radius:1rem;border:1.5px solid #4FA36C;background:#4FA36C;color:#fff;cursor:pointer;display:none">&#10003; Save</button>
+      <span id="log-save-status" style="font-size:0.68rem;color:#7B8FA6"></span>
+      <button onclick="logToggleSetup()" style="margin-left:auto;font-size:0.68rem;background:none;border:none;cursor:pointer;color:#9BAABB" title="Settings">&#9881; Settings</button>
+    </div>
+
+    <!-- Carried-forward banner -->
+    <div id="log-carried-banner" style="display:none;background:#EEF3F9;border-bottom:1px solid #D5E4F2;padding:0.4rem 1.4rem;font-size:0.7rem;color:#4A6480"></div>
+
+    <!-- Main log table -->
+    <div style="flex:1;overflow-y:auto;padding:1rem 1.4rem">
+      <table id="log-table" style="width:100%;border-collapse:collapse"></table>
+      <div id="log-empty" style="padding:2rem;text-align:center;color:#BABABA;font-size:0.85rem;display:none">No items for this week. Click <b>+ New item</b> to add one.</div>
+    </div>
+
+    <!-- New / Edit item modal -->
+    <div id="log-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:500;align-items:center;justify-content:center">
+      <div style="background:#fff;border-radius:0.7rem;padding:1.4rem 1.6rem;width:min(520px,90vw);box-shadow:0 8px 32px rgba(0,0,0,.2)">
+        <div style="font-size:0.85rem;font-weight:700;color:#1A2E44;margin-bottom:1rem" id="log-modal-title">New log item</div>
+        <label style="display:block;font-size:0.7rem;font-weight:600;color:#7B8FA6;margin-bottom:0.2rem">Description</label>
+        <textarea id="log-item-desc" rows="3" placeholder="What needs to be done or was discussed?" style="font-family:'Open Sans',sans-serif;font-size:0.75rem;width:100%;border:1.5px solid #DDE3EA;border-radius:0.4rem;padding:0.4rem 0.6rem;resize:vertical;margin-bottom:0.75rem"></textarea>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:0.75rem">
+          <div>
+            <label style="display:block;font-size:0.7rem;font-weight:600;color:#7B8FA6;margin-bottom:0.2rem">Status</label>
+            <select id="log-item-status" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;width:100%;border:1.5px solid #DDE3EA;border-radius:0.4rem;padding:0.3rem 0.5rem">
+              <option value="open">Open</option>
+              <option value="inprogress">In progress</option>
+              <option value="done">Done</option>
+              <option value="onhold">On hold</option>
+            </select>
+          </div>
+          <div>
+            <label style="display:block;font-size:0.7rem;font-weight:600;color:#7B8FA6;margin-bottom:0.2rem">Owner</label>
+            <input id="log-item-owner" type="text" placeholder="e.g. Vincenzo" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;width:100%;border:1.5px solid #DDE3EA;border-radius:0.4rem;padding:0.3rem 0.5rem">
+          </div>
+        </div>
+        <label style="display:block;font-size:0.7rem;font-weight:600;color:#7B8FA6;margin-bottom:0.2rem">Linked tracker action (optional)</label>
+        <input id="log-item-link-input" type="text" placeholder="Type ID or keyword to search…" autocomplete="off"
+          style="font-family:'Open Sans',sans-serif;font-size:0.72rem;width:100%;border:1.5px solid #DDE3EA;border-radius:0.4rem;padding:0.3rem 0.5rem;margin-bottom:0.15rem"
+          oninput="logFilterActions(this.value)">
+        <div id="log-action-dropdown" style="display:none;max-height:9rem;overflow-y:auto;border:1.5px solid #DDE3EA;border-radius:0 0 0.4rem 0.4rem;background:#fff;margin-bottom:0.5rem"></div>
+        <div id="log-linked-chips" style="display:flex;flex-wrap:wrap;gap:0.3rem;min-height:1.5rem;margin-bottom:0.75rem"></div>
+        <div style="display:flex;justify-content:flex-end;gap:0.6rem;margin-top:0.5rem">
+          <button onclick="logCloseModal()" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;padding:0.3rem 0.9rem;border-radius:1rem;border:1.5px solid #DDE3EA;background:#fff;cursor:pointer">Cancel</button>
+          <button onclick="logSaveItem()" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;font-weight:600;padding:0.3rem 0.9rem;border-radius:1rem;border:none;background:#5B9BD5;color:#fff;cursor:pointer">Save item</button>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </div>
@@ -695,6 +789,7 @@ function showPage(name,btn){
   btn.classList.add('active');
   if(name==='workstreams'){document.getElementById('page-workstreams').classList.add('show');if(!currentWsId)selectWs(WS[0].id);}
   else if(name==='timeline'){document.getElementById('page-timeline').classList.add('show');if(!gtBuilt){buildGantt();gtBuilt=true;}setTimeout(ganttScrollToday,60);}
+  else if(name==='log'){document.getElementById('page-log').classList.add('show');initLog();}
   else{document.getElementById('page-'+name).classList.add('show');}
 }
 function switchTab(name,btn){
@@ -1307,6 +1402,364 @@ function ganttScrollToday(){buildGantt();}
 
   scheduleCheck();
 })();
+// ═══════════════════════════════════════════════════════════════
+//  LOG / NOTEBOOK
+// ═══════════════════════════════════════════════════════════════
+
+// GitHub config — filled in by user via Settings
+var LOG_REPO  = 'vincenzogiancaspro/scap-dashboard'; // set your repo here
+var LOG_FILE  = 'notebook.json';
+var LOG_BRANCH= 'master';
+
+// In-memory state
+var logData    = {items:[], version:1}; // full dataset loaded from GitHub
+var logWeekOffset = 0;  // 0 = this week, -1 = last week, etc.
+var logModalEditId = null; // null = new, string = editing existing
+var logLinkedIds = [];  // ids chosen in modal
+var logDirty = false;   // unsaved changes flag
+
+function logGetToken(){ return localStorage.getItem('log_token')||''; }
+function logGetAuthor(){ return localStorage.getItem('log_author')||'Team'; }
+
+function logSaveSettings(){
+  localStorage.setItem('log_token',  document.getElementById('log-token-input').value.trim());
+  localStorage.setItem('log_author', document.getElementById('log-author-input').value.trim());
+  document.getElementById('log-setup-msg').textContent = '✓ Saved';
+  setTimeout(function(){document.getElementById('log-setup-msg').textContent='';},2000);
+}
+
+function logToggleSetup(){
+  var bar = document.getElementById('log-setup-bar');
+  if(!bar) return;
+  var vis = bar.style.display !== 'flex';
+  bar.style.display = vis ? 'flex' : 'none';
+  if(vis){
+    document.getElementById('log-author-input').value = logGetAuthor();
+    document.getElementById('log-token-input').value  = logGetToken();
+  }
+}
+
+// ── Date helpers ─────────────────────────────────────────────────────────────
+function logMondayOf(date){
+  var d = new Date(date); d.setHours(0,0,0,0);
+  var day = d.getDay(); // 0=Sun
+  d.setDate(d.getDate() - (day===0?6:day-1));
+  return d;
+}
+function logDateStr(d){ return d.toISOString().slice(0,10); }
+function logFmtDay(str){
+  var d = new Date(str+'T00:00:00');
+  return ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d.getDay()]+' '+d.getDate();
+}
+function logFmtWeek(mon){
+  var sun = new Date(mon); sun.setDate(sun.getDate()+6);
+  var mo = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return 'Week of '+mon.getDate()+' '+mo[mon.getMonth()]+' – '+sun.getDate()+' '+mo[sun.getMonth()]+' '+sun.getFullYear();
+}
+function logCurrentMonday(){
+  var base = new Date();
+  base.setDate(base.getDate() + logWeekOffset*7);
+  return logMondayOf(base);
+}
+function logTodayStr(){ return logDateStr(new Date()); }
+
+// ── Load from GitHub ──────────────────────────────────────────────────────────
+function initLog(){
+  document.getElementById('log-week-label').textContent = 'Loading…';
+  var token = logGetToken();
+  var url = 'https://api.github.com/repos/'+LOG_REPO+'/contents/'+LOG_FILE+'?ref='+LOG_BRANCH+'&_='+Date.now();
+  var headers = {'Accept':'application/vnd.github.v3+json'};
+  if(token) headers['Authorization'] = 'token '+token;
+
+  fetch(url, {headers:headers, cache:'no-store'})
+    .then(function(r){
+      if(r.status===404){ logData={items:[],version:1,sha:null}; logRender(); return; }
+      return r.json();
+    })
+    .then(function(data){
+      if(!data) return;
+      var content = atob(data.content.replace(/\n/g,''));
+      logData = JSON.parse(content);
+      logData.sha = data.sha;
+      logRender();
+    })
+    .catch(function(e){
+      document.getElementById('log-week-label').textContent = 'Error loading log';
+      document.getElementById('log-save-status').textContent = 'Could not load: '+e.message;
+    });
+}
+
+// ── Save to GitHub ────────────────────────────────────────────────────────────
+function logSave(){
+  var token = logGetToken();
+  if(!token){ alert('Please add your GitHub token in Settings (⚙ icon top right of Log tab).'); return; }
+  var btn = document.getElementById('log-save-btn');
+  var status = document.getElementById('log-save-status');
+  btn.textContent = 'Saving…'; btn.disabled = true;
+  status.textContent = '';
+
+  var payload = JSON.stringify(logData, null, 2);
+  var b64 = btoa(unescape(encodeURIComponent(payload)));
+  var body = {
+    message: 'Log update '+logTodayStr()+' by '+logGetAuthor(),
+    content: b64,
+    branch:  LOG_BRANCH
+  };
+  if(logData.sha) body.sha = logData.sha;
+
+  fetch('https://api.github.com/repos/'+LOG_REPO+'/contents/'+LOG_FILE, {
+    method: 'PUT',
+    headers: {'Authorization':'token '+token,'Content-Type':'application/json'},
+    body: JSON.stringify(body)
+  })
+  .then(function(r){ return r.json(); })
+  .then(function(data){
+    logData.sha = data.content && data.content.sha ? data.content.sha : logData.sha;
+    btn.textContent = '✓ Saved'; btn.disabled = false;
+    status.textContent = 'Saved at '+new Date().toLocaleTimeString();
+    logDirty = false;
+    setTimeout(function(){
+      btn.textContent = '✓ Save';
+      document.getElementById('log-save-btn').style.display = 'none';
+      status.textContent = '';
+    }, 3000);
+  })
+  .catch(function(e){
+    btn.textContent = '✓ Save'; btn.disabled = false;
+    status.textContent = 'Error: '+e.message;
+  });
+}
+
+// ── Navigation ────────────────────────────────────────────────────────────────
+function logPrevWeek(){ logWeekOffset--; logRender(); }
+function logNextWeek(){ logWeekOffset++; logRender(); }
+function logGoToday(){  logWeekOffset=0; logRender(); }
+
+// ── Render ────────────────────────────────────────────────────────────────────
+function logRender(){
+  var mon = logCurrentMonday();
+  document.getElementById('log-week-label').textContent = logFmtWeek(mon);
+
+  // Collect items relevant to this week:
+  // 1. Created this week
+  // 2. Carried forward (open/inprogress, created before this week)
+  var weekStart = logDateStr(mon);
+  var weekEnd   = logDateStr(new Date(mon.getFullYear(), mon.getMonth(), mon.getDate()+6));
+  var isCurrentWeek = (logWeekOffset === 0);
+
+  var weekItems    = [];
+  var carriedItems = [];
+
+  (logData.items||[]).forEach(function(item){
+    var d = item.date;
+    if(d >= weekStart && d <= weekEnd){
+      weekItems.push(item);
+    } else if(isCurrentWeek && d < weekStart && (item.status==='open'||item.status==='inprogress')){
+      carriedItems.push(item);
+    }
+  });
+
+  // Carried banner
+  var banner = document.getElementById('log-carried-banner');
+  if(carriedItems.length>0){
+    banner.style.display='block';
+    banner.textContent = carriedItems.length+' item'+(carriedItems.length>1?'s':'')+' carried forward from previous weeks (open or in progress).';
+  } else {
+    banner.style.display='none';
+  }
+
+  var allItems = carriedItems.concat(weekItems);
+  var empty = document.getElementById('log-empty');
+  var table = document.getElementById('log-table');
+
+  if(allItems.length===0){
+    table.innerHTML=''; empty.style.display='block'; return;
+  }
+  empty.style.display='none';
+
+  // Group by date
+  var byDate = {};
+  allItems.forEach(function(item){
+    var key = item.date;
+    if(!byDate[key]) byDate[key]=[];
+    byDate[key].push(item);
+  });
+  var dates = Object.keys(byDate).sort();
+
+  var statusLabels = {open:'Open',inprogress:'In progress',done:'Done',onhold:'On hold'};
+  var statusCls    = {open:'log-s-open',inprogress:'log-s-inprogress',done:'log-s-done',onhold:'log-s-onhold'};
+
+  var html = '<thead><tr>'
+    +'<th class="log-th" style="width:5.5rem">Date</th>'
+    +'<th class="log-th">Item</th>'
+    +'<th class="log-th" style="width:7rem">Owner</th>'
+    +'<th class="log-th" style="width:7rem">Status</th>'
+    +'<th class="log-th" style="width:10rem">Linked action</th>'
+    +'<th class="log-th" style="width:2.5rem"></th>'
+    +'</tr></thead><tbody>';
+
+  dates.forEach(function(d){
+    html += '<tr class="log-date-group"><td colspan="6" class="log-date-label">'+logFmtDay(d)
+      +(d<weekStart?' <span style="font-size:0.62rem;color:#9A7B30;font-weight:600">(carried)</span>':'')
+      +'</td></tr>';
+    byDate[d].forEach(function(item){
+      var carried = (d<weekStart) ? ' log-s-carried' : '';
+      var sc = (statusCls[item.status]||'log-s-open')+carried;
+      var sl = statusLabels[item.status]||item.status;
+      var chips = (item.linked||[]).map(function(lid){
+        return '<span class="log-link-chip">'+lid+'</span>';
+      }).join(' ');
+      html += '<tr class="log-tr">'
+        +'<td class="log-td log-date-cell">'+logFmtDay(item.date)+'</td>'
+        +'<td class="log-td"><div style="font-size:0.73rem">'+escHtml(item.desc)+'</div>'
+        +(item.author?'<div style="font-size:0.6rem;color:#9BAABB;margin-top:0.15rem">'+escHtml(item.author)+'</div>':'')
+        +'</td>'
+        +'<td class="log-td" style="font-size:0.7rem;color:#555">'+(item.owner||'—')+'</td>'
+        +'<td class="log-td"><span class="log-status-badge '+sc+'">'+sl+'</span></td>'
+        +'<td class="log-td">'+chips+'</td>'
+        +'<td class="log-td"><button class="log-edit-btn" onclick="logEditItem(\''+item.id+'\')">&#9998;</button></td>'
+        +'</tr>';
+    });
+  });
+  html += '</tbody>';
+  table.innerHTML = html;
+
+  // Show/hide save button
+  document.getElementById('log-save-btn').style.display = logDirty ? 'inline-block' : 'none';
+}
+
+function escHtml(s){
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── Modal ─────────────────────────────────────────────────────────────────────
+function logNewItem(){
+  logModalEditId = null;
+  logLinkedIds   = [];
+  document.getElementById('log-modal-title').textContent = 'New log item';
+  document.getElementById('log-item-desc').value   = '';
+  document.getElementById('log-item-status').value = 'open';
+  document.getElementById('log-item-owner').value  = logGetAuthor();
+  document.getElementById('log-item-link-input').value = '';
+  document.getElementById('log-action-dropdown').style.display = 'none';
+  logRenderChips();
+  document.getElementById('log-modal').style.display = 'flex';
+  document.getElementById('log-item-desc').focus();
+}
+
+function logEditItem(id){
+  var item = (logData.items||[]).find(function(i){return i.id===id;});
+  if(!item) return;
+  logModalEditId = id;
+  logLinkedIds   = (item.linked||[]).slice();
+  document.getElementById('log-modal-title').textContent = 'Edit log item';
+  document.getElementById('log-item-desc').value   = item.desc||'';
+  document.getElementById('log-item-status').value = item.status||'open';
+  document.getElementById('log-item-owner').value  = item.owner||'';
+  document.getElementById('log-item-link-input').value = '';
+  document.getElementById('log-action-dropdown').style.display = 'none';
+  logRenderChips();
+  document.getElementById('log-modal').style.display = 'flex';
+}
+
+function logCloseModal(){
+  document.getElementById('log-modal').style.display = 'none';
+  document.getElementById('log-action-dropdown').style.display = 'none';
+}
+
+function logSaveItem(){
+  var desc = document.getElementById('log-item-desc').value.trim();
+  if(!desc){ alert('Please enter a description.'); return; }
+  var status = document.getElementById('log-item-status').value;
+  var owner  = document.getElementById('log-item-owner').value.trim();
+
+  if(!logData.items) logData.items=[];
+
+  if(logModalEditId){
+    var item = logData.items.find(function(i){return i.id===logModalEditId;});
+    if(item){
+      item.desc   = desc;
+      item.status = status;
+      item.owner  = owner;
+      item.linked = logLinkedIds.slice();
+      item.updated= logTodayStr();
+    }
+  } else {
+    logData.items.push({
+      id:      'log_'+Date.now(),
+      date:    logTodayStr(),
+      desc:    desc,
+      status:  status,
+      owner:   owner,
+      author:  logGetAuthor(),
+      linked:  logLinkedIds.slice(),
+      created: logTodayStr(),
+      updated: logTodayStr()
+    });
+  }
+
+  logDirty = true;
+  logCloseModal();
+  logRender();
+}
+
+// ── Action search ─────────────────────────────────────────────────────────────
+function logFilterActions(query){
+  var dd = document.getElementById('log-action-dropdown');
+  if(!query){ dd.style.display='none'; return; }
+  var q = query.toLowerCase();
+  var matches = [];
+
+  // Search WS_ACTIONS for matching actions
+  try {
+    Object.keys(WS_ACTIONS).forEach(function(slug){
+      WS_ACTIONS[slug].forEach(function(group){
+        group.rows.forEach(function(row){
+          if((row.id+' '+row.action).toLowerCase().indexOf(q)>=0){
+            matches.push({id:row.id, label:row.id+' — '+row.action});
+          }
+        });
+      });
+    });
+  } catch(e){}
+
+  if(matches.length===0){ dd.style.display='none'; return; }
+  dd.innerHTML = matches.slice(0,12).map(function(m){
+    return '<div class="log-action-opt" onclick="logSelectAction(\''+m.id+'\',\''+escHtml(m.label)+'\')">'+escHtml(m.label)+'</div>';
+  }).join('');
+  dd.style.display = 'block';
+}
+
+function logSelectAction(id, label){
+  if(logLinkedIds.indexOf(id)<0) logLinkedIds.push(id);
+  document.getElementById('log-item-link-input').value = '';
+  document.getElementById('log-action-dropdown').style.display = 'none';
+  logRenderChips();
+}
+
+function logRenderChips(){
+  var el = document.getElementById('log-linked-chips');
+  el.innerHTML = logLinkedIds.map(function(id){
+    return '<span class="log-link-chip">'+id
+      +' <span onclick="logRemoveLink(\''+id+'\')" style="cursor:pointer;margin-left:0.2rem;color:#9BAABB">&#10005;</span>'
+      +'</span>';
+  }).join('');
+}
+
+function logRemoveLink(id){
+  logLinkedIds = logLinkedIds.filter(function(i){return i!==id;});
+  logRenderChips();
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(e){
+  var dd = document.getElementById('log-action-dropdown');
+  var inp = document.getElementById('log-item-link-input');
+  if(dd && inp && !dd.contains(e.target) && e.target!==inp){
+    dd.style.display='none';
+  }
+});
+
 </script>
 
 </body>
