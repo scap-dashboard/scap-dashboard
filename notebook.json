@@ -4,58 +4,58 @@
       "id": "log_1775076366148",
       "date": "2026-04-01",
       "desc": "Agenda for CLSO meeting: \n- Ask for an update on meeting with OER on SCM task force and CSLO support\n- Reflect back on Oracle presentation and agree on plan forward\n- Check with Mohammed on guest pass for Laura and Vincenzo\n- etc.",
-      "status": "inprogress",
+      "status": "open",
       "owner": "Vincenzo",
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-01",
-      "updated": "2026-04-01"
+      "updated": "2026-04-02"
     },
     {
       "id": "log_1775076714272",
       "date": "2026-04-01",
       "desc": "Prioritize development of CSLO's operating model - tentative deadline for 1st review: 17/04",
-      "status": "inprogress",
+      "status": "open",
       "owner": "Vincenzo",
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-01",
-      "updated": "2026-04-01"
+      "updated": "2026-04-02"
     },
     {
       "id": "log_1775076889693",
       "date": "2026-04-01",
-      "desc": "Pilot Countries: Let’s wait until the meeting with Marta and colleagues on SCM AA – as the desk officers are also present, I assume we can explore the pilot countries during this meeting as well.",
-      "status": "inprogress",
+      "desc": "Pilot Countries: Letâs wait until the meeting with Marta and colleagues on SCM AA â as the desk officers are also present, I assume we can explore the pilot countries during this meeting as well.",
+      "status": "open",
       "owner": "Tim",
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-01",
-      "updated": "2026-04-01"
+      "updated": "2026-04-02"
     },
     {
       "id": "log_1775076927289",
       "date": "2026-04-01",
-      "desc": "Control Tower: I’ll continue the work as planned; next step will be to put together the functional requirements and present a comprehensive package.",
-      "status": "inprogress",
+      "desc": "Control Tower: Iâll continue the work as planned; next step will be to put together the functional requirements and present a comprehensive package.",
+      "status": "open",
       "owner": "Tim",
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-01",
-      "updated": "2026-04-01"
+      "updated": "2026-04-02"
     },
     {
       "id": "log_1775076979210",
       "date": "2026-04-01",
       "desc": "KPIs: Given all the other new work areas, I propose we postpone this discussion",
-      "status": "inprogress",
+      "status": "open",
       "owner": "Tim",
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-01",
-      "updated": "2026-04-01"
+      "updated": "2026-04-02"
     }
   ],
   "version": 1,
-  "sha": "b386b10345fd309bc7bb3406e19e05a41b39b849"
+  "sha": "0e62ccbdd6053273fc70a480e0973112840f066f"
 }
