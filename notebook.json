@@ -4,7 +4,7 @@
       "id": "log_1775076366148",
       "date": "2026-04-01",
       "desc": "Agenda for CLSO meeting: \n- Ask for an update on meeting with OER on SCM task force and CSLO support\n- Reflect back on Oracle presentation and agree on plan forward\n- Check with Mohammed on guest pass for Laura and Vincenzo\n- etc.",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "author": "Vincenzo",
       "linked": [],
@@ -25,7 +25,7 @@
     {
       "id": "log_1775076889693",
       "date": "2026-04-01",
-      "desc": "Pilot Countries: LetÃ¢ÂÂs wait until the meeting with Marta and colleagues on SCM AA Ã¢ÂÂ as the desk officers are also present, I assume we can explore the pilot countries during this meeting as well.",
+      "desc": "Pilot Countries: Let's wait until the meeting with Marta and colleagues on SCM AA  as the desk officers are also present, I assume we can explore the pilot countries during this meeting as well.",
       "status": "closed",
       "owner": "Tim",
       "author": "Vincenzo",
@@ -36,7 +36,7 @@
     {
       "id": "log_1775076927289",
       "date": "2026-04-01",
-      "desc": "Control Tower: IÃ¢ÂÂll continue the work as planned; next step will be to put together the functional requirements and present a comprehensive package.",
+      "desc": "Control Tower: I'll continue the work as planned; next step will be to put together the functional requirements and present a comprehensive package.",
       "status": "open",
       "owner": "Tim",
       "author": "Vincenzo",
@@ -57,5 +57,5 @@
     }
   ],
   "version": 1,
-  "sha": "77b8b9dc6c83ad7ea7831a0d98412d483e06a60d"
+  "sha": "fd7bda2bbfb27c0f71bc6c54952a15233430ec84"
 }
