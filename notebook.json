@@ -25,8 +25,8 @@
     {
       "id": "log_1775076889693",
       "date": "2026-04-01",
-      "desc": "Pilot Countries: Letâs wait until the meeting with Marta and colleagues on SCM AA â as the desk officers are also present, I assume we can explore the pilot countries during this meeting as well.",
-      "status": "open",
+      "desc": "Pilot Countries: LetÃ¢ÂÂs wait until the meeting with Marta and colleagues on SCM AA Ã¢ÂÂ as the desk officers are also present, I assume we can explore the pilot countries during this meeting as well.",
+      "status": "closed",
       "owner": "Tim",
       "author": "Vincenzo",
       "linked": [],
@@ -36,7 +36,7 @@
     {
       "id": "log_1775076927289",
       "date": "2026-04-01",
-      "desc": "Control Tower: Iâll continue the work as planned; next step will be to put together the functional requirements and present a comprehensive package.",
+      "desc": "Control Tower: IÃ¢ÂÂll continue the work as planned; next step will be to put together the functional requirements and present a comprehensive package.",
       "status": "open",
       "owner": "Tim",
       "author": "Vincenzo",
@@ -57,5 +57,5 @@
     }
   ],
   "version": 1,
-  "sha": "0e62ccbdd6053273fc70a480e0973112840f066f"
+  "sha": "77b8b9dc6c83ad7ea7831a0d98412d483e06a60d"
 }
