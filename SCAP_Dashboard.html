@@ -15,7 +15,7 @@
    At 2560px wide  → capped at 22px
    This single rule makes the whole layout proportional.
 ══════════════════════════════════════════════════════ */
-html{font-size:clamp(13px, 0.95vw, 22px)}
+html{font-size:clamp(14px, 0.95vw, 23px)}
 html,body{height:100%;overflow:hidden}
 body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display:flex;flex-direction:column;font-size:1rem}
 
@@ -314,11 +314,11 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
 .gt-ms-dot{width:0.55rem;height:0.55rem;border-radius:0.1rem;flex-shrink:0}
 
 /* ══ LOG / NOTEBOOK ══════════════════════════════════════════════ */
-.log-th{font-size:0.63rem;font-weight:700;color:#9BAABB;text-transform:uppercase;letter-spacing:.07em;padding:0.4rem 0.6rem;border-bottom:2px solid #E2EAF2;text-align:left;white-space:nowrap;background:#F7F9FC}
-.log-td{font-size:0.73rem;color:#2C3E50;padding:0.5rem 0.6rem;border-bottom:.5px solid #EDF0F4;vertical-align:top}
-.log-tr:hover td{background:#F6FAFD}
+.log-th{font-size:0.73rem;font-weight:700;color:#7B8FA6;text-transform:uppercase;letter-spacing:.07em;padding:0.45rem 0.7rem;border-bottom:2px solid #C8D8E8;text-align:left;white-space:nowrap;background:#F2F6FA}
+.log-td{font-size:0.83rem;color:#2C3E50;padding:0.55rem 0.7rem;border-bottom:.5px solid #E2EAF2;vertical-align:top;background:#fff}
+.log-tr:hover td{background:#F0F6FF}
 .log-date-cell{font-size:0.68rem;color:#7B8FA6;white-space:nowrap;font-weight:600;min-width:5rem}
-.log-status-badge{display:inline-flex;align-items:center;gap:0.25rem;font-size:0.65rem;font-weight:700;padding:0.15rem 0.5rem;border-radius:0.8rem;white-space:nowrap}
+.log-status-badge{display:inline-flex;align-items:center;gap:0.25rem;font-size:0.75rem;font-weight:700;padding:0.15rem 0.5rem;border-radius:0.8rem;white-space:nowrap}
 .log-s-open{background:#EEF3F9;color:#3A78B5}
 .log-s-inprogress{background:#DDEAF7;color:#2F72B3}
 .log-s-done{background:#E3F4EC;color:#2E7D52}
@@ -327,10 +327,10 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
 .log-link-chip{display:inline-flex;align-items:center;gap:0.25rem;font-size:0.62rem;font-weight:600;padding:0.12rem 0.4rem;border-radius:0.4rem;background:#EEF3F9;color:#3A78B5;border:.5px solid #B8D0EC;cursor:default}
 .log-action-opt{padding:0.3rem 0.6rem;font-size:0.7rem;cursor:pointer;color:#2C3E50;border-bottom:.5px solid #F0F3F6}
 .log-action-opt:hover{background:#EEF3F9;color:#3A78B5}
-.log-edit-btn{background:none;border:none;cursor:pointer;color:#9BAABB;font-size:0.7rem;padding:0.1rem 0.3rem;border-radius:0.2rem}
+.log-edit-btn{background:#EEF3F9;border:1.5px solid #C8D8EC;cursor:pointer;color:#5B9BD5;font-size:0.72rem;font-weight:600;padding:0.22rem 0.55rem;border-radius:0.35rem;transition:all .12s}.log-edit-btn:hover{background:#5B9BD5;color:#fff;border-color:#5B9BD5}
 .log-edit-btn:hover{color:#5B9BD5;background:#EEF3F9}
-.log-date-group{background:#FAFBFC;border-top:1.5px solid #E2EAF2}
-.log-date-label{font-size:0.7rem;font-weight:700;color:#5B9BD5;padding:0.35rem 0.6rem;letter-spacing:.03em}
+.log-date-group{background:#fff;border-top:3px solid #5B9BD5}
+.log-date-label{font-size:0.8rem;font-weight:700;color:#5B9BD5;padding:0.45rem 0.7rem;letter-spacing:.03em}
 
 </style>
 </head>
@@ -496,14 +496,13 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
             <label style="display:block;font-size:0.7rem;font-weight:600;color:#7B8FA6;margin-bottom:0.2rem">Status</label>
             <select id="log-item-status" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;width:100%;border:1.5px solid #DDE3EA;border-radius:0.4rem;padding:0.3rem 0.5rem">
               <option value="open">Open</option>
-              <option value="inprogress">In progress</option>
-              <option value="done">Done</option>
+              <option value="closed">Closed</option>
               <option value="onhold">On hold</option>
             </select>
           </div>
           <div>
-            <label style="display:block;font-size:0.7rem;font-weight:600;color:#7B8FA6;margin-bottom:0.2rem">Owner</label>
-            <input id="log-item-owner" type="text" placeholder="e.g. Vincenzo" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;width:100%;border:1.5px solid #DDE3EA;border-radius:0.4rem;padding:0.3rem 0.5rem">
+            <label style="display:block;font-size:0.7rem;font-weight:600;color:#7B8FA6;margin-bottom:0.2rem">Logged by</label>
+            <input id="log-item-owner" type="text" placeholder="e.g. Vincenzo" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;width:100%;border:1.5px solid #DDE3EA;border-radius:0.4rem;padding:0.3rem 0.5rem;background:#F7F9FC;color:#7B8FA6" readonly>
           </div>
         </div>
         <label style="display:block;font-size:0.7rem;font-weight:600;color:#7B8FA6;margin-bottom:0.2rem">Linked tracker action (optional)</label>
@@ -683,7 +682,7 @@ function renderWsDetail(wsId){
           <th style="width:3rem">ID</th><th>Action</th>
           <th style="width:8.5rem">Owner</th><th class="r" style="width:5rem">Priority</th>
           <th style="width:5.7rem">Due date</th><th class="r" style="width:5.2rem">Days left</th>
-          <th class="r" style="width:7rem">Status</th>
+          <th class="r" style="width:7rem">Logged by</th>
         </tr></thead><tbody>${tbody}</tbody></table></div></div>`;
   }).join('');
 
@@ -1554,7 +1553,7 @@ function logRender(){
     var d = item.date;
     if(d >= weekStart && d <= weekEnd){
       weekItems.push(item);
-    } else if(isCurrentWeek && d < weekStart && (item.status==='open'||item.status==='inprogress')){
+    } else if(isCurrentWeek && d < weekStart && (item.status==='open')){
       carriedItems.push(item);
     }
   });
@@ -1586,13 +1585,13 @@ function logRender(){
   });
   var dates = Object.keys(byDate).sort();
 
-  var statusLabels = {open:'Open',inprogress:'In progress',done:'Done',onhold:'On hold'};
-  var statusCls    = {open:'log-s-open',inprogress:'log-s-inprogress',done:'log-s-done',onhold:'log-s-onhold'};
+  var statusLabels = {open:'Open',closed:'Closed',onhold:'On hold'};
+  var statusCls    = {open:'log-s-open',closed:'log-s-done',onhold:'log-s-onhold'};
 
   var html = '<thead><tr>'
     +'<th class="log-th" style="width:5.5rem">Date</th>'
     +'<th class="log-th">Item</th>'
-    +'<th class="log-th" style="width:7rem">Owner</th>'
+    +'<th class="log-th" style="width:7rem">Logged by</th>'
     +'<th class="log-th" style="width:7rem">Status</th>'
     +'<th class="log-th" style="width:10rem">Linked action</th>'
     +'<th class="log-th" style="width:2.5rem"></th>'
@@ -1639,7 +1638,7 @@ function logNewItem(){
   document.getElementById('log-modal-title').textContent = 'New log item';
   document.getElementById('log-item-desc').value   = '';
   document.getElementById('log-item-status').value = 'open';
-  document.getElementById('log-item-owner').value  = logGetAuthor();
+  document.getElementById('log-item-owner').value  = logGetAuthor(); // auto-filled from settings
   document.getElementById('log-item-link-input').value = '';
   document.getElementById('log-action-dropdown').style.display = 'none';
   logRenderChips();
