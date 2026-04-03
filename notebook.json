@@ -54,8 +54,19 @@
       "linked": [],
       "created": "2026-04-01",
       "updated": "2026-04-02"
+    },
+    {
+      "id": "log_1775213356513",
+      "date": "2026-04-03",
+      "desc": "Carry out Laura's onboarding and assign key responsibilities",
+      "status": "open",
+      "owner": "Vincenzo",
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-03",
+      "updated": "2026-04-03"
     }
   ],
   "version": 1,
-  "sha": "fd7bda2bbfb27c0f71bc6c54952a15233430ec84"
+  "sha": "c1d527f700800dfaab90e496fea0d33dd17f170e"
 }
