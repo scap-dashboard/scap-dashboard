@@ -105,8 +105,22 @@
       "linked": [],
       "created": "2026-04-03",
       "updated": "2026-04-03"
+    },
+    {
+      "id": "log_1775224349797",
+      "date": "2026-04-03",
+      "desc": "Set up and facilitate meeting between Arslen, Moto, and Mohammed to reflect on Oracle's presentation, compile and align on a list of priorities for systems advancements, and come up with a plan on how to proceed. <b><u>Tentative date: 09/04</u></b>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": true,
+      "author": "Vincenzo",
+      "linked": [
+        "4.1.1"
+      ],
+      "created": "2026-04-03",
+      "updated": "2026-04-03"
     }
   ],
   "version": 1,
-  "sha": "26c25ca043079b9ced25c3366d8c27d4620bb1ac"
+  "sha": "95c96179b7a9b0c725737194f4886b6e728dd542"
 }
