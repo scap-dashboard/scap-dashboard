@@ -314,11 +314,11 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
 .gt-ms-dot{width:0.55rem;height:0.55rem;border-radius:0.1rem;flex-shrink:0}
 
 /* ══ LOG / NOTEBOOK ══════════════════════════════════════════════ */
-.log-th{font-size:0.73rem;font-weight:700;color:#7B8FA6;text-transform:uppercase;letter-spacing:.07em;padding:0.45rem 0.7rem;border-bottom:2px solid #C8D8E8;text-align:left;white-space:nowrap;background:#F2F6FA}
-.log-td{font-size:0.83rem;color:#2C3E50;padding:0.55rem 0.7rem;border-bottom:.5px solid #E2EAF2;vertical-align:top;background:#fff}
+.log-th{font-size:0.82rem;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.07em;padding:0.45rem 0.7rem;border-bottom:none;text-align:left;white-space:nowrap;background:#5B9BD5}
+.log-td{font-size:0.92rem;color:#2C3E50;padding:0.55rem 0.7rem;border-bottom:.5px solid #E2EAF2;vertical-align:top;background:#fff}
 .log-tr:hover td{background:#F0F6FF}
 .log-date-cell{font-size:0.68rem;color:#7B8FA6;white-space:nowrap;font-weight:600;min-width:5rem}
-.log-status-badge{display:inline-flex;align-items:center;gap:0.25rem;font-size:0.75rem;font-weight:700;padding:0.15rem 0.5rem;border-radius:0.8rem;white-space:nowrap}
+.log-status-badge{display:inline-flex;align-items:center;gap:0.25rem;font-size:0.82rem;font-weight:700;padding:0.15rem 0.5rem;border-radius:0.8rem;white-space:nowrap}
 .log-s-open{background:#EEF3F9;color:#3A78B5}
 .log-s-inprogress{background:#DDEAF7;color:#2F72B3}
 .log-s-done{background:#E3F4EC;color:#2E7D52}
@@ -330,7 +330,12 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
 .log-edit-btn{background:#EEF3F9;border:1.5px solid #C8D8EC;cursor:pointer;color:#5B9BD5;font-size:0.72rem;font-weight:600;padding:0.22rem 0.55rem;border-radius:0.35rem;transition:all .12s}.log-edit-btn:hover{background:#5B9BD5;color:#fff;border-color:#5B9BD5}
 .log-edit-btn:hover{color:#5B9BD5;background:#EEF3F9}
 .log-date-group{background:#fff;border-top:3px solid #5B9BD5}
-.log-date-label{font-size:0.8rem;font-weight:700;color:#5B9BD5;padding:0.45rem 0.7rem;letter-spacing:.03em}
+.log-date-label{font-size:0.9rem;font-weight:700;color:#5B9BD5;padding:0.45rem 0.7rem;letter-spacing:.03em}
+
+#log-item-desc[contenteditable]:empty:before,
+#log-item-desc[data-empty="true"]:before{
+  content:attr(data-placeholder);color:#BABABA;pointer-events:none;
+}
 
 </style>
 </head>
@@ -490,7 +495,16 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
       <div style="background:#fff;border-radius:0.7rem;padding:1.4rem 1.6rem;width:min(520px,90vw);box-shadow:0 8px 32px rgba(0,0,0,.2)">
         <div style="font-size:0.85rem;font-weight:700;color:#1A2E44;margin-bottom:1rem" id="log-modal-title">New log item</div>
         <label style="display:block;font-size:0.7rem;font-weight:600;color:#7B8FA6;margin-bottom:0.2rem">Description</label>
-        <textarea id="log-item-desc" rows="3" placeholder="What needs to be done or was discussed?" style="font-family:'Open Sans',sans-serif;font-size:0.75rem;width:100%;border:1.5px solid #DDE3EA;border-radius:0.4rem;padding:0.4rem 0.6rem;resize:vertical;margin-bottom:0.75rem"></textarea>
+        <div style="border:1.5px solid #DDE3EA;border-radius:0.4rem;margin-bottom:0.75rem;overflow:hidden">
+          <div style="display:flex;gap:0.2rem;padding:0.3rem 0.4rem;background:#F7F9FC;border-bottom:1px solid #E2EAF2">
+            <button type="button" onclick="logFmt('bold')" title="Bold" style="font-family:'Open Sans',sans-serif;font-weight:700;font-size:0.78rem;padding:0.1rem 0.4rem;border:1px solid #DDE3EA;border-radius:0.2rem;background:#fff;cursor:pointer"><b>B</b></button>
+            <button type="button" onclick="logFmt('italic')" title="Italic" style="font-family:'Open Sans',sans-serif;font-size:0.78rem;padding:0.1rem 0.4rem;border:1px solid #DDE3EA;border-radius:0.2rem;background:#fff;cursor:pointer"><i>I</i></button>
+            <button type="button" onclick="logFmt('underline')" title="Underline" style="font-family:'Open Sans',sans-serif;font-size:0.78rem;padding:0.1rem 0.4rem;border:1px solid #DDE3EA;border-radius:0.2rem;background:#fff;cursor:pointer"><u>U</u></button>
+          </div>
+          <div id="log-item-desc" contenteditable="true" data-placeholder="What needs to be done or was discussed?"
+            style="font-family:'Open Sans',sans-serif;font-size:0.82rem;min-height:4.5rem;padding:0.4rem 0.6rem;outline:none;color:#2C3E50;line-height:1.5"
+            oninput="this.dataset.empty=this.textContent.trim()===''?'true':'false'"></div>
+        </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:0.75rem">
           <div>
             <label style="display:block;font-size:0.7rem;font-weight:600;color:#7B8FA6;margin-bottom:0.2rem">Status</label>
@@ -505,6 +519,12 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
             <input id="log-item-owner" type="text" placeholder="e.g. Vincenzo" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;width:100%;border:1.5px solid #DDE3EA;border-radius:0.4rem;padding:0.3rem 0.5rem;background:#F7F9FC;color:#7B8FA6" readonly>
           </div>
         </div>
+        <div style="display:flex;align-items:center;gap:1.2rem;margin-bottom:0.75rem">
+          <label style="display:flex;align-items:center;gap:0.4rem;font-size:0.72rem;font-weight:600;color:#7B8FA6;cursor:pointer">
+            <input type="checkbox" id="log-item-priority" style="accent-color:#F5A623;width:1rem;height:1rem">
+            <span>&#9733; Mark as priority</span>
+          </label>
+        </div>
         <label style="display:block;font-size:0.7rem;font-weight:600;color:#7B8FA6;margin-bottom:0.2rem">Linked tracker action (optional)</label>
         <input id="log-item-link-input" type="text" placeholder="Type ID or keyword to search…" autocomplete="off"
           style="font-family:'Open Sans',sans-serif;font-size:0.72rem;width:100%;border:1.5px solid #DDE3EA;border-radius:0.4rem;padding:0.3rem 0.5rem;margin-bottom:0.15rem"
@@ -512,7 +532,8 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
         <div id="log-action-dropdown" style="display:none;max-height:9rem;overflow-y:auto;border:1.5px solid #DDE3EA;border-radius:0 0 0.4rem 0.4rem;background:#fff;margin-bottom:0.5rem"></div>
         <div id="log-linked-chips" style="display:flex;flex-wrap:wrap;gap:0.3rem;min-height:1.5rem;margin-bottom:0.75rem"></div>
         <div style="display:flex;justify-content:flex-end;gap:0.6rem;margin-top:0.5rem">
-          <button onclick="logCloseModal()" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;padding:0.3rem 0.9rem;border-radius:1rem;border:1.5px solid #DDE3EA;background:#fff;cursor:pointer">Cancel</button>
+          <button onclick="logCloseModal()" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;padding:0.3rem 0.9rem;border-radius:1rem;border:1.5px solid #DDE3EA;background:#fff;cursor:pointer">Discard</button>
+          <button id="log-cancel-item-btn" onclick="logCancelItem()" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;padding:0.3rem 0.9rem;border-radius:1rem;border:1.5px solid #E8A020;background:#FDF8EE;color:#9A6800;cursor:pointer;display:none">Remove action</button>
           <button onclick="logSaveItem()" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;font-weight:600;padding:0.3rem 0.9rem;border-radius:1rem;border:none;background:#5B9BD5;color:#fff;cursor:pointer">Save item</button>
         </div>
       </div>
@@ -1590,7 +1611,7 @@ function logRender(){
 
   var html = '<thead><tr>'
     +'<th class="log-th" style="width:5.5rem">Date</th>'
-    +'<th class="log-th">Item</th>'
+    +'<th class="log-th">Action</th>'
     +'<th class="log-th" style="width:7rem">Logged by</th>'
     +'<th class="log-th" style="width:7rem">Status</th>'
     +'<th class="log-th" style="width:10rem">Linked action</th>'
@@ -1608,12 +1629,12 @@ function logRender(){
       var chips = (item.linked||[]).map(function(lid){
         return '<span class="log-link-chip">'+lid+'</span>';
       }).join(' ');
-      html += '<tr class="log-tr">'
+      var rowStyle=item.status==='closed'?'opacity:0.45;':item.priority?'background:#FFFAEB;':'';
+      var descHtml=item.desc||'';
+      html += '<tr class="log-tr" style="'+rowStyle+'">'
         +'<td class="log-td log-date-cell">'+logFmtDay(item.date)+'</td>'
-        +'<td class="log-td"><div style="font-size:0.73rem">'+escHtml(item.desc)+'</div>'
-        +(item.author?'<div style="font-size:0.6rem;color:#9BAABB;margin-top:0.15rem">'+escHtml(item.author)+'</div>':'')
-        +'</td>'
-        +'<td class="log-td" style="font-size:0.7rem;color:#555">'+(item.owner||'—')+'</td>'
+        +'<td class="log-td">'+(item.priority?'<span style="display:inline-block;background:#F5A623;color:#fff;font-size:0.62rem;font-weight:700;padding:0.08rem 0.38rem;border-radius:0.3rem;margin-right:0.35rem;vertical-align:middle">&#9733; Priority</span>':'')+'<span style="font-size:0.88rem">'+descHtml+'</span></td>'
+        +'<td class="log-td" style="color:#555">'+(item.owner||'—')+'</td>'
         +'<td class="log-td"><span class="log-status-badge '+sc+'">'+sl+'</span></td>'
         +'<td class="log-td">'+chips+'</td>'
         +'<td class="log-td"><button class="log-edit-btn" onclick="logEditItem(\''+item.id+'\')">&#9998;</button></td>'
@@ -1636,10 +1657,12 @@ function logNewItem(){
   logModalEditId = null;
   logLinkedIds   = [];
   document.getElementById('log-modal-title').textContent = 'New log item';
-  document.getElementById('log-item-desc').value   = '';
+  logSetDesc('');
   document.getElementById('log-item-status').value = 'open';
   document.getElementById('log-item-owner').value  = logGetAuthor(); // auto-filled from settings
   document.getElementById('log-item-link-input').value = '';
+  document.getElementById('log-item-priority').checked = false;
+  document.getElementById('log-cancel-item-btn').style.display = 'none';
   document.getElementById('log-action-dropdown').style.display = 'none';
   logRenderChips();
   document.getElementById('log-modal').style.display = 'flex';
@@ -1652,10 +1675,12 @@ function logEditItem(id){
   logModalEditId = id;
   logLinkedIds   = (item.linked||[]).slice();
   document.getElementById('log-modal-title').textContent = 'Edit log item';
-  document.getElementById('log-item-desc').value   = item.desc||'';
+  logSetDesc(item.desc||'');
   document.getElementById('log-item-status').value = item.status||'open';
   document.getElementById('log-item-owner').value  = item.owner||'';
   document.getElementById('log-item-link-input').value = '';
+  document.getElementById('log-item-priority').checked = !!(item.priority);
+  document.getElementById('log-cancel-item-btn').style.display = 'inline-block';
   document.getElementById('log-action-dropdown').style.display = 'none';
   logRenderChips();
   document.getElementById('log-modal').style.display = 'flex';
@@ -1667,33 +1692,36 @@ function logCloseModal(){
 }
 
 function logSaveItem(){
-  var desc = document.getElementById('log-item-desc').value.trim();
+  var desc = logGetDesc();
   if(!desc){ alert('Please enter a description.'); return; }
   var status = document.getElementById('log-item-status').value;
   var owner  = document.getElementById('log-item-owner').value.trim();
 
   if(!logData.items) logData.items=[];
 
+  var priority = document.getElementById('log-item-priority').checked;
   if(logModalEditId){
     var item = logData.items.find(function(i){return i.id===logModalEditId;});
     if(item){
-      item.desc   = desc;
-      item.status = status;
-      item.owner  = owner;
-      item.linked = logLinkedIds.slice();
-      item.updated= logTodayStr();
+      item.desc     = desc;
+      item.status   = status;
+      item.owner    = owner;
+      item.priority = priority;
+      item.linked   = logLinkedIds.slice();
+      item.updated  = logTodayStr();
     }
   } else {
     logData.items.push({
-      id:      'log_'+Date.now(),
-      date:    logTodayStr(),
-      desc:    desc,
-      status:  status,
-      owner:   owner,
-      author:  logGetAuthor(),
-      linked:  logLinkedIds.slice(),
-      created: logTodayStr(),
-      updated: logTodayStr()
+      id:       'log_'+Date.now(),
+      date:     logTodayStr(),
+      desc:     desc,
+      status:   status,
+      owner:    owner,
+      priority: priority,
+      author:   logGetAuthor(),
+      linked:   logLinkedIds.slice(),
+      created:  logTodayStr(),
+      updated:  logTodayStr()
     });
   }
 
@@ -1703,6 +1731,11 @@ function logSaveItem(){
 }
 
 // ── Action search ─────────────────────────────────────────────────────────────
+function logFmt(cmd){ document.execCommand(cmd,false,null); document.getElementById('log-item-desc').focus(); }
+
+function logGetDesc(){ return document.getElementById('log-item-desc').innerHTML.trim(); }
+function logSetDesc(html){ var el=document.getElementById('log-item-desc'); el.innerHTML=html||''; el.dataset.empty=(!html||!html.trim())?'true':'false'; }
+
 function logFilterActions(query){
   var dd = document.getElementById('log-action-dropdown');
   if(!query){ dd.style.display='none'; return; }
@@ -1743,6 +1776,15 @@ function logRenderChips(){
       +' <span onclick="logRemoveLink(\''+id+'\')" style="cursor:pointer;margin-left:0.2rem;color:#9BAABB">&#10005;</span>'
       +'</span>';
   }).join('');
+}
+
+function logCancelItem(){
+  if(!logModalEditId)return;
+  if(!confirm('Remove this action from the log? This cannot be undone.'))return;
+  logData.items = (logData.items||[]).filter(function(i){return i.id!==logModalEditId;});
+  logDirty = true;
+  logCloseModal();
+  logRender();
 }
 
 function logRemoveLink(id){
