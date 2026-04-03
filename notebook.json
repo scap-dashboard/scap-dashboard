@@ -39,12 +39,13 @@
       "id": "log_1775076927289",
       "date": "2026-04-01",
       "desc": "Control Tower: I'll continue the work as planned; next step will be to put together the functional requirements and present a comprehensive package.",
-      "status": "open",
+      "status": "closed",
       "owner": "Tim",
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-01",
-      "updated": "2026-04-02"
+      "updated": "2026-04-03",
+      "priority": false
     },
     {
       "id": "log_1775076979210",
@@ -107,5 +108,5 @@
     }
   ],
   "version": 1,
-  "sha": "7b46b196ff1fb6719d972020b1edd3f65b9dd2d1"
+  "sha": "0842944efcd5dbcd1fbef529750ca152a23ef920"
 }
