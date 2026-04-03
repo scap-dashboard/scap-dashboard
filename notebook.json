@@ -48,12 +48,12 @@
       "id": "log_1775076979210",
       "date": "2026-04-01",
       "desc": "KPIs: Given all the other new work areas, I propose we postpone this discussion",
-      "status": "open",
+      "status": "onhold",
       "owner": "Tim",
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-01",
-      "updated": "2026-04-02"
+      "updated": "2026-04-03"
     },
     {
       "id": "log_1775213356513",
@@ -78,8 +78,19 @@
       ],
       "created": "2026-04-03",
       "updated": "2026-04-03"
+    },
+    {
+      "id": "log_1775213687644",
+      "date": "2026-04-03",
+      "desc": "(In Rome) set up meeting with Arslen to review status of open activities: SCM task force and CSLO support, funding, Laura's secondment, etc.",
+      "status": "open",
+      "owner": "Vincenzo",
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-03",
+      "updated": "2026-04-03"
     }
   ],
   "version": 1,
-  "sha": "043d339d7d8e47c7896c77b52e05caa2a1dbce71"
+  "sha": "c2a5f7603f23d554520e1bf38aa4999bb23329dd"
 }
