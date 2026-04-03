@@ -3,13 +3,14 @@
     {
       "id": "log_1775076366148",
       "date": "2026-04-01",
-      "desc": "Agenda for CLSO meeting: \n- Ask for an update on meeting with OER on SCM task force and CSLO support\n- Reflect back on Oracle presentation and agree on plan forward\n- Check with Mohammed on guest pass for Laura and Vincenzo\n- etc.",
+      "desc": "<b>Agenda for CLSO meeting:</b> \n- Ask for an update on meeting with OER on SCM task force and CSLO support\n- Reflect back on Oracle presentation and agree on plan forward\n- Check with Mohammed on guest pass for Laura and Vincenzo\n- etc.",
       "status": "closed",
       "owner": "Vincenzo",
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-01",
-      "updated": "2026-04-02"
+      "updated": "2026-04-03",
+      "priority": false
     },
     {
       "id": "log_1775076714272",
@@ -20,7 +21,8 @@
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-01",
-      "updated": "2026-04-02"
+      "updated": "2026-04-03",
+      "priority": true
     },
     {
       "id": "log_1775076889693",
@@ -69,7 +71,7 @@
     {
       "id": "log_1775213523790",
       "date": "2026-04-03",
-      "desc": "(In Rome) Set up meeting with Moto to discuss procurement activity on \"repository of tech specs\". Topics to discuss: Oracle solution, overall plan, governance, and timeline",
+      "desc": "<b>(In Rome) </b>Set up meeting with Moto to discuss procurement activity on \"repository of tech specs\". Topics to discuss: Oracle solution, overall plan, governance, and timeline",
       "status": "open",
       "owner": "Vincenzo",
       "author": "Vincenzo",
@@ -77,18 +79,20 @@
         "3.3.1"
       ],
       "created": "2026-04-03",
-      "updated": "2026-04-03"
+      "updated": "2026-04-03",
+      "priority": false
     },
     {
       "id": "log_1775213687644",
       "date": "2026-04-03",
-      "desc": "(In Rome) set up meeting with Arslen to review status of open activities: SCM task force and CSLO support, funding, Laura's secondment, etc.",
+      "desc": "<b>(In Rome)</b> set up meeting with Arslen to review status of open activities: SCM task force and CSLO support, funding, Laura's secondment, etc.",
       "status": "open",
       "owner": "Vincenzo",
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-03",
-      "updated": "2026-04-03"
+      "updated": "2026-04-03",
+      "priority": false
     },
     {
       "id": "log_1775214139165",
@@ -103,5 +107,5 @@
     }
   ],
   "version": 1,
-  "sha": "5a30e17c5d9f003d728fb6effc8f6f6473e02747"
+  "sha": "7b46b196ff1fb6719d972020b1edd3f65b9dd2d1"
 }
