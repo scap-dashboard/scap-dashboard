@@ -69,7 +69,7 @@
     {
       "id": "log_1775213523790",
       "date": "2026-04-03",
-      "desc": "Set up meeting with Moto to discuss procurement activity on \"repository of tech specs\". Topics to discuss: Oracle solution, overall plan, governance, and timeline",
+      "desc": "(In Rome) Set up meeting with Moto to discuss procurement activity on \"repository of tech specs\". Topics to discuss: Oracle solution, overall plan, governance, and timeline",
       "status": "open",
       "owner": "Vincenzo",
       "author": "Vincenzo",
@@ -81,5 +81,5 @@
     }
   ],
   "version": 1,
-  "sha": "8b56425088fc7e879cdf2ad1746a7d1aa4e0c7c5"
+  "sha": "043d339d7d8e47c7896c77b52e05caa2a1dbce71"
 }
