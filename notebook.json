@@ -156,8 +156,20 @@
       "linked": [],
       "created": "2026-04-07",
       "updated": "2026-04-07"
+    },
+    {
+      "id": "log_1775575506655",
+      "date": "2026-04-07",
+      "desc": "test",
+      "status": "open",
+      "owner": "Laura",
+      "priority": false,
+      "author": "Laura",
+      "linked": [],
+      "created": "2026-04-07",
+      "updated": "2026-04-07"
     }
   ],
   "version": 1,
-  "sha": "00e6613906b2dabb82c81116d2fb649c0494faf0"
+  "sha": "ff5874158ac3c3de775c3d7cab07b5a0c2e4f041"
 }
