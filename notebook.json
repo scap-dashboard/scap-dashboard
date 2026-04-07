@@ -131,8 +131,20 @@
       "linked": [],
       "created": "2026-04-07",
       "updated": "2026-04-07"
+    },
+    {
+      "id": "log_1775556355077",
+      "date": "2026-04-07",
+      "desc": "Set up follow up meeting with Chris to get an update on coms plan (external action plan, etc.). Tentative date: 16/04",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-07",
+      "updated": "2026-04-07"
     }
   ],
   "version": 1,
-  "sha": "26f9fc66c1c8c0480ed26239a4310942205863b4"
+  "sha": "4e653c2a6c888efd91cda3bdcd7da4cf6a411402"
 }
