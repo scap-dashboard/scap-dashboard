@@ -148,7 +148,7 @@
       "id": "log_1775557563193",
       "date": "2026-04-07",
       "desc": "Adi is testing the log feature",
-      "status": "open",
+      "status": "closed",
       "owner": "Adi",
       "priority": false,
       "author": "Adi",
@@ -158,5 +158,5 @@
     }
   ],
   "version": 1,
-  "sha": "9a2d03057e08c070db049d181540630d7430739a"
+  "sha": "b127fa5f625758e002387664f4b3ae7407e6d88a"
 }
