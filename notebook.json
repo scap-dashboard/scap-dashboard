@@ -144,20 +144,8 @@
       "linked": [],
       "created": "2026-04-07",
       "updated": "2026-04-07"
-    },
-    {
-      "id": "log_1775557563193",
-      "date": "2026-04-07",
-      "desc": "Adi is testing the log feature",
-      "status": "closed",
-      "owner": "Adi",
-      "priority": false,
-      "author": "Adi",
-      "linked": [],
-      "created": "2026-04-07",
-      "updated": "2026-04-07"
     }
   ],
   "version": 1,
-  "sha": "9edcf25b4fa0cbe4118cca386ffa63fce47d5803"
+  "sha": "0700aed3f81fe175b35e376eb9b85268ce558dc9"
 }
