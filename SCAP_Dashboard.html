@@ -314,11 +314,11 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
 .gt-ms-dot{width:0.55rem;height:0.55rem;border-radius:0.1rem;flex-shrink:0}
 
 /* ══ LOG / NOTEBOOK ══════════════════════════════════════════════ */
-.log-th{font-size:0.82rem;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.07em;padding:0.45rem 0.7rem;border-bottom:none;text-align:left;white-space:nowrap;background:#5B9BD5}
-.log-td{font-size:0.92rem;color:#2C3E50;padding:0.55rem 0.7rem;border-bottom:.5px solid #E2EAF2;vertical-align:top;background:#fff}
+.log-th{font-size:0.74rem;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.07em;padding:0.48rem 0.75rem;border-bottom:none;text-align:left;white-space:nowrap;background:#5B9BD5}
+.log-td{font-size:0.83rem;color:#2C3E50;padding:0.55rem 0.75rem;border-bottom:.5px solid #EDF0F4;vertical-align:middle;background:#fff}
 .log-tr:hover td{background:#F0F6FF}
 .log-date-cell{font-size:0.68rem;color:#7B8FA6;white-space:nowrap;font-weight:600;min-width:5rem}
-.log-status-badge{display:inline-flex;align-items:center;gap:0.25rem;font-size:0.82rem;font-weight:700;padding:0.15rem 0.5rem;border-radius:0.8rem;white-space:nowrap}
+.log-status-badge{display:inline-flex;align-items:center;gap:0.25rem;font-size:0.74rem;font-weight:700;padding:0.15rem 0.5rem;border-radius:0.8rem;white-space:nowrap}
 .log-s-open{background:#EEF3F9;color:#3A78B5}
 .log-s-inprogress{background:#DDEAF7;color:#2F72B3}
 .log-s-done{background:#E3F4EC;color:#2E7D52}
@@ -329,13 +329,21 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
 .log-action-opt:hover{background:#EEF3F9;color:#3A78B5}
 .log-edit-btn{background:#EEF3F9;border:1.5px solid #C8D8EC;cursor:pointer;color:#5B9BD5;font-size:0.72rem;font-weight:600;padding:0.22rem 0.55rem;border-radius:0.35rem;transition:all .12s}.log-edit-btn:hover{background:#5B9BD5;color:#fff;border-color:#5B9BD5}
 .log-edit-btn:hover{color:#5B9BD5;background:#EEF3F9}
-.log-date-group{background:#fff;border-top:3px solid #5B9BD5}
-.log-date-label{font-size:0.9rem;font-weight:700;color:#5B9BD5;padding:0.45rem 0.7rem;letter-spacing:.03em}
+.log-date-group{background:#5B9BD5;border-top:none}
+.log-date-label{font-size:0.74rem;font-weight:700;color:#fff;padding:0.42rem 0.75rem;letter-spacing:.03em;text-transform:uppercase}
 
 #log-item-desc[contenteditable]:empty:before,
 #log-item-desc[data-empty="true"]:before{
   content:attr(data-placeholder);color:#BABABA;pointer-events:none;
 }
+
+/* Log table rounded header corners */
+#log-table thead tr th:first-child{border-radius:0.4rem 0 0 0}
+#log-table thead tr th:last-child{border-radius:0 0.4rem 0 0}
+/* Log date-group row — white text on blue */
+#log-table .log-date-group td{background:#5B9BD5;color:#fff;padding:0.42rem 0.75rem}
+/* Carried badge */
+.log-carried-badge{display:inline-block;font-size:0.6rem;font-weight:700;background:rgba(255,255,255,.22);color:#fff;padding:0.06rem 0.4rem;border-radius:0.4rem;margin-left:0.5rem;border:.5px solid rgba(255,255,255,.4);vertical-align:middle}
 
 </style>
 </head>
@@ -486,7 +494,7 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
 
     <!-- Main log table -->
     <div style="flex:1;overflow-y:auto;padding:1rem 1.4rem">
-      <table id="log-table" style="width:100%;border-collapse:collapse"></table>
+      <div style="border:1px solid #DDE3EA;border-radius:0.4rem;overflow:hidden"><table id="log-table" style="width:100%;border-collapse:collapse"></table></div>
       <div id="log-empty" style="padding:2rem;text-align:center;color:#BABABA;font-size:0.85rem;display:none">No items for this week. Click <b>+ New item</b> to add one.</div>
     </div>
 
@@ -703,7 +711,7 @@ function renderWsDetail(wsId){
           <th style="width:3rem">ID</th><th>Action</th>
           <th style="width:8.5rem">Owner</th><th class="r" style="width:5rem">Priority</th>
           <th style="width:5.7rem">Due date</th><th class="r" style="width:5.2rem">Days left</th>
-          <th class="r" style="width:7rem">Logged by</th>
+          <th class="r" style="width:7rem">Status</th>
         </tr></thead><tbody>${tbody}</tbody></table></div></div>`;
   }).join('');
 
@@ -1620,7 +1628,7 @@ function logRender(){
 
   dates.forEach(function(d){
     html += '<tr class="log-date-group"><td colspan="6" class="log-date-label">'+logFmtDay(d)
-      +(d<weekStart?' <span style="font-size:0.62rem;color:#9A7B30;font-weight:600">(carried)</span>':'')
+      +(d<weekStart?'<span class="log-carried-badge">carried</span>':'')
       +'</td></tr>';
     byDate[d].forEach(function(item){
       var carried = (d<weekStart) ? ' log-s-carried' : '';
