@@ -144,8 +144,20 @@
       "linked": [],
       "created": "2026-04-07",
       "updated": "2026-04-07"
+    },
+    {
+      "id": "log_1775566660801",
+      "date": "2026-04-07",
+      "desc": "From Arslen: Follow up with Valentina on CSLO's support to Haiti w/ him on CC. No need to get the greenlight from the FAOR - we can proceed&nbsp;",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-07",
+      "updated": "2026-04-07"
     }
   ],
   "version": 1,
-  "sha": "0700aed3f81fe175b35e376eb9b85268ce558dc9"
+  "sha": "00e6613906b2dabb82c81116d2fb649c0494faf0"
 }
