@@ -87,12 +87,12 @@
       "id": "log_1775213687644",
       "date": "2026-04-03",
       "desc": "<b>(In Rome)</b> set up meeting with Arslen to review status of open activities: SCM task force and CSLO support, funding, Laura's secondment, etc.",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-03",
-      "updated": "2026-04-03",
+      "updated": "2026-04-07",
       "priority": false
     },
     {
@@ -134,5 +134,5 @@
     }
   ],
   "version": 1,
-  "sha": "b2450cb3f1b2a0b822f3e671eb88311df77a1cc6"
+  "sha": "26f9fc66c1c8c0480ed26239a4310942205863b4"
 }
