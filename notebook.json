@@ -119,8 +119,20 @@
       ],
       "created": "2026-04-03",
       "updated": "2026-04-03"
+    },
+    {
+      "id": "log_1775553801362",
+      "date": "2026-04-07",
+      "desc": "<b>Agenda for alignment w/ Arslen:</b> <b>1)</b> Any updates from his side. <b>2) </b>Meeting with OER on SCM task force and CSLO surge support. <b>3) </b>Plan for Haiti surge support and plan for meeting with FAOR. <b>4)</b> Laura's secondment - timeline and place of work. <b>5)</b> Collect guidance on how to proceed on selection of pilot COs for the action plan",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": true,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-07",
+      "updated": "2026-04-07"
     }
   ],
   "version": 1,
-  "sha": "95c96179b7a9b0c725737194f4886b6e728dd542"
+  "sha": "b2450cb3f1b2a0b822f3e671eb88311df77a1cc6"
 }
