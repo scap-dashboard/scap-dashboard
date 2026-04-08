@@ -173,13 +173,13 @@
       "id": "log_1775576963433",
       "date": "2026-04-07",
       "desc": "Ask Arslen how Laura can work from the office for the next weeks until her secondment is completed",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
-      "priority": true,
+      "priority": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-07",
-      "updated": "2026-04-07"
+      "updated": "2026-04-08"
     },
     {
       "id": "log_1775633879088",
@@ -207,5 +207,5 @@
     }
   ],
   "version": 1,
-  "sha": "91753319b95321296b9cdfcf4ed5f3e2e4c0cc6c"
+  "sha": "eb632d4572334b3bfa56834da033cd4f9e261e16"
 }
