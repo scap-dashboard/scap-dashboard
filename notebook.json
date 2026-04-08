@@ -192,20 +192,8 @@
       "linked": [],
       "created": "2026-04-08",
       "updated": "2026-04-08"
-    },
-    {
-      "id": "log_1775634938198",
-      "date": "2026-04-08",
-      "desc": "test",
-      "status": "open",
-      "owner": "Vincenzo",
-      "priority": false,
-      "author": "Vincenzo",
-      "linked": [],
-      "created": "2026-04-08",
-      "updated": "2026-04-08"
     }
   ],
   "version": 1,
-  "sha": "d6d5df69d23141b7cdecd287340f65ffb1a1c438"
+  "sha": "2f1c07f48bf6826a98f553dbd7ec8658e0899ce8"
 }
