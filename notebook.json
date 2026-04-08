@@ -161,13 +161,13 @@
       "id": "log_1775576848111",
       "date": "2026-04-07",
       "desc": "Inform HR about the successful creation of Laura's profile and agreement",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
-      "priority": true,
+      "priority": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-07",
-      "updated": "2026-04-07"
+      "updated": "2026-04-08"
     },
     {
       "id": "log_1775576963433",
@@ -207,5 +207,5 @@
     }
   ],
   "version": 1,
-  "sha": "237eefb89ef07c71d4c7ede61d7db33331f6ae75"
+  "sha": "f541158fee9439f0e64f226e44bcc82f4d47e728"
 }
