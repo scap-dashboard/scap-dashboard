@@ -62,25 +62,26 @@
       "id": "log_1775213356513",
       "date": "2026-04-03",
       "desc": "Carry out Laura's onboarding and assign key responsibilities",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-03",
-      "updated": "2026-04-03"
+      "updated": "2026-04-08",
+      "priority": false
     },
     {
       "id": "log_1775213523790",
       "date": "2026-04-03",
       "desc": "<b>(In Rome) </b>Set up meeting with Moto to discuss procurement activity on \"repository of tech specs\". Topics to discuss: Oracle solution, overall plan, governance, and timeline",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "author": "Vincenzo",
       "linked": [
         "3.3.1"
       ],
       "created": "2026-04-03",
-      "updated": "2026-04-03",
+      "updated": "2026-04-08",
       "priority": false
     },
     {
@@ -111,7 +112,7 @@
       "id": "log_1775224349797",
       "date": "2026-04-03",
       "desc": "Set up and facilitate meeting between Arslen, Moto, and Mohammed to reflect on Oracle's presentation, compile and align on a list of priorities for systems advancements, and come up with a plan on how to proceed. <b><u>Tentative date: 09/04</u></b>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": true,
       "author": "Vincenzo",
@@ -119,7 +120,7 @@
         "4.1.1"
       ],
       "created": "2026-04-03",
-      "updated": "2026-04-03"
+      "updated": "2026-04-08"
     },
     {
       "id": "log_1775553801362",
@@ -207,5 +208,5 @@
     }
   ],
   "version": 1,
-  "sha": "eb632d4572334b3bfa56834da033cd4f9e261e16"
+  "sha": "aa992d6ead6527639393cb47db47b612a799fb53"
 }
