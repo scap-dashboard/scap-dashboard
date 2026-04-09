@@ -205,8 +205,20 @@
       "linked": [],
       "created": "2026-04-08",
       "updated": "2026-04-08"
+    },
+    {
+      "id": "log_1775723248645",
+      "date": "2026-04-09",
+      "desc": "<div><b>Outcome of our chat with Moto on \"rep. tech. specs.\"</b></div>Focal point for the rep for tech specs - not ready to designate one.&nbsp;<div><b>Plan forward:&nbsp;</b></div><div>- Develop one-pager concept note on requirements of this repository</div><div>- Set up meeting with LATAM to review SMART and assess if it responds to our needs</div><div>- Check feasibility to embed SMART to the oracle systems or check if GRMS can be configured to address this need</div><div><br></div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-09",
+      "updated": "2026-04-09"
     }
   ],
   "version": 1,
-  "sha": "aa992d6ead6527639393cb47db47b612a799fb53"
+  "sha": "5ae44b1430d68400a95236bc7531ed55c195906c"
 }
