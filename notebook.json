@@ -244,21 +244,8 @@
       "created": "2026-04-09",
       "updated": "2026-04-09",
       "isNote": true
-    },
-    {
-      "id": "log_1775736172806",
-      "date": "2026-04-09",
-      "desc": "test",
-      "status": "open",
-      "owner": "Vincenzo",
-      "priority": true,
-      "isNote": true,
-      "author": "Vincenzo",
-      "linked": [],
-      "created": "2026-04-09",
-      "updated": "2026-04-09"
     }
   ],
   "version": 1,
-  "sha": "76a1bd22946c95c96b57f53d09b95e1c90f5ade5"
+  "sha": "db71830c89a9494c08028da8a9582c15d63384e0"
 }
