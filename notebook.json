@@ -212,7 +212,7 @@
       "desc": "<div><b>Outcome of our chat with Moto on \"rep. tech. specs.\"</b><span style=\"font-size: 0.82rem;\">.&nbsp;</span></div><div><b>Plan forward:&nbsp;</b></div><div>- Develop one-pager concept note on requirements of this repository (TO BE REVIEWED IN MAY IN ROME)</div><div>- Set up meeting with LATAM to review SMART and assess if it responds to our needs</div><div>- Check feasibility to embed SMART to the oracle systems or check if GRMS can be configured to address this need</div><div>- Develop proposal to be presented to tech. divisions to collect funding for this initiative (CSLO to support in developing the proposal)&nbsp;</div><div><b>Governance:&nbsp;</b></div><div>- CSLP to lead this initiative - project task force to be appointed at a later stage</div><div>- CSLO maintain oversight and PM tracking and support when needed</div><div><br></div>",
       "status": "open",
       "owner": "Vincenzo",
-      "priority": true,
+      "priority": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-09",
@@ -246,5 +246,5 @@
     }
   ],
   "version": 1,
-  "sha": "8af1065e57b3ab6d66028808dbfc3863a746bba7"
+  "sha": "91e7e9890fca8ce00d228aee6cd9990af349b872"
 }
