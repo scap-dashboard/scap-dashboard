@@ -185,14 +185,15 @@
     {
       "id": "log_1775633879088",
       "date": "2026-04-08",
-      "desc": "<b>Tim</b> to develop demo of OCHA CT by 10/4",
+      "desc": "<b>Tim</b> to develop demo of OCHA CT by 13/4",
       "status": "open",
       "owner": "Vincenzo",
       "priority": true,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-08",
-      "updated": "2026-04-08"
+      "updated": "2026-04-09",
+      "isNote": false
     },
     {
       "id": "log_1775642846651",
@@ -260,5 +261,5 @@
     }
   ],
   "version": 1,
-  "sha": "3cf48022a65addbf3f618c9ae2ca237cf283be2c"
+  "sha": "c3efc6bc750bb0561fdb147dcea28473c7409782"
 }
