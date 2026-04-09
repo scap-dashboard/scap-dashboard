@@ -241,9 +241,10 @@
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-09",
-      "updated": "2026-04-09"
+      "updated": "2026-04-09",
+      "isNote": true
     }
   ],
   "version": 1,
-  "sha": "7c8c6fdee1e7524e32e29338bab455f11e217a17"
+  "sha": "8a1ee3f1a498b3e821b537d476433b4226713fad"
 }
