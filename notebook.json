@@ -244,8 +244,21 @@
       "created": "2026-04-09",
       "updated": "2026-04-09",
       "isNote": true
+    },
+    {
+      "id": "log_1775740345088",
+      "date": "2026-04-09",
+      "desc": "Follow up with Arslen on CT's RFQ by early next week",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": true,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-09",
+      "updated": "2026-04-09"
     }
   ],
   "version": 1,
-  "sha": "db71830c89a9494c08028da8a9582c15d63384e0"
+  "sha": "068d1cc7d368be85251c46da8dd323f000f3c8d8"
 }
