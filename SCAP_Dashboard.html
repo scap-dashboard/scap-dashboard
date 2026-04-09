@@ -329,7 +329,7 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
 .log-action-opt:hover{background:#EEF3F9;color:#3A78B5}
 .log-edit-btn{background:#EEF3F9;border:1.5px solid #C8D8EC;cursor:pointer;color:#5B9BD5;font-size:0.72rem;font-weight:600;padding:0.22rem 0.55rem;border-radius:0.35rem;transition:all .12s}.log-edit-btn:hover{background:#5B9BD5;color:#fff;border-color:#5B9BD5}
 .log-edit-btn:hover{color:#5B9BD5;background:#EEF3F9}
-.log-date-group{background:#D6E6F5;border-top:2px solid #5B9BD5}
+.log-date-group{background:#EEF3F9;border-top:2px solid #5B9BD5}
 .log-date-label{font-size:0.74rem;font-weight:700;color:#1A2E44;padding:0.42rem 0.75rem;letter-spacing:.05em;text-transform:uppercase}
 
 #log-item-desc[contenteditable]:empty:before,
@@ -341,7 +341,7 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
 #log-table thead tr th:first-child{border-radius:0.4rem 0 0 0}
 #log-table thead tr th:last-child{border-radius:0 0.4rem 0 0}
 /* Log date-group row — white text on blue */
-#log-table .log-date-group td{background:#D6E6F5;color:#1A2E44;padding:0.42rem 0.75rem;border-top:2px solid #5B9BD5}
+#log-table .log-date-group td{background:#EEF3F9;color:#1A2E44;padding:0.42rem 0.75rem;border-top:2px solid #5B9BD5}
 /* Carried badge */
 .log-carried-badge{display:inline-block;font-size:0.6rem;font-weight:700;background:#5B9BD5;color:#fff;padding:0.06rem 0.4rem;border-radius:0.4rem;margin-left:0.5rem;border:none;vertical-align:middle}
 
@@ -909,32 +909,6 @@ function populateKPIs(){
 document.getElementById('kpi-ws-grid').innerHTML=WS.map(w=>wsCardHtml(w,'goToWorkstream')).join('');
 populateKPIs();
 buildSidebar();populateOwnerDropdowns();
-
-// ── Restore last active tab (runs after full init) ────────────────────────────
-(function(){
-  try{
-    var saved = localStorage.getItem('scap_active_tab');
-    if(saved){
-      // Find the matching nav button by scanning onclick attributes
-      var btns = document.querySelectorAll('.nav-btn');
-      var match = null;
-      for(var i=0;i<btns.length;i++){
-        var oc = btns[i].getAttribute('onclick') || '';
-        if(oc.indexOf("'"+saved+"'") >= 0){ match = btns[i]; break; }
-      }
-      if(match){
-        // Remove default 'show' from KPIs page first
-        document.querySelectorAll('.page,.ws-layout').forEach(function(p){p.classList.remove('show');});
-        document.querySelectorAll('.nav-btn').forEach(function(b){b.classList.remove('active');});
-        showPage(saved, match, true);
-        return;
-      }
-    }
-  } catch(e){}
-  // Default: ensure KPIs tab button is active
-  var kbtn = document.querySelector('.nav-btn');
-  if(kbtn) kbtn.classList.add('active');
-})();
 document.getElementById('tab-progress').innerHTML=buildL2(IP,'progress')||`<div style="padding:1.4rem;text-align:center;color:#7B8FA6;font-size:0.85rem">No items.</div>`;
 document.getElementById('tab-delayed').innerHTML=DL.length?buildL2(DL,'delayed'):`<div style="padding:1.4rem;text-align:center;color:#7B8FA6;font-size:0.85rem">No delayed items.</div>`;
 document.getElementById('tab-soon').innerHTML=buildL2(SN,'soon')||`<div style="padding:1.4rem;text-align:center;color:#7B8FA6;font-size:0.85rem">No items.</div>`;
@@ -1526,12 +1500,7 @@ function logTodayStr(){ return logDateStr(new Date()); }
 
 // ── Load from GitHub ──────────────────────────────────────────────────────────
 function initLog(){
-  // If already loaded (e.g. tab was visited before), just re-render
-  if(logData && logData.items && logData._loaded){
-    logRender(); return;
-  }
   document.getElementById('log-week-label').textContent = 'Loading…';
-  document.getElementById('log-save-status').textContent = '';
   var token = logGetToken();
   var url = 'https://api.github.com/repos/'+LOG_REPO+'/contents/'+LOG_FILE+'?ref='+LOG_BRANCH+'&_='+Date.now();
   var headers = {'Accept':'application/vnd.github.v3+json'};
@@ -1539,7 +1508,7 @@ function initLog(){
 
   fetch(url, {headers:headers, cache:'no-store'})
     .then(function(r){
-      if(r.status===404){ logData={items:[],version:1,sha:null,_loaded:true}; logRender(); return; }
+      if(r.status===404){ logData={items:[],version:1,sha:null}; logRender(); return; }
       return r.json();
     })
     .then(function(data){
@@ -1547,18 +1516,11 @@ function initLog(){
       var content = atob(data.content.replace(/\n/g,''));
       logData = JSON.parse(content);
       logData.sha = data.sha;
-      logData._loaded = true;
       logRender();
     })
     .catch(function(e){
-      // Network failure — use empty local state so the tab is still usable
-      if(!logData._loaded){
-        logData = {items:[], version:1, sha:null, _loaded:false};
-      }
-      logRender();
-      document.getElementById('log-save-status').textContent =
-        '⚠ Could not reach GitHub — working offline. ' +
-        '<button onclick="logData._loaded=false;initLog();" style="background:none;border:none;color:#5B9BD5;cursor:pointer;font-size:0.7rem;text-decoration:underline;padding:0">Retry</button>';
+      document.getElementById('log-week-label').textContent = 'Error loading log';
+      document.getElementById('log-save-status').textContent = 'Could not load: '+e.message;
     });
 }
 
@@ -1566,13 +1528,13 @@ function initLog(){
 function logSave(){
   var token = logGetToken();
   if(!token){ 
-    document.getElementById('log-save-status').innerHTML = '⚠ Add GitHub token in <button onclick="logToggleSetup()" style="background:none;border:none;color:#5B9BD5;cursor:pointer;text-decoration:underline;padding:0;font-size:0.7rem">Settings</button> to enable saving';
+    document.getElementById('log-save-status').textContent = '⚠ Add GitHub token in Settings to save';
     return; 
   }
   var btn = document.getElementById('log-save-btn');
   var status = document.getElementById('log-save-status');
   if(btn) btn.textContent = 'Saving…';
-  if(status) status.innerHTML = 'Saving…';
+  if(status) status.textContent = 'Saving…';
 
   var payload = JSON.stringify(logData, null, 2);
   var b64 = btoa(unescape(encodeURIComponent(payload)));
@@ -1592,7 +1554,7 @@ function logSave(){
   .then(function(data){
     logData.sha = data.content && data.content.sha ? data.content.sha : logData.sha;
     btn.textContent = '✓ Saved'; btn.disabled = false;
-    if(status) status.innerHTML = 'Saved at '+new Date().toLocaleTimeString();
+    status.textContent = 'Saved at '+new Date().toLocaleTimeString();
     logDirty = false;
     setTimeout(function(){
       btn.textContent = '✓ Save';
@@ -1602,7 +1564,7 @@ function logSave(){
   })
   .catch(function(e){
     btn.textContent = '✓ Save'; btn.disabled = false;
-    if(status) status.innerHTML = 'Error: '+e.message;
+    status.textContent = 'Error: '+e.message;
   });
 }
 
@@ -1854,7 +1816,22 @@ function logRemoveLink(id){
   logRenderChips();
 }
 
-// ── // Close dropdown when clicking outside
+// ── Restore last active tab on page load ──────────────────────────────────────
+(function(){
+  try{
+    var saved = localStorage.getItem('scap_active_tab');
+    if(saved && saved !== 'kpis'){
+      var btn = documArray.prototype.find.call(document.querySelectorAll('.nav-btn'),function(b){var oc=b.getAttribute('onclick')||'';return oc.indexOf("'"+saved+"'")>=0;});
+      if(btn){ showPage(saved, btn, true); return; }
+    }
+  } catch(e){}
+  // Default: KPIs
+  var kpiBtn = Array.prototype.find.call(document.querySelectorAll('.nav-btn'),function(b){var oc=b.getAttribute('onclick')||'';return oc.indexOf("'kpis'")>=0;});
+  if(kpiBtn) kpiBtn.classList.add('active');
+  document.getElementById('page-kpis').classList.add('show');
+})();
+
+// Close dropdown when clicking outside
 document.addEventListener('click', function(e){
   var dd = document.getElementById('log-action-dropdown');
   var inp = document.getElementById('log-item-link-input');
