@@ -229,8 +229,20 @@
       "linked": [],
       "created": "2026-04-09",
       "updated": "2026-04-09"
+    },
+    {
+      "id": "log_1775724664258",
+      "date": "2026-04-09",
+      "desc": "<b>Arslen on CSLO support to OCHA:</b> CSLP and CSLDL are member of the meeting chaired by OER. Need to see first how we manage Haiti then go to OER, show what we are doing w// Haiti and then use that as leverage to expand/motivate support to more COs. It's more relevant to partecipate in meetings that OER is having w/ COs instead of these alignments with CSLP and CSLDL. Haiti's OCHA project has not been approved yet.&nbsp;",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-09",
+      "updated": "2026-04-09"
     }
   ],
   "version": 1,
-  "sha": "6e9341b41d06558a61ae1adf1996a31c82252d62"
+  "sha": "18d251b4b29308c3e9a39b442c571e15b3856e0c"
 }
