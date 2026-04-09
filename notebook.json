@@ -217,8 +217,20 @@
       "linked": [],
       "created": "2026-04-09",
       "updated": "2026-04-09"
+    },
+    {
+      "id": "log_1775724342758",
+      "date": "2026-04-09",
+      "desc": "Proposal to be in rome on Thursday and Friday of week of May 18th",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-09",
+      "updated": "2026-04-09"
     }
   ],
   "version": 1,
-  "sha": "cc943b7db378ecaf5a36762dfebc4a23dfce2882"
+  "sha": "e02776dcceae7e974af282b4248b46d974f2cebf"
 }
