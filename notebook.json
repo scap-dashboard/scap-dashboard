@@ -198,13 +198,13 @@
       "id": "log_1775642846651",
       "date": "2026-04-08",
       "desc": "<b>Agenda for CSLO meeting:&nbsp;</b><div>1) General update on OCHA work, CT work,&nbsp;</div><div>2) Oracle update from the ERP board and plan forward</div><div>3) Discussion on how to proceed with the \"repository of tech steps\" w/ Moto</div><div><br></div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": true,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-08",
-      "updated": "2026-04-08"
+      "updated": "2026-04-09"
     },
     {
       "id": "log_1775723248645",
@@ -220,5 +220,5 @@
     }
   ],
   "version": 1,
-  "sha": "34a5814bbfa249a52a49404c34bbfa71a0dd9590"
+  "sha": "cc943b7db378ecaf5a36762dfebc4a23dfce2882"
 }
