@@ -248,7 +248,7 @@
     {
       "id": "log_1775740345088",
       "date": "2026-04-09",
-      "desc": "Follow up with Arslen on CT's RFQ by email tomorrow",
+      "desc": "Follow up with Arslen on CT RFQ by email tomorrow",
       "status": "open",
       "owner": "Vincenzo",
       "priority": true,
@@ -260,5 +260,5 @@
     }
   ],
   "version": 1,
-  "sha": "a7004c94e07ee1ea3b44307e5158926454e82afe"
+  "sha": "3cf48022a65addbf3f618c9ae2ca237cf283be2c"
 }
