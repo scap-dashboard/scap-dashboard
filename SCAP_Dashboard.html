@@ -1526,7 +1526,12 @@ function logTodayStr(){ return logDateStr(new Date()); }
 
 // ── Load from GitHub ──────────────────────────────────────────────────────────
 function initLog(){
+  // If already loaded (e.g. tab was visited before), just re-render
+  if(logData && logData.items && logData._loaded){
+    logRender(); return;
+  }
   document.getElementById('log-week-label').textContent = 'Loading…';
+  document.getElementById('log-save-status').textContent = '';
   var token = logGetToken();
   var url = 'https://api.github.com/repos/'+LOG_REPO+'/contents/'+LOG_FILE+'?ref='+LOG_BRANCH+'&_='+Date.now();
   var headers = {'Accept':'application/vnd.github.v3+json'};
@@ -1534,7 +1539,7 @@ function initLog(){
 
   fetch(url, {headers:headers, cache:'no-store'})
     .then(function(r){
-      if(r.status===404){ logData={items:[],version:1,sha:null}; logRender(); return; }
+      if(r.status===404){ logData={items:[],version:1,sha:null,_loaded:true}; logRender(); return; }
       return r.json();
     })
     .then(function(data){
@@ -1542,11 +1547,18 @@ function initLog(){
       var content = atob(data.content.replace(/\n/g,''));
       logData = JSON.parse(content);
       logData.sha = data.sha;
+      logData._loaded = true;
       logRender();
     })
     .catch(function(e){
-      document.getElementById('log-week-label').textContent = 'Error loading log';
-      document.getElementById('log-save-status').textContent = 'Could not load: '+e.message;
+      // Network failure — use empty local state so the tab is still usable
+      if(!logData._loaded){
+        logData = {items:[], version:1, sha:null, _loaded:false};
+      }
+      logRender();
+      document.getElementById('log-save-status').textContent =
+        '⚠ Could not reach GitHub — working offline. ' +
+        '<button onclick="logData._loaded=false;initLog();" style="background:none;border:none;color:#5B9BD5;cursor:pointer;font-size:0.7rem;text-decoration:underline;padding:0">Retry</button>';
     });
 }
 
@@ -1554,13 +1566,13 @@ function initLog(){
 function logSave(){
   var token = logGetToken();
   if(!token){ 
-    document.getElementById('log-save-status').textContent = '⚠ Add GitHub token in Settings to save';
+    document.getElementById('log-save-status').innerHTML = '⚠ Add GitHub token in <button onclick="logToggleSetup()" style="background:none;border:none;color:#5B9BD5;cursor:pointer;text-decoration:underline;padding:0;font-size:0.7rem">Settings</button> to enable saving';
     return; 
   }
   var btn = document.getElementById('log-save-btn');
   var status = document.getElementById('log-save-status');
   if(btn) btn.textContent = 'Saving…';
-  if(status) status.textContent = 'Saving…';
+  if(status) status.innerHTML = 'Saving…';
 
   var payload = JSON.stringify(logData, null, 2);
   var b64 = btoa(unescape(encodeURIComponent(payload)));
@@ -1580,7 +1592,7 @@ function logSave(){
   .then(function(data){
     logData.sha = data.content && data.content.sha ? data.content.sha : logData.sha;
     btn.textContent = '✓ Saved'; btn.disabled = false;
-    status.textContent = 'Saved at '+new Date().toLocaleTimeString();
+    if(status) status.innerHTML = 'Saved at '+new Date().toLocaleTimeString();
     logDirty = false;
     setTimeout(function(){
       btn.textContent = '✓ Save';
@@ -1590,7 +1602,7 @@ function logSave(){
   })
   .catch(function(e){
     btn.textContent = '✓ Save'; btn.disabled = false;
-    status.textContent = 'Error: '+e.message;
+    if(status) status.innerHTML = 'Error: '+e.message;
   });
 }
 
