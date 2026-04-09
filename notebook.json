@@ -204,7 +204,8 @@
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-08",
-      "updated": "2026-04-09"
+      "updated": "2026-04-09",
+      "isNote": false
     },
     {
       "id": "log_1775723248645",
@@ -246,5 +247,5 @@
     }
   ],
   "version": 1,
-  "sha": "91e7e9890fca8ce00d228aee6cd9990af349b872"
+  "sha": "416ed4233dbeb10bc278e66d2fde805405073957"
 }
