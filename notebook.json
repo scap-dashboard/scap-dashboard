@@ -186,7 +186,7 @@
     {
       "id": "log_1775633879088",
       "date": "2026-04-08",
-      "desc": "<b>Tim</b> to develop demo of OCHA CT by 13/4",
+      "desc": "<b>Tim</b> to develop demo of OCHA CT by 13/4 - demonstration is scheduled for monday morning",
       "status": "open",
       "owner": "Vincenzo",
       "priority": true,
@@ -262,5 +262,5 @@
     }
   ],
   "version": 1,
-  "sha": "5164585c8a908acdb87fdccd0726a15f9918bd2f"
+  "sha": "2b95186444e8308891b92b427712ce09564863db"
 }
