@@ -16,7 +16,7 @@
       "id": "log_1775076714272",
       "date": "2026-04-01",
       "desc": "Prioritize development of CSLO's operating model - tentative deadline for 1st review: 17/04<div>Note: An external facing version would have to be developed (potentially in word format)&nbsp;</div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "author": "Vincenzo",
       "linked": [],
@@ -262,5 +262,5 @@
     }
   ],
   "version": 1,
-  "sha": "2b95186444e8308891b92b427712ce09564863db"
+  "sha": "e098baa0b1612e44ffe9f1867c923ea4910f71ee"
 }
