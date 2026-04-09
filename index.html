@@ -329,8 +329,8 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
 .log-action-opt:hover{background:#EEF3F9;color:#3A78B5}
 .log-edit-btn{background:#EEF3F9;border:1.5px solid #C8D8EC;cursor:pointer;color:#5B9BD5;font-size:0.72rem;font-weight:600;padding:0.22rem 0.55rem;border-radius:0.35rem;transition:all .12s}.log-edit-btn:hover{background:#5B9BD5;color:#fff;border-color:#5B9BD5}
 .log-edit-btn:hover{color:#5B9BD5;background:#EEF3F9}
-.log-date-group{background:#5B9BD5;border-top:none}
-.log-date-label{font-size:0.74rem;font-weight:700;color:#fff;padding:0.42rem 0.75rem;letter-spacing:.03em;text-transform:uppercase}
+.log-date-group{background:#EEF3F9;border-top:2px solid #5B9BD5}
+.log-date-label{font-size:0.74rem;font-weight:700;color:#1A2E44;padding:0.42rem 0.75rem;letter-spacing:.05em;text-transform:uppercase}
 
 #log-item-desc[contenteditable]:empty:before,
 #log-item-desc[data-empty="true"]:before{
@@ -341,9 +341,11 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
 #log-table thead tr th:first-child{border-radius:0.4rem 0 0 0}
 #log-table thead tr th:last-child{border-radius:0 0.4rem 0 0}
 /* Log date-group row — white text on blue */
-#log-table .log-date-group td{background:#5B9BD5;color:#fff;padding:0.42rem 0.75rem}
+#log-table .log-date-group td{background:#EEF3F9;color:#1A2E44;padding:0.42rem 0.75rem;border-top:2px solid #5B9BD5}
 /* Carried badge */
-.log-carried-badge{display:inline-block;font-size:0.6rem;font-weight:700;background:rgba(255,255,255,.22);color:#fff;padding:0.06rem 0.4rem;border-radius:0.4rem;margin-left:0.5rem;border:.5px solid rgba(255,255,255,.4);vertical-align:middle}
+.log-carried-badge{display:inline-block;font-size:0.6rem;font-weight:700;background:#5B9BD5;color:#fff;padding:0.06rem 0.4rem;border-radius:0.4rem;margin-left:0.5rem;border:none;vertical-align:middle}
+
+.log-note-badge{display:inline-block;font-size:0.62rem;font-weight:700;background:#E8F0FA;color:#4A6FA5;padding:0.08rem 0.38rem;border-radius:0.3rem;margin-right:0.35rem;vertical-align:middle;border:.5px solid #B8D0EC}
 
 </style>
 </head>
@@ -531,6 +533,10 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
           <label style="display:flex;align-items:center;gap:0.4rem;font-size:0.72rem;font-weight:600;color:#7B8FA6;cursor:pointer">
             <input type="checkbox" id="log-item-priority" style="accent-color:#F5A623;width:1rem;height:1rem">
             <span>&#9733; Mark as priority</span>
+          </label>
+          <label style="display:flex;align-items:center;gap:0.4rem;font-size:0.72rem;font-weight:600;color:#7B8FA6;cursor:pointer">
+            <input type="checkbox" id="log-item-note" style="accent-color:#6B8CBA;width:1rem;height:1rem">
+            <span>&#9998; Mark as note</span>
           </label>
         </div>
         <label style="display:block;font-size:0.7rem;font-weight:600;color:#7B8FA6;margin-bottom:0.2rem">Linked tracker action (optional)</label>
@@ -811,7 +817,7 @@ function selectWs(id){
   currentWsId=id;activeFilters.clear();renderWsDetail(id);
 }
 
-function showPage(name,btn){
+function showPage(name,btn,skipSave){
   document.querySelectorAll('.page,.ws-layout').forEach(p=>p.classList.remove('show'));
   document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
@@ -819,6 +825,7 @@ function showPage(name,btn){
   else if(name==='timeline'){document.getElementById('page-timeline').classList.add('show');if(!gtBuilt){buildGantt();gtBuilt=true;}setTimeout(ganttScrollToday,60);}
   else if(name==='log'){document.getElementById('page-log').classList.add('show');initLog();}
   else{document.getElementById('page-'+name).classList.add('show');}
+  if(!skipSave) try{localStorage.setItem('scap_active_tab',name);}catch(e){}
 }
 function switchTab(name,btn){
   document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('show'));
@@ -1520,11 +1527,14 @@ function initLog(){
 // ── Save to GitHub ────────────────────────────────────────────────────────────
 function logSave(){
   var token = logGetToken();
-  if(!token){ alert('Please add your GitHub token in Settings (⚙ icon top right of Log tab).'); return; }
+  if(!token){ 
+    document.getElementById('log-save-status').textContent = '⚠ Add GitHub token in Settings to save';
+    return; 
+  }
   var btn = document.getElementById('log-save-btn');
   var status = document.getElementById('log-save-status');
-  btn.textContent = 'Saving…'; btn.disabled = true;
-  status.textContent = '';
+  if(btn) btn.textContent = 'Saving…';
+  if(status) status.textContent = 'Saving…';
 
   var payload = JSON.stringify(logData, null, 2);
   var b64 = btoa(unescape(encodeURIComponent(payload)));
@@ -1582,7 +1592,7 @@ function logRender(){
     var d = item.date;
     if(d >= weekStart && d <= weekEnd){
       weekItems.push(item);
-    } else if(isCurrentWeek && d < weekStart && (item.status==='open')){
+    } else if(isCurrentWeek && d < weekStart && (item.status==='open') && !item.isNote){
       carriedItems.push(item);
     }
   });
@@ -1637,11 +1647,11 @@ function logRender(){
       var chips = (item.linked||[]).map(function(lid){
         return '<span class="log-link-chip">'+lid+'</span>';
       }).join(' ');
-      var rowStyle=item.status==='closed'?'opacity:0.45;':item.priority?'background:#FFFAEB;':'';
+      var rowStyle=item.status==='closed'?'opacity:0.45;':item.priority?'background:#FFFAEB;':item.isNote?'background:#F7FAFF;':'';
       var descHtml=item.desc||'';
       html += '<tr class="log-tr" style="'+rowStyle+'">'
         +'<td class="log-td log-date-cell">'+logFmtDay(item.date)+'</td>'
-        +'<td class="log-td">'+(item.priority?'<span style="display:inline-block;background:#F5A623;color:#fff;font-size:0.62rem;font-weight:700;padding:0.08rem 0.38rem;border-radius:0.3rem;margin-right:0.35rem;vertical-align:middle">&#9733; Priority</span>':'')+'<span style="font-size:0.88rem">'+descHtml+'</span></td>'
+        +'<td class="log-td">'+(item.priority?'<span style="display:inline-block;background:#F5A623;color:#fff;font-size:0.62rem;font-weight:700;padding:0.08rem 0.38rem;border-radius:0.3rem;margin-right:0.35rem;vertical-align:middle">&#9733; Priority</span>':'')+(item.isNote?'<span class="log-note-badge">&#9998; Note</span>':'')+'<span style="font-size:0.88rem">'+descHtml+'</span></td>'
         +'<td class="log-td" style="color:#555">'+(item.owner||'—')+'</td>'
         +'<td class="log-td"><span class="log-status-badge '+sc+'">'+sl+'</span></td>'
         +'<td class="log-td">'+chips+'</td>'
@@ -1653,7 +1663,7 @@ function logRender(){
   table.innerHTML = html;
 
   // Show/hide save button
-  document.getElementById('log-save-btn').style.display = logDirty ? 'inline-block' : 'none';
+  // Save button hidden — auto-save handles persistence
 }
 
 function escHtml(s){
@@ -1670,6 +1680,7 @@ function logNewItem(){
   document.getElementById('log-item-owner').value  = logGetAuthor(); // auto-filled from settings
   document.getElementById('log-item-link-input').value = '';
   document.getElementById('log-item-priority').checked = false;
+  document.getElementById('log-item-note').checked = false;
   document.getElementById('log-cancel-item-btn').style.display = 'none';
   document.getElementById('log-action-dropdown').style.display = 'none';
   logRenderChips();
@@ -1688,6 +1699,7 @@ function logEditItem(id){
   document.getElementById('log-item-owner').value  = item.owner||'';
   document.getElementById('log-item-link-input').value = '';
   document.getElementById('log-item-priority').checked = !!(item.priority);
+  document.getElementById('log-item-note').checked = !!(item.isNote);
   document.getElementById('log-cancel-item-btn').style.display = 'inline-block';
   document.getElementById('log-action-dropdown').style.display = 'none';
   logRenderChips();
@@ -1708,6 +1720,7 @@ function logSaveItem(){
   if(!logData.items) logData.items=[];
 
   var priority = document.getElementById('log-item-priority').checked;
+  var isNote   = document.getElementById('log-item-note').checked;
   if(logModalEditId){
     var item = logData.items.find(function(i){return i.id===logModalEditId;});
     if(item){
@@ -1715,6 +1728,7 @@ function logSaveItem(){
       item.status   = status;
       item.owner    = owner;
       item.priority = priority;
+      item.isNote   = isNote;
       item.linked   = logLinkedIds.slice();
       item.updated  = logTodayStr();
     }
@@ -1726,6 +1740,7 @@ function logSaveItem(){
       status:   status,
       owner:    owner,
       priority: priority,
+      isNote:   isNote,
       author:   logGetAuthor(),
       linked:   logLinkedIds.slice(),
       created:  logTodayStr(),
@@ -1733,9 +1748,10 @@ function logSaveItem(){
     });
   }
 
-  logDirty = true;
   logCloseModal();
   logRender();
+  // Auto-save to GitHub immediately
+  logSave();
 }
 
 // ── Action search ─────────────────────────────────────────────────────────────
@@ -1790,15 +1806,30 @@ function logCancelItem(){
   if(!logModalEditId)return;
   if(!confirm('Remove this action from the log? This cannot be undone.'))return;
   logData.items = (logData.items||[]).filter(function(i){return i.id!==logModalEditId;});
-  logDirty = true;
   logCloseModal();
   logRender();
+  logSave();
 }
 
 function logRemoveLink(id){
   logLinkedIds = logLinkedIds.filter(function(i){return i!==id;});
   logRenderChips();
 }
+
+// ── Restore last active tab on page load ──────────────────────────────────────
+(function(){
+  try{
+    var saved = localStorage.getItem('scap_active_tab');
+    if(saved && saved !== 'kpis'){
+      var btn = documArray.prototype.find.call(document.querySelectorAll('.nav-btn'),function(b){var oc=b.getAttribute('onclick')||'';return oc.indexOf("'"+saved+"'")>=0;});
+      if(btn){ showPage(saved, btn, true); return; }
+    }
+  } catch(e){}
+  // Default: KPIs
+  var kpiBtn = Array.prototype.find.call(document.querySelectorAll('.nav-btn'),function(b){var oc=b.getAttribute('onclick')||'';return oc.indexOf("'kpis'")>=0;});
+  if(kpiBtn) kpiBtn.classList.add('active');
+  document.getElementById('page-kpis').classList.add('show');
+})();
 
 // Close dropdown when clicking outside
 document.addEventListener('click', function(e){
