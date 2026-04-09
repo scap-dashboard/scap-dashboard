@@ -222,7 +222,7 @@
       "id": "log_1775724342758",
       "date": "2026-04-09",
       "desc": "Proposal to be in rome on Thursday and Friday of week of May 18th",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "author": "Vincenzo",
@@ -244,5 +244,5 @@
     }
   ],
   "version": 1,
-  "sha": "18d251b4b29308c3e9a39b442c571e15b3856e0c"
+  "sha": "2276a2c7c19241665e7a7b7fd739e8d86f286095"
 }
