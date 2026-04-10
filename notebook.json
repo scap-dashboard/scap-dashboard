@@ -272,8 +272,21 @@
       "linked": [],
       "created": "2026-04-09",
       "updated": "2026-04-10"
+    },
+    {
+      "id": "log_1775823399935",
+      "date": "2026-04-10",
+      "desc": "<b>Success metrics to start measuring - integrate them in the tracker:</b>&nbsp;<!--StartFragment--><span data-olk-copy-source=\"MessageBody\" style=\"margin-left: 0in;\">a) Real impact / change in operations and SC performance; b) COs are happy and request more CSLO support; c) Sustainable funding model for CSLO post-MVP; d) Initiate SC policy change; e) Approved KPI framework and baseline measured.</span><!--EndFragment-->",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": true,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-10",
+      "updated": "2026-04-10"
     }
   ],
   "version": 1,
-  "sha": "4960c1b07ee6373f5e52590a87f03e4b3ff3c482"
+  "sha": "1bcbab3b423e6476ebf4e2d14f8088fc56c94ecb"
 }
