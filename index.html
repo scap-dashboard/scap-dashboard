@@ -1527,27 +1527,33 @@ function logTodayStr(){ return logDateStr(new Date()); }
 // ── Load from GitHub ──────────────────────────────────────────────────────────
 function initLog(){
   var statusEl = document.getElementById('log-save-status');
-  var weekEl   = document.getElementById('log-week-label');
-  var hasCachedData = false;
 
-  // ── Step 1: Render immediately from localStorage cache ────────────────────
-  try {
+  // ── Render immediately from cache (or empty) — SYNCHRONOUS, no blank screen ──
+  var hasCachedData = false;
+  try{
     var cached = localStorage.getItem('scap_log_cache');
     if(cached){
       var parsed = JSON.parse(cached);
-      if(parsed && parsed.items){
+      if(parsed && Array.isArray(parsed.items)){
         logData = parsed;
         hasCachedData = true;
-        logRender();
-        if(statusEl) statusEl.innerHTML = '<span style="color:#9BAABB;font-size:0.65rem">Refreshing…</span>';
       }
     }
-  } catch(e){}
+  }catch(e){}
 
-  if(!hasCachedData && weekEl) weekEl.textContent = 'Loading…';
+  // Always render synchronously before touching the network
+  logRender();
+  if(statusEl) statusEl.innerHTML = hasCachedData
+    ? '<span style="color:#9BAABB;font-size:0.65rem">Refreshing from GitHub…</span>'
+    : '';
 
-  // ── Step 2: Fetch fresh data from GitHub in background ────────────────────
+  // ── Then fetch fresh data silently in background ────────────────────────
   var token = logGetToken();
+  if(!token && !hasCachedData){
+    if(statusEl) statusEl.innerHTML = '<span style="color:#E8A020;font-size:0.68rem">⚠ Add your GitHub token in Settings to load the shared log.</span>';
+    return;
+  }
+
   var url = 'https://api.github.com/repos/'+LOG_REPO+'/contents/'+LOG_FILE
             +'?ref='+LOG_BRANCH+'&_='+Date.now();
   var headers = {'Accept':'application/vnd.github.v3+json'};
@@ -1556,11 +1562,9 @@ function initLog(){
   fetch(url, {headers:headers, cache:'no-store'})
     .then(function(r){
       if(r.status===404){
-        logData = {items:[], version:1, sha:null};
-        try{ localStorage.removeItem('scap_log_cache'); }catch(e){}
-        logRender();
+        if(!hasCachedData){ logData={items:[],version:1,sha:null}; logRender(); }
         if(statusEl) statusEl.innerHTML = '';
-        return;
+        return null;
       }
       return r.json();
     })
@@ -1574,14 +1578,12 @@ function initLog(){
       if(statusEl) statusEl.innerHTML = '';
     })
     .catch(function(){
-      // Always render — either shows cached data or empty state
-      logRender();
+      // Fetch failed — already showing cached or empty data, just show a quiet note
       if(statusEl) statusEl.innerHTML = hasCachedData
-        ? '<span style="color:#9BAABB;font-size:0.65rem">Offline — showing last saved data. <button onclick="initLog()" style="background:none;border:none;color:#5B9BD5;cursor:pointer;font-size:0.65rem;text-decoration:underline;padding:0">Retry</button></span>'
-        : '<span style="color:#E8A020;font-size:0.68rem">⚠ Could not reach GitHub. Check your connection and <button onclick="initLog()" style="background:none;border:none;color:#5B9BD5;cursor:pointer;font-size:0.68rem;text-decoration:underline;padding:0">retry</button>, or add your token in Settings.</span>';
+        ? '<span style="color:#9BAABB;font-size:0.65rem">Using cached data — offline. <button onclick="initLog()" style="background:none;border:none;color:#5B9BD5;cursor:pointer;font-size:0.65rem;text-decoration:underline;padding:0">Retry</button></span>'
+        : '<span style="color:#9BAABB;font-size:0.65rem">Could not reach GitHub. <button onclick="initLog()" style="background:none;border:none;color:#5B9BD5;cursor:pointer;font-size:0.65rem;text-decoration:underline;padding:0">Retry</button></span>';
     });
 }
-
 // ── Save to GitHub ────────────────────────────────────────────────────────────
 function logSave(){
   var token = logGetToken();
