@@ -1528,19 +1528,23 @@ function logTodayStr(){ return logDateStr(new Date()); }
 function initLog(){
   var statusEl = document.getElementById('log-save-status');
   var weekEl   = document.getElementById('log-week-label');
+  var hasCachedData = false;
 
-  // ── Step 1: Render immediately from localStorage cache (instant, no flicker) ──
+  // ── Step 1: Render immediately from localStorage cache ────────────────────
   try {
     var cached = localStorage.getItem('scap_log_cache');
     if(cached){
-      logData = JSON.parse(cached);
-      logData._fromCache = true;
-      logRender();
-      if(statusEl) statusEl.innerHTML = '<span style="color:#9BAABB;font-size:0.65rem">Refreshing…</span>';
-    } else {
-      if(weekEl) weekEl.textContent = 'Loading…';
+      var parsed = JSON.parse(cached);
+      if(parsed && parsed.items){
+        logData = parsed;
+        hasCachedData = true;
+        logRender();
+        if(statusEl) statusEl.innerHTML = '<span style="color:#9BAABB;font-size:0.65rem">Refreshing…</span>';
+      }
     }
-  } catch(e){ if(weekEl) weekEl.textContent = 'Loading…'; }
+  } catch(e){}
+
+  if(!hasCachedData && weekEl) weekEl.textContent = 'Loading…';
 
   // ── Step 2: Fetch fresh data from GitHub in background ────────────────────
   var token = logGetToken();
@@ -1565,22 +1569,16 @@ function initLog(){
       var content = atob(data.content.split('\n').join(''));
       logData = JSON.parse(content);
       logData.sha = data.sha;
-      // Update cache with fresh data
       try{ localStorage.setItem('scap_log_cache', JSON.stringify(logData)); }catch(e){}
       logRender();
       if(statusEl) statusEl.innerHTML = '';
     })
     .catch(function(){
-      // GitHub unreachable — already showing cached data, just note it quietly
-      if(statusEl) statusEl.innerHTML =
-        '<span style="color:#9BAABB;font-size:0.65rem">Offline — showing last saved data. '
-        +'<button onclick="initLog()" style="background:none;border:none;color:#5B9BD5;'
-        +'cursor:pointer;font-size:0.65rem;text-decoration:underline;padding:0">Retry</button></span>';
-      // If no cache at all, show empty state (first-time user without token)
-      if(!logData || !logData.items){
-        logData = {items:[], version:1, sha:null};
-        logRender();
-      }
+      // Always render — either shows cached data or empty state
+      logRender();
+      if(statusEl) statusEl.innerHTML = hasCachedData
+        ? '<span style="color:#9BAABB;font-size:0.65rem">Offline — showing last saved data. <button onclick="initLog()" style="background:none;border:none;color:#5B9BD5;cursor:pointer;font-size:0.65rem;text-decoration:underline;padding:0">Retry</button></span>'
+        : '<span style="color:#E8A020;font-size:0.68rem">⚠ Could not reach GitHub. Check your connection and <button onclick="initLog()" style="background:none;border:none;color:#5B9BD5;cursor:pointer;font-size:0.68rem;text-decoration:underline;padding:0">retry</button>, or add your token in Settings.</span>';
     });
 }
 
