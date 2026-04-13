@@ -187,13 +187,13 @@
       "id": "log_1775633879088",
       "date": "2026-04-08",
       "desc": "<b>Tim</b> to develop demo of OCHA CT by 13/4 - demonstration is scheduled for monday morning",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
-      "priority": true,
+      "priority": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-08",
-      "updated": "2026-04-09",
+      "updated": "2026-04-13",
       "isNote": false
     },
     {
@@ -288,5 +288,5 @@
     }
   ],
   "version": 1,
-  "sha": "1bcbab3b423e6476ebf4e2d14f8088fc56c94ecb"
+  "sha": "afebf229731426c014c6119befbdeca56b2a563c"
 }
