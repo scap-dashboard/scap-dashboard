@@ -138,14 +138,15 @@
     {
       "id": "log_1775556355077",
       "date": "2026-04-07",
-      "desc": "Set up follow up meeting with Chris to get an update on coms plan (external action plan, etc.). Tentative date: 16/04",
+      "desc": "Set up follow up meeting with Chris to get an update on coms plan (external action plan, etc.). Tentative date: 16/04 . NOTE: A reminder has been shared with Chris - pending an update",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-07",
-      "updated": "2026-04-07"
+      "updated": "2026-04-13",
+      "isNote": false
     },
     {
       "id": "log_1775566660801",
@@ -302,5 +303,5 @@
     }
   ],
   "version": 1,
-  "sha": "edcdbe18009c8a62c4f471c857a74d6e0f7c862c"
+  "sha": "2726b082d299b66bcc2cb06a68adcfea1fcd5657"
 }
