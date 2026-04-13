@@ -286,8 +286,21 @@
       "linked": [],
       "created": "2026-04-10",
       "updated": "2026-04-10"
+    },
+    {
+      "id": "log_1776078398528",
+      "date": "2026-04-13",
+      "desc": "Ask Arslen on thursday if we could update our CLSO alignment cadence to a bi-weekly format - Tuesday (30 min) and Thursday",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-13",
+      "updated": "2026-04-13"
     }
   ],
   "version": 1,
-  "sha": "a27c2dbc1d27d9e722f183faa5860f47042f9ed4"
+  "sha": "edcdbe18009c8a62c4f471c857a74d6e0f7c862c"
 }
