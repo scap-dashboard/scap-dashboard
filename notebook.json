@@ -300,8 +300,21 @@
       "linked": [],
       "created": "2026-04-13",
       "updated": "2026-04-13"
+    },
+    {
+      "id": "log_1776113273776",
+      "date": "2026-04-13",
+      "desc": "<b>Agenda for Thursday's meeting with Arslen:&nbsp;</b><div>- Collect any general updates on CAPEX, OCHA, etc.</div><div>- Align on dates &amp; plan for next trip to Rome (18/05 to 21/05)</div><div>- Agree on new cadence of the CSLO alignment (Tuesday and Thursday for 30 min)&nbsp;</div><div>- Discuss any updates related to the OCHA support plan (any updates from OER? from Haiti? what's the plan for the Haiti response?)</div><div>- Presentation of the working solution for the OCHA-programme control tower and suggested plan for introduction to OER, data collection/review/reporting, etc.</div><div><br></div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": true,
+      "isNote": true,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-13",
+      "updated": "2026-04-13"
     }
   ],
   "version": 1,
-  "sha": "84220c549f35e5db0c00996535202031ddb9a354"
+  "sha": "8f0f58e2d8fcfbb8946aeef4f6b908e603a80917"
 }
