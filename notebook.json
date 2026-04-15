@@ -304,7 +304,7 @@
     {
       "id": "log_1776113273776",
       "date": "2026-04-13",
-      "desc": "<b>Agenda for Thursday's meeting with Arslen:&nbsp;</b><div>- Collect any general updates on CAPEX, OCHA, etc.</div><div>- Align on dates &amp; plan for next trip to Rome (18/05 to 21/05)</div><div>- Agree on new cadence of the CSLO alignment (Tuesday and Thursday for 30 min)&nbsp;</div><div>- Discuss any updates related to the OCHA support plan (any updates from OER? from Haiti? what's the plan for the Haiti response?)</div><div>- Presentation of the working solution for the OCHA-programme control tower and suggested plan for introduction to OER, data collection/review/reporting, etc.</div><div>- Discuss with Arslen on how to proceed with the selection of pilot COs <b><u>(we are delayed here)</u></b></div><div><br></div>",
+      "desc": "<b>Agenda for Thursday's meeting with Arslen:&nbsp;</b><div>- Collect any general updates on CAPEX, OCHA, etc.</div><div>- Align on dates &amp; plan for next trip to Rome (18/05 to 21/05)</div><div>- Agree on new cadence of the CSLO alignment (Tuesday and Thursday for 30 min)&nbsp;</div><div>- Discuss any updates related to the OCHA support plan (any updates from OER? from Haiti? what's the plan for the Haiti response?)</div><div>- Presentation of the working solution for the OCHA-programme control tower and suggested plan for introduction to OER, data collection/review/reporting, etc.</div><div>- Discuss with Arslen on how to proceed with the selection of pilot COs <b><u>(we are delayed here)</u></b></div><div>- Systems component/discussion with Oracle update</div><div><br></div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": true,
@@ -312,9 +312,9 @@
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-13",
-      "updated": "2026-04-14"
+      "updated": "2026-04-15"
     }
   ],
   "version": 1,
-  "sha": "23c86344bfddfc36626a1427129bebe85899ada7"
+  "sha": "48e93103c56481e2b1e7a8b173b8e6cbb4c3f155"
 }
