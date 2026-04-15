@@ -250,19 +250,6 @@
       "isNote": true
     },
     {
-      "id": "log_1775740345088",
-      "date": "2026-04-09",
-      "desc": "Follow up with Arslen on CT RFQ by email tomorrow",
-      "status": "open",
-      "owner": "Vincenzo",
-      "priority": true,
-      "isNote": false,
-      "author": "Vincenzo",
-      "linked": [],
-      "created": "2026-04-09",
-      "updated": "2026-04-09"
-    },
-    {
       "id": "log_1775743636050",
       "date": "2026-04-09",
       "desc": "<b>Plan for CSLO Operating model:&nbsp;</b><div>1) Draft of complete CSLO-OM ready to be reviewed by 17/04</div><div>2) Draft of CSLO-OM to be shared with CSL by 24/04</div><div>3) Prepare external-facing version of the CSLO-OM by 24/04</div>",
@@ -316,5 +303,5 @@
     }
   ],
   "version": 1,
-  "sha": "5359399709c47edb2edbec6dda4511619e5018d8"
+  "sha": "72608a0e0feba60e385fce4283cbf8c81abfe504"
 }
