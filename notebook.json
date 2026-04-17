@@ -339,8 +339,21 @@
       "linked": [],
       "created": "2026-04-17",
       "updated": "2026-04-17"
+    },
+    {
+      "id": "log_1776427805523",
+      "date": "2026-04-17",
+      "desc": "Ensure that the external action plan goes through the approval process",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-17",
+      "updated": "2026-04-17"
     }
   ],
   "version": 1,
-  "sha": "16e1405a16d4b04c9389de5689339614fa298070"
+  "sha": "9f2caac5e19c1ab0883b5acc9d21308dd77732d3"
 }
