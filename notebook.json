@@ -300,8 +300,21 @@
       "linked": [],
       "created": "2026-04-13",
       "updated": "2026-04-15"
+    },
+    {
+      "id": "log_1776412112181",
+      "date": "2026-04-17",
+      "desc": "Laura to create data request on Haiti for CSLP and the CO",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-17",
+      "updated": "2026-04-17"
     }
   ],
   "version": 1,
-  "sha": "42d9d001756f0e15c2a97148d2db9e9e43339fcc"
+  "sha": "2d79037852053dba3f015e1a55565d5003356ea8"
 }
