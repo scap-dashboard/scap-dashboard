@@ -292,14 +292,14 @@
       "id": "log_1776113273776",
       "date": "2026-04-13",
       "desc": "<b>Agenda for Thursday's meeting with Arslen:&nbsp;</b><div>- Collect any general updates on CAPEX, OCHA, etc.</div><div>- Align on dates &amp; plan for next trip to Rome (18/05 to 21/05)</div><div>- Agree on new cadence of the CSLO alignment (Tuesday and Thursday for 30 min)&nbsp;</div><div>- Discuss any updates related to the OCHA support plan (any updates from OER? from Haiti? what's the plan for the Haiti response?)</div><div>- Presentation of the working solution for the OCHA-programme control tower and suggested plan for introduction to OER, data collection/review/reporting, etc.</div><div>- Discuss with Arslen on how to proceed with the selection of pilot COs <b><u>(</u>we are delayed here - proposed list of COs to run by Arslen (Haiti, Afghanistan, Pakistan, Madagascar)</b></div><div>- Systems component/discussion with Oracle update</div><div><br></div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": true,
       "isNote": true,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-13",
-      "updated": "2026-04-15"
+      "updated": "2026-04-17"
     },
     {
       "id": "log_1776412112181",
@@ -355,5 +355,5 @@
     }
   ],
   "version": 1,
-  "sha": "9f2caac5e19c1ab0883b5acc9d21308dd77732d3"
+  "sha": "1fe5e03f08273a23c4e0c061c24c872b8983c4cd"
 }
