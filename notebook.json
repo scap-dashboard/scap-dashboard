@@ -278,7 +278,7 @@
     {
       "id": "log_1776078398528",
       "date": "2026-04-13",
-      "desc": "Ask Arslen on thursday if we could update our CLSO alignment cadence to a bi-weekly format - Tuesday (30 min) and Thursday",
+      "desc": "Ask Arslen on thursday if we could update our CLSO alignment cadence to a bi-weekly format - Tuesday (30 min) and Thursday<div><br></div><div>Decision: keep it as it is - switch to a bi-weekly format one OCHA work begins</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -286,7 +286,7 @@
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-13",
-      "updated": "2026-04-13"
+      "updated": "2026-04-17"
     },
     {
       "id": "log_1776113273776",
@@ -355,5 +355,5 @@
     }
   ],
   "version": 1,
-  "sha": "1fe5e03f08273a23c4e0c061c24c872b8983c4cd"
+  "sha": "282801f413b3f895b521bb742eb8605e7c5dc496"
 }
