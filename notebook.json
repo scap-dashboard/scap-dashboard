@@ -304,7 +304,7 @@
     {
       "id": "log_1776412112181",
       "date": "2026-04-17",
-      "desc": "Laura to create data request on Haiti for CSLP and the CO --&gt; <i><u>this should be done following our alignment with Rodrigue and Valentina (Haiti) on the CT and our role&nbsp;</u></i>",
+      "desc": "Laura to create data request on Haiti for CSLP and the CO --&gt; <i><u>this should be shared following our alignment with Rodrigue and Valentina (Haiti) on the CT and our role&nbsp;</u></i>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -355,5 +355,5 @@
     }
   ],
   "version": 1,
-  "sha": "8d304681bdd3a9b4faaf362085d3ce61ea2a5ee5"
+  "sha": "ea70e340381f58dd48f5f09de30c8d8876dec2fe"
 }
