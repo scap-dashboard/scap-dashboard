@@ -313,8 +313,21 @@
       "linked": [],
       "created": "2026-04-17",
       "updated": "2026-04-17"
+    },
+    {
+      "id": "log_1776427592308",
+      "date": "2026-04-17",
+      "desc": "<div><b>On the OCHA-CT</b></div>- Pending support from OER to set up meeting with Rodrigue to present the OCHA-CT mock-up, discuss viability of the solution, ownership, and practical next steps<div>- Pending support from CSL to set up technical discussion with CSI on the hosting of this solution</div><div><b>Both meeting should be held by 01/05 at the latest!</b></div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": true,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-17",
+      "updated": "2026-04-17"
     }
   ],
   "version": 1,
-  "sha": "2d79037852053dba3f015e1a55565d5003356ea8"
+  "sha": "c7e986659220d28f3c7ef1cdf77e24d4a46805cb"
 }
