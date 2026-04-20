@@ -379,8 +379,21 @@
       "linked": [],
       "created": "2026-04-20",
       "updated": "2026-04-20"
+    },
+    {
+      "id": "log_1776675780206",
+      "date": "2026-04-20",
+      "desc": "Confirm trip to CPH with FAO delegation on the 2nd of July",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-20",
+      "updated": "2026-04-20"
     }
   ],
   "version": 1,
-  "sha": "0ab647710f07365c4333056a9dd2f4c5bdc8c839"
+  "sha": "35d8204841c97f57713e9443ecd642fddba34b9d"
 }
