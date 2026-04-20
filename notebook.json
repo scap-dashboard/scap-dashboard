@@ -101,13 +101,14 @@
       "id": "log_1775214139165",
       "date": "2026-04-03",
       "desc": "Tim to develop a consolidated draft of the functional requirements to be shared by FAO colleagues by 17/04",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-03",
-      "updated": "2026-04-08",
-      "priority": true
+      "updated": "2026-04-20",
+      "priority": true,
+      "isNote": false
     },
     {
       "id": "log_1775224349797",
@@ -381,5 +382,5 @@
     }
   ],
   "version": 1,
-  "sha": "da959228c83e4efe28405956bf8cb5083824e6ee"
+  "sha": "0ab647710f07365c4333056a9dd2f4c5bdc8c839"
 }
