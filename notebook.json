@@ -409,7 +409,7 @@
     {
       "id": "log_1776760871865",
       "date": "2026-04-21",
-      "desc": "Tim to request through Arslen a meeting with CSI to discuss hosting of the OCHA solution",
+      "desc": "Tim to request through Arslen a meeting with CSI to discuss hosting of the OCHA solution --&gt; <b>Update:</b> this might not happen afterall considering that the OCHA CT might be dropped moving forward",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -434,5 +434,5 @@
     }
   ],
   "version": 1,
-  "sha": "869f1fafdb156c97bf9ae93fd090c847a0d19dc2"
+  "sha": "b9ac61f572dd8167f850f383029ef7740ec7f2b7"
 }
