@@ -396,7 +396,7 @@
     {
       "id": "log_1776760840413",
       "date": "2026-04-21",
-      "desc": "Tim to follow up with Oxana on setting up meeting with the Haiti logistics team",
+      "desc": "Tim to follow up with Oxana on setting up meeting with the Haiti logistics team --&gt; <b>Update:</b> Done, waiting for her response",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -434,5 +434,5 @@
     }
   ],
   "version": 1,
-  "sha": "c9ed740078faac93820387bb44c8d12ac8eb9b12"
+  "sha": "869f1fafdb156c97bf9ae93fd090c847a0d19dc2"
 }
