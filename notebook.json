@@ -318,7 +318,7 @@
     {
       "id": "log_1776427592308",
       "date": "2026-04-17",
-      "desc": "<div><b>On the OCHA-CT</b></div>- <i><u>Pending support from OER to set up meeting with Rodrigue to present the OCHA-CT mock-up, discuss viability of the solution, ownership, and practical next steps (DONE)&nbsp;</u></i><div>- Pending support from CSL to set up technical discussion with CSI on the hosting of this solution</div><div><b>Both meeting should be held by 01/05 at the latest!</b></div>",
+      "desc": "<div><b>On the OCHA-CT --&gt; Udpate: this might be dropped; detailed explanation can be found below</b></div>- <i><u>Pending support from OER to set up meeting with Rodrigue to present the OCHA-CT mock-up, discuss viability of the solution, ownership, and practical next steps (DONE)&nbsp;</u></i><div>- Pending support from CSL to set up technical discussion with CSI on the hosting of this solution</div><div><b>Both meeting should be held by 01/05 at the latest!</b></div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": true,
@@ -326,7 +326,7 @@
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-17",
-      "updated": "2026-04-20"
+      "updated": "2026-04-21"
     },
     {
       "id": "log_1776427714483",
@@ -434,5 +434,5 @@
     }
   ],
   "version": 1,
-  "sha": "afe63b42dc2139e3eccf5a5dc31bc83c0e08bdbf"
+  "sha": "42dab634f0f05ed15622ea37a12a9da915c61768"
 }
