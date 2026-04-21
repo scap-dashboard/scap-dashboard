@@ -405,8 +405,21 @@
       "linked": [],
       "created": "2026-04-21",
       "updated": "2026-04-21"
+    },
+    {
+      "id": "log_1776760871865",
+      "date": "2026-04-21",
+      "desc": "Tim to request through Arslen a meeting with CSI to discuss hosting of the OCHA solution",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-21",
+      "updated": "2026-04-21"
     }
   ],
   "version": 1,
-  "sha": "42f85ac48af01293c5b07f976a6448af1330eebd"
+  "sha": "d8059d217d727c55b662b9d16a182e693d9815ac"
 }
