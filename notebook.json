@@ -392,8 +392,21 @@
       "linked": [],
       "created": "2026-04-20",
       "updated": "2026-04-20"
+    },
+    {
+      "id": "log_1776760840413",
+      "date": "2026-04-21",
+      "desc": "Tim to follow up with Oxana on setting up meeting with the Haiti logistics team",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-21",
+      "updated": "2026-04-21"
     }
   ],
   "version": 1,
-  "sha": "b0d2c16b325ee05c6c3e0c3b820f194f862beede"
+  "sha": "42f85ac48af01293c5b07f976a6448af1330eebd"
 }
