@@ -418,8 +418,21 @@
       "linked": [],
       "created": "2026-04-21",
       "updated": "2026-04-21"
+    },
+    {
+      "id": "log_1776797802914",
+      "date": "2026-04-21",
+      "desc": "<div style=\"border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-stretch: inherit; font-size: 12pt; line-height: inherit; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; vertical-align: baseline; color: black;\"><b data-olk-copy-source=\"MessageBody\">Proposed way forward for OCHA CT and support</b></div><ul data-editing-info=\"{&quot;applyListStyleFromLevel&quot;:true}\" style=\"color: rgb(36, 36, 36); font-family: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif; font-size: 15px; list-style: disc;\"><li style=\"color: black; font-size: 12pt; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;\"><div role=\"presentation\" style=\"border: 0px; font: inherit; vertical-align: baseline; color: inherit;\"><b>- Drop OCHA-specific control tower deployment&nbsp;(for now):&nbsp;</b><span style=\"color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Avoid forcing adoption in high-pressure environments to mitigate risk of rejection or ineffective usage</span></div></li><li style=\"color: black; font-size: 12pt; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;\"><div role=\"presentation\" style=\"border: 0px; font: inherit; vertical-align: baseline; color: inherit;\"><b>- Continue development as a corporate control tower solution:&nbsp;</b><span style=\"color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">There is a strong interest from OER in the concept as a future corporate capability.&nbsp;</span><span style=\"color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">However, it should be piloted in selected countries with sufficient capacity, not OCHA-heavy contexts</span></div></li><li style=\"color: black; font-size: 12pt; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;\"><div role=\"presentation\" style=\"border: 0px; font: inherit; vertical-align: baseline; color: inherit;\"><b>- Provide targeted support to OER (not tied to a specific system)</b></div></li><ul data-editing-info=\"{&quot;applyListStyleFromLevel&quot;:true}\" style=\"list-style: circle;\"><li style=\"color: black; font-size: 12pt; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;\"><div role=\"presentation\" style=\"border: 0px; font: inherit; vertical-align: baseline; color: inherit;\">If allowed, we can review their internal tool and provide input on improvements to create more SC visibility over the OCHA projects&nbsp;</div></li><li style=\"color: black; font-size: 12pt; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;\"><div role=\"presentation\" style=\"border: 0px; font: inherit; vertical-align: baseline; color: inherit;\">Participate in cross-functional coordination mechanisms as CSLO support capacity (or part of the CSL support to act as one force)</div></li><li style=\"color: black; font-size: 12pt; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;\"><div role=\"presentation\" style=\"border: 0px; font: inherit; vertical-align: baseline; color: inherit;\">Focus on solving concrete SCM issues rather than pushing tooling</div></li></ul></ul>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": true,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-21",
+      "updated": "2026-04-21"
     }
   ],
   "version": 1,
-  "sha": "d8059d217d727c55b662b9d16a182e693d9815ac"
+  "sha": "c9ed740078faac93820387bb44c8d12ac8eb9b12"
 }
