@@ -319,7 +319,7 @@
       "id": "log_1776427592308",
       "date": "2026-04-17",
       "desc": "<div><b>On the OCHA-CT --&gt; Udpate: this might be dropped; detailed explanation can be found below</b></div>- <i><u>Pending support from OER to set up meeting with Rodrigue to present the OCHA-CT mock-up, discuss viability of the solution, ownership, and practical next steps (DONE)&nbsp;</u></i><div>- Pending support from CSL to set up technical discussion with CSI on the hosting of this solution</div><div><b>Both meeting should be held by 01/05 at the latest!</b></div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": true,
       "isNote": false,
@@ -434,5 +434,5 @@
     }
   ],
   "version": 1,
-  "sha": "42dab634f0f05ed15622ea37a12a9da915c61768"
+  "sha": "965c7eda2c3a8374ba4b4c28752bf6f12ac6bc9e"
 }
