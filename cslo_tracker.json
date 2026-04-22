@@ -10,7 +10,7 @@
       "csloFP": "Tim",
       "coFP": "Oxana",
       "plannedHrs": "10",
-      "status": "completed",
+      "status": "notstarted",
       "actualHrs": "1",
       "surge": "No",
       "supportDesc": "Test",
@@ -25,5 +25,5 @@
     }
   ],
   "version": 1,
-  "sha": "051a2e77bc70be1d4f64837e85f54a22c11a009c"
+  "sha": "82328efbb55bc81a4793610464bfb77de37beee4"
 }
