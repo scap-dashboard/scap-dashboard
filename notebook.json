@@ -436,7 +436,7 @@
       "id": "log_1776845354304",
       "date": "2026-04-22",
       "desc": "Laura to set up a meeting with discuss requirements for IMS and TMS (planned for tomorrow) --&gt; update on this to be provided on Friday",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
@@ -473,5 +473,5 @@
     }
   ],
   "version": 1,
-  "sha": "ff0094327c3a2a7f07e5f8f686386908ebba9e14"
+  "sha": "fff7731976fb05bbc72410102acddc2a8bda3258"
 }
