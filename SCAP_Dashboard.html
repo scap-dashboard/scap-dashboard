@@ -329,7 +329,7 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
 .log-action-opt:hover{background:#EEF3F9;color:#3A78B5}
 .log-edit-btn{background:#EEF3F9;border:1.5px solid #C8D8EC;cursor:pointer;color:#5B9BD5;font-size:0.72rem;font-weight:600;padding:0.22rem 0.55rem;border-radius:0.35rem;transition:all .12s}.log-edit-btn:hover{background:#5B9BD5;color:#fff;border-color:#5B9BD5}
 .log-edit-btn:hover{color:#5B9BD5;background:#EEF3F9}
-.log-date-group{background:#EEF3F9;border-top:2px solid #5B9BD5}
+.log-date-group{background:#D6E6F5;border-top:2px solid #5B9BD5}
 .log-date-label{font-size:0.74rem;font-weight:700;color:#1A2E44;padding:0.42rem 0.75rem;letter-spacing:.05em;text-transform:uppercase}
 
 #log-item-desc[contenteditable]:empty:before,
@@ -341,11 +341,61 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
 #log-table thead tr th:first-child{border-radius:0.4rem 0 0 0}
 #log-table thead tr th:last-child{border-radius:0 0.4rem 0 0}
 /* Log date-group row — white text on blue */
-#log-table .log-date-group td{background:#EEF3F9;color:#1A2E44;padding:0.42rem 0.75rem;border-top:2px solid #5B9BD5}
+#log-table .log-date-group td{background:#D6E6F5;color:#1A2E44;padding:0.42rem 0.75rem;border-top:2px solid #5B9BD5}
 /* Carried badge */
 .log-carried-badge{display:inline-block;font-size:0.6rem;font-weight:700;background:#5B9BD5;color:#fff;padding:0.06rem 0.4rem;border-radius:0.4rem;margin-left:0.5rem;border:none;vertical-align:middle}
 
 .log-note-badge{display:inline-block;font-size:0.62rem;font-weight:700;background:#E8F0FA;color:#4A6FA5;padding:0.08rem 0.38rem;border-radius:0.3rem;margin-right:0.35rem;vertical-align:middle;border:.5px solid #B8D0EC}
+
+/* ══ CSLO TRACKER ════════════════════════════════════════════════ */
+.cslo-login{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;gap:1rem;background:#F7F9FC}
+.cslo-login-card{background:#fff;border:1.5px solid #DDE3EA;border-radius:0.7rem;padding:2rem 2.4rem;width:min(360px,90vw);box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.cslo-login-title{font-size:1rem;font-weight:700;color:#1A2E44;margin-bottom:0.2rem}
+.cslo-login-sub{font-size:0.72rem;color:#7B8FA6;margin-bottom:1.2rem}
+.cslo-input{font-family:'Open Sans',sans-serif;font-size:0.78rem;width:100%;border:1.5px solid #DDE3EA;border-radius:0.4rem;padding:0.4rem 0.6rem;margin-bottom:0.7rem;box-sizing:border-box}
+.cslo-input:focus{outline:none;border-color:#5B9BD5}
+.cslo-login-btn{font-family:'Open Sans',sans-serif;font-size:0.78rem;font-weight:700;width:100%;padding:0.5rem;border:none;border-radius:0.4rem;background:#5B9BD5;color:#fff;cursor:pointer}
+.cslo-login-btn:hover{background:#4A8AC4}
+.cslo-login-err{font-size:0.7rem;color:#C0392B;min-height:1rem}
+/* Tracker shell */
+.cslo-shell{display:flex;flex-direction:column;flex:1;min-height:0;background:#F7F9FC}
+.cslo-toolbar{display:flex;align-items:center;gap:0.6rem;padding:0.65rem 1.4rem;border-bottom:1.5px solid #E2EAF2;background:#fff;flex-wrap:wrap;flex-shrink:0}
+.cslo-user-badge{font-size:0.7rem;background:#EEF3F9;color:#3A78B5;border-radius:1rem;padding:0.18rem 0.65rem;font-weight:700}
+.cslo-main{flex:1;overflow-y:auto;padding:1rem 1.4rem}
+/* Table */
+.cslo-tbl{width:100%;border-collapse:collapse;border:1px solid #DDE3EA;border-radius:0.4rem;overflow:hidden}
+.cslo-tbl thead tr th{font-size:0.72rem;font-weight:700;color:#fff;background:#5B9BD5;padding:0.5rem 0.65rem;text-align:left;white-space:nowrap;border-bottom:none}
+.cslo-tbl tbody tr td{font-size:0.75rem;color:#2C3E50;padding:0.5rem 0.65rem;border-bottom:.5px solid #EDF0F4;background:#fff;vertical-align:top}
+.cslo-tbl tbody tr:hover td{background:#F0F6FD}
+.cslo-tbl tbody tr.cslo-done td{opacity:0.5}
+/* Status badges */
+.cslo-st{display:inline-block;font-size:0.62rem;font-weight:700;padding:0.12rem 0.45rem;border-radius:0.7rem;white-space:nowrap}
+.cslo-st-prospect{background:#F0F4FF;color:#4A6FA5}
+.cslo-st-notstarted{background:#F5F5F5;color:#888}
+.cslo-st-ongoing{background:#E8F4FF;color:#2F7FB8}
+.cslo-st-onhold{background:#FFF8E7;color:#9A7B30}
+.cslo-st-completed{background:#E6F9EE;color:#2A7A4B}
+.cslo-st-cancelled{background:#FFF0F0;color:#B94040}
+/* Edit button */
+.cslo-edit-btn{background:#EEF3F9;border:1.5px solid #C8D8EC;cursor:pointer;color:#5B9BD5;font-size:0.7rem;font-weight:600;padding:0.2rem 0.5rem;border-radius:0.3rem}
+.cslo-edit-btn:hover{background:#5B9BD5;color:#fff}
+/* Modal */
+.cslo-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:500;align-items:flex-start;justify-content:center;padding-top:2rem;overflow-y:auto}
+.cslo-modal-card{background:#fff;border-radius:0.7rem;padding:1.5rem 1.8rem;width:min(600px,94vw);box-shadow:0 8px 32px rgba(0,0,0,.18);margin-bottom:2rem}
+.cslo-modal-title{font-size:0.9rem;font-weight:700;color:#1A2E44;margin-bottom:1.1rem}
+.cslo-field-group{display:grid;grid-template-columns:1fr 1fr;gap:0.7rem 1rem;margin-bottom:0.8rem}
+.cslo-field-group.full{grid-template-columns:1fr}
+.cslo-field{display:flex;flex-direction:column;gap:0.18rem}
+.cslo-label{font-size:0.68rem;font-weight:600;color:#7B8FA6;text-transform:uppercase;letter-spacing:.04em}
+.cslo-sel,.cslo-inp,.cslo-ta{font-family:'Open Sans',sans-serif;font-size:0.75rem;border:1.5px solid #DDE3EA;border-radius:0.4rem;padding:0.3rem 0.5rem;width:100%;box-sizing:border-box}
+.cslo-ta{resize:vertical;min-height:3.5rem}
+.cslo-section-hdr{font-size:0.68rem;font-weight:700;color:#5B9BD5;text-transform:uppercase;letter-spacing:.06em;margin:0.8rem 0 0.4rem;padding-bottom:0.3rem;border-bottom:1px solid #DDE3EA}
+.cslo-btn-primary{font-family:'Open Sans',sans-serif;font-size:0.75rem;font-weight:700;padding:0.35rem 1rem;border:none;border-radius:0.4rem;background:#5B9BD5;color:#fff;cursor:pointer}
+.cslo-btn-secondary{font-family:'Open Sans',sans-serif;font-size:0.75rem;padding:0.35rem 1rem;border:1.5px solid #DDE3EA;border-radius:0.4rem;background:#fff;cursor:pointer}
+.cslo-btn-danger{font-family:'Open Sans',sans-serif;font-size:0.75rem;padding:0.35rem 1rem;border:1.5px solid #E8A020;border-radius:0.4rem;background:#FDF8EE;color:#9A6800;cursor:pointer}
+.cslo-export-btn{font-family:'Open Sans',sans-serif;font-size:0.72rem;font-weight:600;padding:0.28rem 0.8rem;border:1.5px solid #4FA36C;border-radius:1rem;background:#fff;color:#4FA36C;cursor:pointer}
+.cslo-export-btn:hover{background:#4FA36C;color:#fff}
+.cslo-empty{padding:3rem;text-align:center;color:#BABABA;font-size:0.85rem}
 
 </style>
 </head>
@@ -370,6 +420,7 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
   <button class="nav-btn" onclick="showPage('workstreams',this)">Workstreams</button>
   <button class="nav-btn" onclick="showPage('timeline',this)">Timeline</button>
   <button class="nav-btn" onclick="showPage('log',this)">Log</button>
+  <button class="nav-btn" onclick="showPage('cslo',this)">CSLO Tracker</button>
 </div>
 
 <!-- APP SHELL -->
@@ -549,6 +600,218 @@ body{font-family:'Open Sans',sans-serif;background:#F7F9FC;color:#2C3E50;display
           <button onclick="logCloseModal()" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;padding:0.3rem 0.9rem;border-radius:1rem;border:1.5px solid #DDE3EA;background:#fff;cursor:pointer">Discard</button>
           <button id="log-cancel-item-btn" onclick="logCancelItem()" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;padding:0.3rem 0.9rem;border-radius:1rem;border:1.5px solid #E8A020;background:#FDF8EE;color:#9A6800;cursor:pointer;display:none">Remove action</button>
           <button onclick="logSaveItem()" style="font-family:'Open Sans',sans-serif;font-size:0.72rem;font-weight:600;padding:0.3rem 0.9rem;border-radius:1rem;border:none;background:#5B9BD5;color:#fff;cursor:pointer">Save item</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- PAGE: CSLO Tracker -->
+  <div id="page-cslo" class="page" style="padding:0;flex-direction:column;background:#F7F9FC">
+
+    <!-- Login gate -->
+    <div id="cslo-login" class="cslo-login">
+      <div class="cslo-login-card">
+        <div class="cslo-login-title">&#128274; CSLO Support Tracker</div>
+        <div class="cslo-login-sub">Restricted access — CSLO staff only</div>
+        <select id="cslo-name-sel" class="cslo-input">
+          <option value="">Select your name…</option>
+          <option value="Vincenzo">Vincenzo</option>
+          <option value="Tim">Tim</option>
+          <option value="Adi">Adi</option>
+          <option value="Eida">Eida</option>
+          <option value="Jonas">Jonas</option>
+          <option value="Laura">Laura</option>
+          <option value="Arslen">Arslen</option>
+        </select>
+        <input id="cslo-pw-inp" type="password" class="cslo-input" placeholder="Password" onkeydown="if(event.key==='Enter')csloLogin()">
+        <div id="cslo-login-err" class="cslo-login-err"></div>
+        <button class="cslo-login-btn" onclick="csloLogin()">Access Tracker</button>
+      </div>
+    </div>
+
+    <!-- Main tracker (hidden until logged in) -->
+    <div id="cslo-main-shell" class="cslo-shell" style="display:none">
+
+      <!-- Toolbar -->
+      <div class="cslo-toolbar">
+        <span id="cslo-user-badge" class="cslo-user-badge"></span>
+        <button class="cslo-btn-primary" onclick="csloNewEntry()">+ New request</button>
+        <button class="cslo-export-btn" onclick="csloExport()">&#8595; Export to Excel</button>
+        <span id="cslo-save-status" style="font-size:0.68rem;color:#9BAABB;margin-left:0.3rem"></span>
+        <button onclick="csloLogout()" style="margin-left:auto;font-size:0.68rem;background:none;border:none;cursor:pointer;color:#9BAABB">Sign out</button>
+      </div>
+
+      <!-- Table -->
+      <div class="cslo-main">
+        <div id="cslo-table-wrap" style="border:1px solid #DDE3EA;border-radius:0.4rem;overflow:hidden">
+          <table class="cslo-tbl">
+            <thead>
+              <tr>
+                <th>ID</th><th>Entity</th><th>Country</th>
+                <th>Type of support</th><th>Risk</th>
+                <th>CSLO Focal Point</th><th>Planned hrs</th>
+                <th>Actual hrs</th><th>Status</th><th>Created</th>
+                <th style="width:2.5rem"></th>
+              </tr>
+            </thead>
+            <tbody id="cslo-tbody"></tbody>
+          </table>
+        </div>
+        <div id="cslo-empty" class="cslo-empty" style="display:none">No entries yet. Click <b>+ New request</b> to log the first support request.</div>
+      </div>
+    </div>
+
+    <!-- Entry modal -->
+    <div id="cslo-modal" class="cslo-modal">
+      <div class="cslo-modal-card">
+        <div id="cslo-modal-title" class="cslo-modal-title">New support request</div>
+
+        <div class="cslo-section-hdr">Request details (required to create entry)</div>
+        <div class="cslo-field-group">
+          <div class="cslo-field">
+            <span class="cslo-label">Entity</span>
+            <select id="cm-entity" class="cslo-sel" onchange="csloToggleCountry()">
+              <option value="">Select…</option>
+              <option value="HQ">HQ</option>
+              <option value="CO">CO</option>
+            </select>
+          </div>
+          <div class="cslo-field" id="cm-country-wrap" style="display:none">
+            <span class="cslo-label">Country</span>
+            <input id="cm-country" type="text" class="cslo-inp" placeholder="e.g. Haiti">
+          </div>
+        </div>
+        <div class="cslo-field-group">
+          <div class="cslo-field">
+            <span class="cslo-label">Type of support</span>
+            <select id="cm-type" class="cslo-sel" onchange="csloToggleOther()">
+              <option value="">Select…</option>
+              <option>Emergency planning</option>
+              <option>Planning</option>
+              <option>Operational orchestration</option>
+              <option>General surge</option>
+              <option>SC Visibility</option>
+              <option>SC reporting</option>
+              <option>Capacity building</option>
+              <option value="Other">Other (specify below)</option>
+            </select>
+          </div>
+          <div class="cslo-field">
+            <span class="cslo-label">Risk level</span>
+            <select id="cm-risk" class="cslo-sel">
+              <option value="">Select…</option>
+              <option>Critical</option>
+              <option>High</option>
+              <option>Medium</option>
+              <option>Low</option>
+              <option>None</option>
+            </select>
+          </div>
+        </div>
+        <div class="cslo-field-group full" id="cm-other-wrap" style="display:none">
+          <div class="cslo-field">
+            <span class="cslo-label">Specify other type</span>
+            <input id="cm-other" type="text" class="cslo-inp" placeholder="Describe the type of support">
+          </div>
+        </div>
+        <div class="cslo-field-group full">
+          <div class="cslo-field">
+            <span class="cslo-label">Description of the request</span>
+            <textarea id="cm-desc" class="cslo-ta" placeholder="Describe what is being requested…"></textarea>
+          </div>
+        </div>
+        <div class="cslo-field-group">
+          <div class="cslo-field">
+            <span class="cslo-label">CSLO focal point</span>
+            <select id="cm-cslo-fp" class="cslo-sel">
+              <option value="">Select…</option>
+              <option>Vincenzo</option><option>Tim</option><option>Adi</option>
+              <option>Eida</option><option>Jonas</option><option>Laura</option><option>Arslen</option>
+            </select>
+          </div>
+          <div class="cslo-field" id="cm-co-fp-wrap" style="display:none">
+            <span class="cslo-label">CO focal point</span>
+            <input id="cm-co-fp" type="text" class="cslo-inp" placeholder="Name of CO contact">
+          </div>
+        </div>
+        <div class="cslo-field-group">
+          <div class="cslo-field">
+            <span class="cslo-label">Planned time (hrs)</span>
+            <input id="cm-planned-hrs" type="number" min="0" step="0.5" class="cslo-inp" placeholder="e.g. 10">
+          </div>
+          <div class="cslo-field">
+            <span class="cslo-label">Status</span>
+            <select id="cm-status" class="cslo-sel">
+              <option value="prospect">Prospect</option>
+              <option value="notstarted">Not started</option>
+              <option value="ongoing">Ongoing</option>
+              <option value="onhold">On hold</option>
+              <option value="completed">Completed</option>
+              <option value="cancelled">Cancelled</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="cslo-section-hdr" id="cslo-grey-section" style="display:none">Service delivery (update as work progresses)</div>
+        <div id="cslo-grey-fields" style="display:none">
+          <div class="cslo-field-group">
+            <div class="cslo-field">
+              <span class="cslo-label">Actual time spent (hrs)</span>
+              <input id="cm-actual-hrs" type="number" min="0" step="0.5" class="cslo-inp">
+            </div>
+            <div class="cslo-field">
+              <span class="cslo-label">Surge (Y/N)</span>
+              <select id="cm-surge" class="cslo-sel">
+                <option value="">—</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div class="cslo-field-group full">
+            <div class="cslo-field">
+              <span class="cslo-label">Description of support provided</span>
+              <textarea id="cm-support-desc" class="cslo-ta"></textarea>
+            </div>
+          </div>
+          <div class="cslo-field-group full">
+            <div class="cslo-field">
+              <span class="cslo-label">Outcome of the support</span>
+              <textarea id="cm-outcome" class="cslo-ta"></textarea>
+            </div>
+          </div>
+          <div class="cslo-field-group">
+            <div class="cslo-field">
+              <span class="cslo-label">Led to more CO requests? (Y/N)</span>
+              <select id="cm-more-reqs" class="cslo-sel">
+                <option value="">—</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <div class="cslo-field">
+              <span class="cslo-label">CSLO Survey sent? (Y/N)</span>
+              <select id="cm-survey" class="cslo-sel">
+                <option value="">—</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div class="cslo-field-group full">
+            <div class="cslo-field">
+              <span class="cslo-label">Survey results / notes</span>
+              <textarea id="cm-survey-results" class="cslo-ta"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;justify-content:flex-end;gap:0.6rem;margin-top:1rem">
+          <button class="cslo-btn-secondary" onclick="csloCloseModal()">Cancel</button>
+          <button id="cslo-delete-btn" class="cslo-btn-danger" style="display:none" onclick="csloDeleteEntry()">Delete entry</button>
+          <button class="cslo-btn-primary" onclick="csloSaveEntry()">Save</button>
         </div>
       </div>
     </div>
@@ -824,6 +1087,7 @@ function showPage(name,btn,skipSave){
   if(name==='workstreams'){document.getElementById('page-workstreams').classList.add('show');if(!currentWsId)selectWs(WS[0].id);}
   else if(name==='timeline'){document.getElementById('page-timeline').classList.add('show');if(!gtBuilt){buildGantt();gtBuilt=true;}setTimeout(ganttScrollToday,60);}
   else if(name==='log'){document.getElementById('page-log').classList.add('show');initLog();}
+  else if(name==='cslo'){document.getElementById('page-cslo').classList.add('show');csloInit();}
   else{document.getElementById('page-'+name).classList.add('show');}
   if(!skipSave) try{localStorage.setItem('scap_active_tab',name);}catch(e){}
 }
@@ -909,6 +1173,32 @@ function populateKPIs(){
 document.getElementById('kpi-ws-grid').innerHTML=WS.map(w=>wsCardHtml(w,'goToWorkstream')).join('');
 populateKPIs();
 buildSidebar();populateOwnerDropdowns();
+
+// ── Restore last active tab (runs after full init) ────────────────────────────
+(function(){
+  try{
+    var saved = localStorage.getItem('scap_active_tab');
+    if(saved){
+      // Find the matching nav button by scanning onclick attributes
+      var btns = document.querySelectorAll('.nav-btn');
+      var match = null;
+      for(var i=0;i<btns.length;i++){
+        var oc = btns[i].getAttribute('onclick') || '';
+        if(oc.indexOf("'"+saved+"'") >= 0){ match = btns[i]; break; }
+      }
+      if(match){
+        // Remove default 'show' from KPIs page first
+        document.querySelectorAll('.page,.ws-layout').forEach(function(p){p.classList.remove('show');});
+        document.querySelectorAll('.nav-btn').forEach(function(b){b.classList.remove('active');});
+        showPage(saved, match, true);
+        return;
+      }
+    }
+  } catch(e){}
+  // Default: ensure KPIs tab button is active
+  var kbtn = document.querySelector('.nav-btn');
+  if(kbtn) kbtn.classList.add('active');
+})();
 document.getElementById('tab-progress').innerHTML=buildL2(IP,'progress')||`<div style="padding:1.4rem;text-align:center;color:#7B8FA6;font-size:0.85rem">No items.</div>`;
 document.getElementById('tab-delayed').innerHTML=DL.length?buildL2(DL,'delayed'):`<div style="padding:1.4rem;text-align:center;color:#7B8FA6;font-size:0.85rem">No delayed items.</div>`;
 document.getElementById('tab-soon').innerHTML=buildL2(SN,'soon')||`<div style="padding:1.4rem;text-align:center;color:#7B8FA6;font-size:0.85rem">No items.</div>`;
@@ -1500,41 +1790,75 @@ function logTodayStr(){ return logDateStr(new Date()); }
 
 // ── Load from GitHub ──────────────────────────────────────────────────────────
 function initLog(){
-  document.getElementById('log-week-label').textContent = 'Loading…';
+  var statusEl = document.getElementById('log-save-status');
+
+  // ── Render immediately from cache (or empty) — SYNCHRONOUS, no blank screen ──
+  var hasCachedData = false;
+  try{
+    var cached = localStorage.getItem('scap_log_cache');
+    if(cached){
+      var parsed = JSON.parse(cached);
+      if(parsed && Array.isArray(parsed.items)){
+        logData = parsed;
+        hasCachedData = true;
+      }
+    }
+  }catch(e){}
+
+  // Always render synchronously before touching the network
+  logRender();
+  if(statusEl) statusEl.innerHTML = hasCachedData
+    ? '<span style="color:#9BAABB;font-size:0.65rem">Refreshing from GitHub…</span>'
+    : '';
+
+  // ── Then fetch fresh data silently in background ────────────────────────
   var token = logGetToken();
-  var url = 'https://api.github.com/repos/'+LOG_REPO+'/contents/'+LOG_FILE+'?ref='+LOG_BRANCH+'&_='+Date.now();
+  if(!token && !hasCachedData){
+    if(statusEl) statusEl.innerHTML = '<span style="color:#E8A020;font-size:0.68rem">⚠ Add your GitHub token in Settings to load the shared log.</span>';
+    return;
+  }
+
+  var url = 'https://api.github.com/repos/'+LOG_REPO+'/contents/'+LOG_FILE
+            +'?ref='+LOG_BRANCH+'&_='+Date.now();
   var headers = {'Accept':'application/vnd.github.v3+json'};
   if(token) headers['Authorization'] = 'token '+token;
 
   fetch(url, {headers:headers, cache:'no-store'})
     .then(function(r){
-      if(r.status===404){ logData={items:[],version:1,sha:null}; logRender(); return; }
+      if(r.status===404){
+        if(!hasCachedData){ logData={items:[],version:1,sha:null}; logRender(); }
+        if(statusEl) statusEl.innerHTML = '';
+        return null;
+      }
       return r.json();
     })
     .then(function(data){
       if(!data) return;
-      var content = atob(data.content.replace(/\n/g,''));
+      var content = atob(data.content.split('\n').join(''));
       logData = JSON.parse(content);
       logData.sha = data.sha;
+      try{ localStorage.setItem('scap_log_cache', JSON.stringify(logData)); }catch(e){}
       logRender();
+      if(statusEl) statusEl.innerHTML = '';
     })
-    .catch(function(e){
-      document.getElementById('log-week-label').textContent = 'Error loading log';
-      document.getElementById('log-save-status').textContent = 'Could not load: '+e.message;
+    .catch(function(){
+      // Fetch failed — already showing cached or empty data, just show a quiet note
+      if(statusEl) statusEl.innerHTML = hasCachedData
+        ? '<span style="color:#9BAABB;font-size:0.65rem">Using cached data — offline. <button onclick="initLog()" style="background:none;border:none;color:#5B9BD5;cursor:pointer;font-size:0.65rem;text-decoration:underline;padding:0">Retry</button></span>'
+        : '<span style="color:#9BAABB;font-size:0.65rem">Could not reach GitHub. <button onclick="initLog()" style="background:none;border:none;color:#5B9BD5;cursor:pointer;font-size:0.65rem;text-decoration:underline;padding:0">Retry</button></span>';
     });
 }
-
 // ── Save to GitHub ────────────────────────────────────────────────────────────
 function logSave(){
   var token = logGetToken();
   if(!token){ 
-    document.getElementById('log-save-status').textContent = '⚠ Add GitHub token in Settings to save';
+    document.getElementById('log-save-status').innerHTML = '⚠ Add GitHub token in <button onclick="logToggleSetup()" style="background:none;border:none;color:#5B9BD5;cursor:pointer;text-decoration:underline;padding:0;font-size:0.7rem">Settings</button> to enable saving';
     return; 
   }
   var btn = document.getElementById('log-save-btn');
   var status = document.getElementById('log-save-status');
   if(btn) btn.textContent = 'Saving…';
-  if(status) status.textContent = 'Saving…';
+  if(status) status.innerHTML = 'Saving…';
 
   var payload = JSON.stringify(logData, null, 2);
   var b64 = btoa(unescape(encodeURIComponent(payload)));
@@ -1553,8 +1877,10 @@ function logSave(){
   .then(function(r){ return r.json(); })
   .then(function(data){
     logData.sha = data.content && data.content.sha ? data.content.sha : logData.sha;
+    // Update localStorage cache with the just-saved data
+    try{ localStorage.setItem('scap_log_cache', JSON.stringify(logData)); }catch(e){}
     btn.textContent = '✓ Saved'; btn.disabled = false;
-    status.textContent = 'Saved at '+new Date().toLocaleTimeString();
+    if(status) status.innerHTML = 'Saved at '+new Date().toLocaleTimeString();
     logDirty = false;
     setTimeout(function(){
       btn.textContent = '✓ Save';
@@ -1564,7 +1890,7 @@ function logSave(){
   })
   .catch(function(e){
     btn.textContent = '✓ Save'; btn.disabled = false;
-    status.textContent = 'Error: '+e.message;
+    if(status) status.innerHTML = 'Error: '+e.message;
   });
 }
 
@@ -1816,22 +2142,7 @@ function logRemoveLink(id){
   logRenderChips();
 }
 
-// ── Restore last active tab on page load ──────────────────────────────────────
-(function(){
-  try{
-    var saved = localStorage.getItem('scap_active_tab');
-    if(saved && saved !== 'kpis'){
-      var btn = documArray.prototype.find.call(document.querySelectorAll('.nav-btn'),function(b){var oc=b.getAttribute('onclick')||'';return oc.indexOf("'"+saved+"'")>=0;});
-      if(btn){ showPage(saved, btn, true); return; }
-    }
-  } catch(e){}
-  // Default: KPIs
-  var kpiBtn = Array.prototype.find.call(document.querySelectorAll('.nav-btn'),function(b){var oc=b.getAttribute('onclick')||'';return oc.indexOf("'kpis'")>=0;});
-  if(kpiBtn) kpiBtn.classList.add('active');
-  document.getElementById('page-kpis').classList.add('show');
-})();
-
-// Close dropdown when clicking outside
+// ── // Close dropdown when clicking outside
 document.addEventListener('click', function(e){
   var dd = document.getElementById('log-action-dropdown');
   var inp = document.getElementById('log-item-link-input');
@@ -1839,6 +2150,329 @@ document.addEventListener('click', function(e){
     dd.style.display='none';
   }
 });
+
+
+// ═══════════════════════════════════════════════════════════════
+//  CSLO SUPPORT TRACKER
+// ═══════════════════════════════════════════════════════════════
+var CSLO_FILE   = 'cslo_tracker.json';
+var CSLO_BRANCH = 'master';
+var CSLO_REPO   = 'vincenzogiancaspro/scap-dashboard';
+var CSLO_ALLOWED = ['Vincenzo','Tim','Adi','Eida','Jonas','Laura','Arslen'];
+var CSLO_PW_HASH = '8a7b4c3d2e1f'; // placeholder — set at runtime
+var csloUser  = '';
+var csloData  = {entries:[], version:1, sha:null};
+var csloEditId = null;
+
+// Simple hash — compare against stored hash of "CSLOTRACKER"
+function csloHash(s){
+  var h=0; for(var i=0;i<s.length;i++){h=(Math.imul(31,h)+s.charCodeAt(i))|0;}
+  return h.toString(16);
+}
+var CSLO_CORRECT_HASH = csloHash('CSLOTRACKER');
+
+function csloLogin(){
+  var name = document.getElementById('cslo-name-sel').value.trim();
+  var pw   = document.getElementById('cslo-pw-inp').value;
+  var err  = document.getElementById('cslo-login-err');
+  if(!name){ err.textContent='Please select your name.'; return; }
+  if(CSLO_ALLOWED.indexOf(name)<0){ err.textContent='Name not recognised.'; return; }
+  if(csloHash(pw) !== CSLO_CORRECT_HASH){ err.textContent='Incorrect password.'; return; }
+  csloUser = name;
+  try{ localStorage.setItem('cslo_user', name); }catch(e){}
+  err.textContent='';
+  csloShowShell();
+  csloLoad();
+}
+
+function csloLogout(){
+  csloUser='';
+  try{ localStorage.removeItem('cslo_user'); }catch(e){}
+  document.getElementById('cslo-login').style.display='flex';
+  document.getElementById('cslo-main-shell').style.display='none';
+  document.getElementById('cslo-pw-inp').value='';
+  document.getElementById('cslo-name-sel').value='';
+}
+
+function csloShowShell(){
+  document.getElementById('cslo-login').style.display='none';
+  document.getElementById('cslo-main-shell').style.display='flex';
+  document.getElementById('cslo-user-badge').textContent='Logged in as '+csloUser;
+}
+
+function csloInit(){
+  // Restore session
+  try{
+    var saved = localStorage.getItem('cslo_user');
+    if(saved && CSLO_ALLOWED.indexOf(saved)>=0){
+      csloUser = saved;
+      csloShowShell();
+      csloLoad();
+      return;
+    }
+  }catch(e){}
+  document.getElementById('cslo-login').style.display='flex';
+  document.getElementById('cslo-main-shell').style.display='none';
+}
+
+function csloGetToken(){ return localStorage.getItem('log_token')||''; }
+
+// ── Load from GitHub ──────────────────────────────────────────────────────────
+function csloLoad(){
+  var statusEl = document.getElementById('cslo-save-status');
+  // Render from cache first
+  try{
+    var cached = localStorage.getItem('cslo_cache');
+    if(cached){
+      var p=JSON.parse(cached);
+      if(p&&p.entries){ csloData=p; csloRender(); }
+    }
+  }catch(e){}
+
+  var token = csloGetToken();
+  var url = 'https://api.github.com/repos/'+CSLO_REPO+'/contents/'+CSLO_FILE+'?ref='+CSLO_BRANCH+'&_='+Date.now();
+  var headers = {'Accept':'application/vnd.github.v3+json'};
+  if(token) headers['Authorization']='token '+token;
+
+  fetch(url,{headers:headers,cache:'no-store'})
+    .then(function(r){
+      if(r.status===404){ csloData={entries:[],version:1,sha:null}; csloRender(); return null; }
+      return r.json();
+    })
+    .then(function(data){
+      if(!data)return;
+      var content=atob(data.content.split('\n').join(''));
+      csloData=JSON.parse(content);
+      csloData.sha=data.sha;
+      try{ localStorage.setItem('cslo_cache',JSON.stringify(csloData)); }catch(e){}
+      csloRender();
+      if(statusEl) statusEl.textContent='';
+    })
+    .catch(function(){
+      csloRender();
+      if(statusEl) statusEl.textContent='Offline — showing cached data';
+    });
+}
+
+// ── Save to GitHub ────────────────────────────────────────────────────────────
+function csloSaveToGitHub(callback){
+  var statusEl = document.getElementById('cslo-save-status');
+  var token = csloGetToken();
+  if(!token){
+    if(statusEl) statusEl.textContent='⚠ Add GitHub token in Log Settings to save';
+    if(callback) callback(false); return;
+  }
+  if(statusEl) statusEl.textContent='Saving…';
+  var payload = JSON.stringify(csloData,null,2);
+  var b64 = btoa(unescape(encodeURIComponent(payload)));
+  var body = {message:'CSLO tracker update '+new Date().toISOString().slice(0,10)+' by '+csloUser,content:b64,branch:CSLO_BRANCH};
+  if(csloData.sha) body.sha=csloData.sha;
+  fetch('https://api.github.com/repos/'+CSLO_REPO+'/contents/'+CSLO_FILE,{
+    method:'PUT',
+    headers:{'Authorization':'token '+token,'Content-Type':'application/json'},
+    body:JSON.stringify(body)
+  })
+  .then(function(r){return r.json();})
+  .then(function(data){
+    if(data.content&&data.content.sha) csloData.sha=data.content.sha;
+    try{ localStorage.setItem('cslo_cache',JSON.stringify(csloData)); }catch(e){}
+    if(statusEl) statusEl.textContent='Saved '+new Date().toLocaleTimeString();
+    setTimeout(function(){if(statusEl)statusEl.textContent='';},3000);
+    if(callback) callback(true);
+  })
+  .catch(function(e){
+    if(statusEl) statusEl.textContent='Save error: '+e.message;
+    if(callback) callback(false);
+  });
+}
+
+// ── Render table ─────────────────────────────────────────────────────────────
+var CSLO_STATUS_LABELS = {prospect:'Prospect',notstarted:'Not started',ongoing:'Ongoing',onhold:'On hold',completed:'Completed',cancelled:'Cancelled'};
+var CSLO_STATUS_CLS    = {prospect:'cslo-st-prospect',notstarted:'cslo-st-notstarted',ongoing:'cslo-st-ongoing',onhold:'cslo-st-onhold',completed:'cslo-st-completed',cancelled:'cslo-st-cancelled'};
+
+function csloRender(){
+  var tbody = document.getElementById('cslo-tbody');
+  var empty = document.getElementById('cslo-empty');
+  var entries = (csloData.entries||[]);
+  if(!entries.length){ tbody.innerHTML=''; empty.style.display='block'; return; }
+  empty.style.display='none';
+  var rows = entries.map(function(e){
+    var stLabel = CSLO_STATUS_LABELS[e.status]||e.status||'—';
+    var stCls   = CSLO_STATUS_CLS[e.status]||'cslo-st-notstarted';
+    var done    = e.status==='completed'||e.status==='cancelled';
+    var typeStr = e.typeOther||e.type||'—';
+    return '<tr class="'+(done?'cslo-done':'')+'">'
+      +'<td style="font-weight:700;color:#BABABA">'+e.id+'</td>'
+      +'<td>'+esc(e.entity||'—')+'</td>'
+      +'<td>'+esc(e.country||'—')+'</td>'
+      +'<td style="max-width:11rem;white-space:normal">'+esc(typeStr)+'</td>'
+      +'<td>'+esc(e.risk||'—')+'</td>'
+      +'<td>'+esc(e.csloFP||'—')+'</td>'
+      +'<td style="text-align:center">'+esc(e.plannedHrs||'—')+'</td>'
+      +'<td style="text-align:center">'+esc(e.actualHrs||'—')+'</td>'
+      +'<td><span class="cslo-st '+stCls+'">'+stLabel+'</span></td>'
+      +'<td style="font-size:0.68rem;color:#9BAABB;white-space:nowrap">'+esc(e.created||'')+'</td>'
+      +'<td><button class="cslo-edit-btn" onclick="csloEdit(\''+e.id+'\')">&#9998;</button></td>'
+      +'</tr>';
+  }).join('');
+  tbody.innerHTML=rows;
+}
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+// ── Modal helpers ─────────────────────────────────────────────────────────────
+function csloToggleCountry(){
+  var v = document.getElementById('cm-entity').value;
+  document.getElementById('cm-country-wrap').style.display = v==='CO'?'block':'none';
+  document.getElementById('cm-co-fp-wrap').style.display   = v==='CO'?'block':'none';
+}
+function csloToggleOther(){
+  var v = document.getElementById('cm-type').value;
+  document.getElementById('cm-other-wrap').style.display = v==='Other'?'grid':'none';
+}
+
+function csloNewEntry(){
+  csloEditId = null;
+  document.getElementById('cslo-modal-title').textContent = 'New support request';
+  document.getElementById('cslo-delete-btn').style.display = 'none';
+  document.getElementById('cslo-grey-section').style.display = 'none';
+  document.getElementById('cslo-grey-fields').style.display  = 'none';
+  // Reset all fields
+  ['cm-entity','cm-type','cm-risk','cm-cslo-fp','cm-surge','cm-more-reqs','cm-survey'].forEach(function(id){
+    var el=document.getElementById(id); if(el) el.value='';
+  });
+  ['cm-country','cm-other','cm-desc','cm-support-desc','cm-outcome','cm-survey-results'].forEach(function(id){
+    var el=document.getElementById(id); if(el) el.value='';
+  });
+  ['cm-planned-hrs','cm-actual-hrs'].forEach(function(id){
+    var el=document.getElementById(id); if(el) el.value='';
+  });
+  document.getElementById('cm-status').value='prospect';
+  document.getElementById('cm-cslo-fp').value = csloUser||'';
+  csloToggleCountry(); csloToggleOther();
+  document.getElementById('cm-country-wrap').style.display='none';
+  document.getElementById('cm-co-fp-wrap').style.display='none';
+  document.getElementById('cm-other-wrap').style.display='none';
+  document.getElementById('cslo-modal').style.display='flex';
+}
+
+function csloEdit(id){
+  var entry = (csloData.entries||[]).find(function(e){return e.id===id;});
+  if(!entry) return;
+  csloEditId = id;
+  document.getElementById('cslo-modal-title').textContent = 'Edit request #'+id;
+  document.getElementById('cslo-delete-btn').style.display = 'inline-block';
+  document.getElementById('cslo-grey-section').style.display = 'block';
+  document.getElementById('cslo-grey-fields').style.display  = 'block';
+  // Load values
+  document.getElementById('cm-entity').value      = entry.entity||'';
+  document.getElementById('cm-country').value     = entry.country||'';
+  document.getElementById('cm-type').value        = entry.type||'';
+  document.getElementById('cm-other').value       = entry.typeOther||'';
+  document.getElementById('cm-risk').value        = entry.risk||'';
+  document.getElementById('cm-desc').value        = entry.desc||'';
+  document.getElementById('cm-cslo-fp').value     = entry.csloFP||'';
+  document.getElementById('cm-co-fp').value       = entry.coFP||'';
+  document.getElementById('cm-planned-hrs').value = entry.plannedHrs||'';
+  document.getElementById('cm-status').value      = entry.status||'notstarted';
+  document.getElementById('cm-actual-hrs').value  = entry.actualHrs||'';
+  document.getElementById('cm-surge').value       = entry.surge||'';
+  document.getElementById('cm-support-desc').value= entry.supportDesc||'';
+  document.getElementById('cm-outcome').value     = entry.outcome||'';
+  document.getElementById('cm-more-reqs').value   = entry.moreReqs||'';
+  document.getElementById('cm-survey').value      = entry.survey||'';
+  document.getElementById('cm-survey-results').value = entry.surveyResults||'';
+  csloToggleCountry(); csloToggleOther();
+  document.getElementById('cslo-modal').style.display='flex';
+}
+
+function csloCloseModal(){
+  document.getElementById('cslo-modal').style.display='none';
+}
+
+function csloSaveEntry(){
+  var entity = document.getElementById('cm-entity').value;
+  var type   = document.getElementById('cm-type').value;
+  var desc   = document.getElementById('cm-desc').value.trim();
+  var csloFP = document.getElementById('cm-cslo-fp').value;
+  if(!entity||!type||!desc||!csloFP){
+    alert('Please fill in Entity, Type of support, Description, and CSLO focal point.');
+    return;
+  }
+  var entry = {
+    entity:     entity,
+    country:    entity==='CO'?document.getElementById('cm-country').value.trim():'',
+    type:       type,
+    typeOther:  type==='Other'?document.getElementById('cm-other').value.trim():'',
+    risk:       document.getElementById('cm-risk').value,
+    desc:       desc,
+    csloFP:     csloFP,
+    coFP:       entity==='CO'?document.getElementById('cm-co-fp').value.trim():'',
+    plannedHrs: document.getElementById('cm-planned-hrs').value,
+    status:     document.getElementById('cm-status').value||'prospect',
+    actualHrs:  document.getElementById('cm-actual-hrs').value,
+    surge:      document.getElementById('cm-surge').value,
+    supportDesc:document.getElementById('cm-support-desc').value.trim(),
+    outcome:    document.getElementById('cm-outcome').value.trim(),
+    moreReqs:   document.getElementById('cm-more-reqs').value,
+    survey:     document.getElementById('cm-survey').value,
+    surveyResults:document.getElementById('cm-survey-results').value.trim(),
+    updatedBy:  csloUser,
+    updated:    new Date().toISOString().slice(0,10)
+  };
+  if(!csloData.entries) csloData.entries=[];
+  if(csloEditId){
+    var idx = csloData.entries.findIndex(function(e){return e.id===csloEditId;});
+    if(idx>=0){ entry.id=csloEditId; entry.created=csloData.entries[idx].created; csloData.entries[idx]=entry; }
+  } else {
+    var maxId = csloData.entries.reduce(function(m,e){return Math.max(m,parseInt(e.id)||0);},0);
+    entry.id = String(maxId+1);
+    entry.created = new Date().toISOString().slice(0,10);
+    csloData.entries.push(entry);
+  }
+  csloCloseModal();
+  csloRender();
+  csloSaveToGitHub(null);
+}
+
+function csloDeleteEntry(){
+  if(!csloEditId) return;
+  if(!confirm('Delete this entry? This cannot be undone.')) return;
+  csloData.entries = (csloData.entries||[]).filter(function(e){return e.id!==csloEditId;});
+  csloCloseModal();
+  csloRender();
+  csloSaveToGitHub(null);
+}
+
+// ── Excel export ──────────────────────────────────────────────────────────────
+function csloExport(){
+  var entries = csloData.entries||[];
+  if(!entries.length){ alert('No entries to export.'); return; }
+  // Build CSV
+  var headers = ['ID','Entity','Country','Type of support','Risk','Description',
+    'CSLO FP','CO FP','Planned hrs','Actual hrs','Status','Surge',
+    'Support description','Outcome','More CO requests','Survey sent',
+    'Survey results','Created','Updated','Updated by'];
+  var rows = entries.map(function(e){
+    return [e.id,e.entity,e.country,e.typeOther||e.type,e.risk,e.desc,
+      e.csloFP,e.coFP,e.plannedHrs,e.actualHrs,
+      CSLO_STATUS_LABELS[e.status]||e.status,
+      e.surge,e.supportDesc,e.outcome,e.moreReqs,e.survey,e.surveyResults,
+      e.created,e.updated,e.updatedBy];
+  });
+  var csv = [headers].concat(rows).map(function(row){
+    return row.map(function(cell){
+      var s = String(cell||'').replace(/"/g,'""');
+      return s.indexOf(',')>=0||s.indexOf('"')>=0||s.indexOf('\n')>=0?'"'+s+'"':s;
+    }).join(',');
+  }).join('\r\n');
+  var blob = new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8'});
+  var url  = URL.createObjectURL(blob);
+  var a    = document.createElement('a');
+  a.href=url; a.download='CSLO_Tracker_'+new Date().toISOString().slice(0,10)+'.csv';
+  document.body.appendChild(a); a.click();
+  document.body.removeChild(a); URL.revokeObjectURL(url);
+}
 
 </script>
 
