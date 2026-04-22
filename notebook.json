@@ -431,8 +431,21 @@
       "linked": [],
       "created": "2026-04-21",
       "updated": "2026-04-21"
+    },
+    {
+      "id": "log_1776845354304",
+      "date": "2026-04-22",
+      "desc": "Laura to set up a meeting with discuss requirements for IMS and TMS (planned for tomorrow) --&gt; update on this to be provided on Friday",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-22",
+      "updated": "2026-04-22"
     }
   ],
   "version": 1,
-  "sha": "524daecf11eba91f75f6b4d187a2770a408c4e13"
+  "sha": "b8e3f9980099599f90a5f2f5eae4a705af71c3aa"
 }
