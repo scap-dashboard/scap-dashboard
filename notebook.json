@@ -457,8 +457,21 @@
       "linked": [],
       "created": "2026-04-22",
       "updated": "2026-04-22"
+    },
+    {
+      "id": "log_1776849840565",
+      "date": "2026-04-22",
+      "desc": "Share follow up email with Rodrigue and Mohammed (OER) to explain what the SAG is about, share the work plan, and ask them to appoint relevant operational person to join the SAG",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": true,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-22",
+      "updated": "2026-04-22"
     }
   ],
   "version": 1,
-  "sha": "ce60fcc8cbff5755ee1ad65688201f12838dc248"
+  "sha": "80be72d157fec1b9defc3bb98d77d8cf3297b5b5"
 }
