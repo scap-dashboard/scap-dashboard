@@ -496,8 +496,21 @@
       "linked": [],
       "created": "2026-04-22",
       "updated": "2026-04-22"
+    },
+    {
+      "id": "log_1776865896796",
+      "date": "2026-04-22",
+      "desc": "Review updated scope of support to Haiti with Arslen",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-22",
+      "updated": "2026-04-22"
     }
   ],
   "version": 1,
-  "sha": "653a658fd438a6aa7a9f8aaa33a2b1bbfa9ece6e"
+  "sha": "0e41cfb92c95e59d89b0c749ecaf61e84edec58a"
 }
