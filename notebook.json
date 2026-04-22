@@ -306,7 +306,7 @@
       "id": "log_1776412112181",
       "date": "2026-04-17",
       "desc": "X Laura to create data request on Haiti for CSLP and the CO --&gt; <i><u>this should be shared following our alignment with Rodrigue and Valentina (Haiti) on the CT and our role&nbsp;</u></i><div><i><u><br></u></i></div><div><i><u>Decision: Keep the data request for future interaction with pilot COs; but it might not be needed at this stage for Haiti</u></i></div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
@@ -434,5 +434,5 @@
     }
   ],
   "version": 1,
-  "sha": "31977b5dac49d26562112cd84a21f348559a3b16"
+  "sha": "c232ede39d4ce67f45990d9d21eb8b7c8aef3f17"
 }
