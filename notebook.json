@@ -397,14 +397,14 @@
       "id": "log_1776760840413",
       "date": "2026-04-21",
       "desc": "Tim to follow up with Oxana on setting up meeting with the Haiti logistics team --&gt; <b>Update:</b> Done, waiting for her response",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-21",
-      "updated": "2026-04-21"
+      "updated": "2026-04-22"
     },
     {
       "id": "log_1776760871865",
@@ -434,5 +434,5 @@
     }
   ],
   "version": 1,
-  "sha": "9c770d4cdad002d95e6d81c222f86ae1bc64ae71"
+  "sha": "31977b5dac49d26562112cd84a21f348559a3b16"
 }
