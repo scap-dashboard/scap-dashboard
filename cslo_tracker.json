@@ -1,0 +1,29 @@
+{
+  "entries": [
+    {
+      "entity": "CO",
+      "country": "Haiti",
+      "type": "Other",
+      "typeOther": "Outline CO stance on UN80 SC Cell pilot",
+      "risk": "Medium",
+      "desc": "Haiti requested to support them in defining FAO's local stance on the UN80 pilot - what's FAO take on it and what can FAO offer?",
+      "csloFP": "Tim",
+      "coFP": "Oxana",
+      "plannedHrs": "10",
+      "status": "prospect",
+      "actualHrs": "",
+      "surge": "",
+      "supportDesc": "",
+      "outcome": "",
+      "moreReqs": "",
+      "survey": "",
+      "surveyResults": "",
+      "updatedBy": "Vincenzo",
+      "updated": "2026-04-22",
+      "id": "1",
+      "created": "2026-04-22"
+    }
+  ],
+  "version": 1,
+  "sha": null
+}
