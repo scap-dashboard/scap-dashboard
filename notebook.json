@@ -509,8 +509,21 @@
       "linked": [],
       "created": "2026-04-22",
       "updated": "2026-04-22"
+    },
+    {
+      "id": "log_1776928381793",
+      "date": "2026-04-23",
+      "desc": "<b>Agenda Weekly Status Update:&nbsp;</b><div>- Selection of pilot COs. Proposed COs (Haiti, Afghanistan, Nigeria or Madagascar, Pakistan). Should we continue with the plan of making Haiti a pilot CO? By when can we confirm the selection of pilots?&nbsp;</div><div>- Proposed dates for next trip to Rome: 26th - 28th of May</div><div>-&nbsp;</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-23",
+      "updated": "2026-04-23"
     }
   ],
   "version": 1,
-  "sha": "6939c65e3c360512ed22a9a6a255da116c2e380e"
+  "sha": "5e7714ea28596899d40dc0ee590a10f1075f3de4"
 }
