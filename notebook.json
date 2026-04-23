@@ -504,7 +504,7 @@
       "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
-      "isNote": false,
+      "isNote": true,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-23",
@@ -538,5 +538,5 @@
     }
   ],
   "version": 1,
-  "sha": "1437832e8781c3c99ea7e07a2ce1fef37a28d8b5"
+  "sha": "894160b6fd6639a5f32f288ac39a3c889e5b3dc8"
 }
