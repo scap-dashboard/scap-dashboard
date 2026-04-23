@@ -478,11 +478,11 @@
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
-      "isNote": false,
+      "isNote": true,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-22",
-      "updated": "2026-04-22"
+      "updated": "2026-04-23"
     },
     {
       "id": "log_1776864433298",
@@ -512,5 +512,5 @@
     }
   ],
   "version": 1,
-  "sha": "7c108aabf2a39e94da2fc4df3185baec0cd8fa15"
+  "sha": "af9fc90a05236f57a2d0e073f17fb965aa7ce145"
 }
