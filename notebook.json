@@ -500,7 +500,7 @@
     {
       "id": "log_1776928381793",
       "date": "2026-04-23",
-      "desc": "<b>Agenda Weekly Status Update:&nbsp;</b><div>- Agree on the proposed approach for the OCHA-related support (email)</div><div>- Update on meeting with Haiti and proposed way forward. Q: Should we still consider Haiti as a pilot CO?</div><div>- Selection of pilot COs. Proposed COs (Haiti, Afghanistan, Nigeria or Madagascar, Pakistan). Should we continue with the plan of making Haiti a pilot CO? By when can we confirm the selection of pilots?&nbsp;</div><div>- Proposed dates for next trip to Rome: 26th - 28th of May</div><div>- Confirm plan for FAO visit to UNFPA on the 2nd of July</div><div>- Now that final draft of the external action plan has been finalized, how should we proceed with internal approval (within SAG) before initiating the 12 stages coms approval process?&nbsp;</div>",
+      "desc": "<b><u>Agenda Weekly Status Update:&nbsp;</u></b><div>- Agree on the proposed approach for the OCHA-related support (email)</div><div>- Update on meeting with Haiti and proposed way forward. Q: Should we still consider Haiti as a pilot CO?</div><div>- Selection of pilot COs. Proposed COs (Haiti, Afghanistan, Nigeria or Madagascar, Pakistan). Should we continue with the plan of making Haiti a pilot CO? By when can we confirm the selection of pilots?&nbsp;</div><div>- Proposed dates for next trip to Rome: 26th - 28th of May</div><div>- Confirm plan for FAO visit to UNFPA on the 2nd of July</div><div>- Now that final draft of the external action plan has been finalized, how should we proceed with internal approval (within SAG) before initiating the 12 stages coms approval process?&nbsp;</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -512,5 +512,5 @@
     }
   ],
   "version": 1,
-  "sha": "16c190bc17c96769ac3cd3a4feb269cccab2957f"
+  "sha": "9af73cc25943060c8520d43cb0915db6323d7356"
 }
