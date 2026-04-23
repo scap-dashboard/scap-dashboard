@@ -498,19 +498,6 @@
       "updated": "2026-04-22"
     },
     {
-      "id": "log_1776865896796",
-      "date": "2026-04-22",
-      "desc": "Review updated scope of support to Haiti with Arslen",
-      "status": "open",
-      "owner": "Vincenzo",
-      "priority": false,
-      "isNote": false,
-      "author": "Vincenzo",
-      "linked": [],
-      "created": "2026-04-22",
-      "updated": "2026-04-22"
-    },
-    {
       "id": "log_1776928381793",
       "date": "2026-04-23",
       "desc": "<b>Agenda Weekly Status Update:&nbsp;</b><div>- Agree on the proposed approach for the OCHA-related support (email)</div><div>- Update on meeting with Haiti and proposed way forward. Q: Should we still consider Haiti as a pilot CO?</div><div>- Selection of pilot COs. Proposed COs (Haiti, Afghanistan, Nigeria or Madagascar, Pakistan). Should we continue with the plan of making Haiti a pilot CO? By when can we confirm the selection of pilots?&nbsp;</div><div>- Proposed dates for next trip to Rome: 26th - 28th of May</div><div>- Confirm plan for FAO visit to UNFPA on the 2nd of July</div>",
@@ -525,5 +512,5 @@
     }
   ],
   "version": 1,
-  "sha": "2785c2f372675cf082db9b0ae8743656bf306b0d"
+  "sha": "7c108aabf2a39e94da2fc4df3185baec0cd8fa15"
 }
