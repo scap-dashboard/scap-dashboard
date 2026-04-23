@@ -513,7 +513,7 @@
     {
       "id": "log_1776928381793",
       "date": "2026-04-23",
-      "desc": "<b>Agenda Weekly Status Update:&nbsp;</b><div>- Selection of pilot COs. Proposed COs (Haiti, Afghanistan, Nigeria or Madagascar, Pakistan). Should we continue with the plan of making Haiti a pilot CO? By when can we confirm the selection of pilots?&nbsp;</div><div>- Proposed dates for next trip to Rome: 26th - 28th of May</div><div>-&nbsp;</div>",
+      "desc": "<b>Agenda Weekly Status Update:&nbsp;</b><div>- Agree on the proposed approach for the OCHA-related support (email)</div><div>- Selection of pilot COs. Proposed COs (Haiti, Afghanistan, Nigeria or Madagascar, Pakistan). Should we continue with the plan of making Haiti a pilot CO? By when can we confirm the selection of pilots?&nbsp;</div><div>- Proposed dates for next trip to Rome: 26th - 28th of May</div><div>- Confirm plan for FAO visit to UNFPA on the 2nd of July</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -525,5 +525,5 @@
     }
   ],
   "version": 1,
-  "sha": "5e7714ea28596899d40dc0ee590a10f1075f3de4"
+  "sha": "5deb3d5f3572cebcd54a2d4e287070c523056a6e"
 }
