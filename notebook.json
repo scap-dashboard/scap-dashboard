@@ -509,8 +509,21 @@
       "linked": [],
       "created": "2026-04-23",
       "updated": "2026-04-23"
+    },
+    {
+      "id": "log_1776945999173",
+      "date": "2026-04-23",
+      "desc": "<b>OCHA Update:</b> For DRC and Chad, OER asked to limit attendance from HQ colleagues to coordination calls; CSLO for now won't be invited and remains on stand by to support when prompted",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-23",
+      "updated": "2026-04-23"
     }
   ],
   "version": 1,
-  "sha": "7c9a420f48b3079c8c1527a10802052e3624be4e"
+  "sha": "8babfb4fdb3f8e24530183a462a03a0e3b1e50e5"
 }
