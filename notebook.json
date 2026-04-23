@@ -522,8 +522,21 @@
       "linked": [],
       "created": "2026-04-23",
       "updated": "2026-04-23"
+    },
+    {
+      "id": "log_1776946148066",
+      "date": "2026-04-23",
+      "desc": "<b>Communication: </b>do another review of the coms plan once funding is approved to increase focus on publishing and disseminating&nbsp;",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-23",
+      "updated": "2026-04-23"
     }
   ],
   "version": 1,
-  "sha": "8babfb4fdb3f8e24530183a462a03a0e3b1e50e5"
+  "sha": "84aa73d6ce624ffee820e5e7a42d07838c997c94"
 }
