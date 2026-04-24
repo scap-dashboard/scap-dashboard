@@ -22,8 +22,31 @@
       "updated": "2026-04-22",
       "id": "1",
       "created": "2026-04-22"
+    },
+    {
+      "entity": "HQ",
+      "country": "",
+      "type": "Other",
+      "typeOther": "IMS and TMS Req. Mapping",
+      "risk": "None",
+      "desc": "CSLDL requested support from CSLO to map functional requirements for future Oracle ERP IMS and TMS",
+      "csloFP": "Vincenzo",
+      "coFP": "",
+      "plannedHrs": "5",
+      "status": "ongoing",
+      "actualHrs": "",
+      "surge": "",
+      "supportDesc": "",
+      "outcome": "",
+      "moreReqs": "",
+      "survey": "",
+      "surveyResults": "",
+      "updatedBy": "Vincenzo",
+      "updated": "2026-04-24",
+      "id": "2",
+      "created": "2026-04-24"
     }
   ],
   "version": 1,
-  "sha": "d3695a2d7e00144100e2fb1f88c91e637cd91e03"
+  "sha": "8c39750c1b469ccd4148a46ab2a167a71cae2e2e"
 }
