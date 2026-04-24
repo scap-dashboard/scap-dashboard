@@ -13,8 +13,8 @@
       "status": "notstarted",
       "actualHrs": "1",
       "surge": "No",
-      "supportDesc": "TEST\nÃ¢ÂÂ¢\tThe contract is subject to FAOÃ¢ÂÂs General Terms and Conditions for the Procurement of Services.\nÃ¢ÂÂ¢\tAll intellectual property, deliverables, reports, tools, dashboards, SOPs, and other outputs produced under this contract shall be the exclusive property of FAO.\nÃ¢ÂÂ¢\tThe Contractor shall treat all information obtained in connection with this assignment as confidential and shall not disclose such information to third parties without prior written authorization from FAO.\nÃ¢ÂÂ¢\tFAO reserves the right to accept or reject any or all proposals and is not obliged to award a contract.\nÃ¢ÂÂ¢\tThe issuance of this Terms of Reference does not constitute a commitment on the part of FAO to make any award.\nÃ¢ÂÂ¢\tFAO shall not be responsible for any costs incurred by the interested companies in preparing and submitting a proposal.\nÃ¢ÂÂ¢\tThe selected Contractor shall comply with FAOÃ¢ÂÂs standards of conduct, including provisions on fraud, corruption, sexual exploitation and abuse, and harassment.",
-      "outcome": "TEST\nÃ¢ÂÂ¢\tThe contract is subject to FAOÃ¢ÂÂs General Terms and Conditions for the Procurement of Services.\nÃ¢ÂÂ¢\tAll intellectual property, deliverables, reports, tools, dashboards, SOPs, and other outputs produced under this contract shall be the exclusive property of FAO.\nÃ¢ÂÂ¢\tThe Contractor shall treat all information obtained in connection with this assignment as confidential and shall not disclose such information to third parties without prior written authorization from FAO.\nÃ¢ÂÂ¢\tFAO reserves the right to accept or reject any or all proposals and is not obliged to award a contract.\nÃ¢ÂÂ¢\tThe issuance of this Terms of Reference does not constitute a commitment on the part of FAO to make any award.\nÃ¢ÂÂ¢\tFAO shall not be responsible for any costs incurred by the interested companies in preparing and submitting a proposal.\nÃ¢ÂÂ¢\tThe selected Contractor shall comply with FAOÃ¢ÂÂs standards of conduct, including provisions on fraud, corruption, sexual exploitation and abuse, and harassment.",
+      "supportDesc": "TEST\nÃÂ¢ÃÂÃÂ¢\tThe contract is subject to FAOÃÂ¢ÃÂÃÂs General Terms and Conditions for the Procurement of Services.\nÃÂ¢ÃÂÃÂ¢\tAll intellectual property, deliverables, reports, tools, dashboards, SOPs, and other outputs produced under this contract shall be the exclusive property of FAO.\nÃÂ¢ÃÂÃÂ¢\tThe Contractor shall treat all information obtained in connection with this assignment as confidential and shall not disclose such information to third parties without prior written authorization from FAO.\nÃÂ¢ÃÂÃÂ¢\tFAO reserves the right to accept or reject any or all proposals and is not obliged to award a contract.\nÃÂ¢ÃÂÃÂ¢\tThe issuance of this Terms of Reference does not constitute a commitment on the part of FAO to make any award.\nÃÂ¢ÃÂÃÂ¢\tFAO shall not be responsible for any costs incurred by the interested companies in preparing and submitting a proposal.\nÃÂ¢ÃÂÃÂ¢\tThe selected Contractor shall comply with FAOÃÂ¢ÃÂÃÂs standards of conduct, including provisions on fraud, corruption, sexual exploitation and abuse, and harassment.",
+      "outcome": "TEST\nÃÂ¢ÃÂÃÂ¢\tThe contract is subject to FAOÃÂ¢ÃÂÃÂs General Terms and Conditions for the Procurement of Services.\nÃÂ¢ÃÂÃÂ¢\tAll intellectual property, deliverables, reports, tools, dashboards, SOPs, and other outputs produced under this contract shall be the exclusive property of FAO.\nÃÂ¢ÃÂÃÂ¢\tThe Contractor shall treat all information obtained in connection with this assignment as confidential and shall not disclose such information to third parties without prior written authorization from FAO.\nÃÂ¢ÃÂÃÂ¢\tFAO reserves the right to accept or reject any or all proposals and is not obliged to award a contract.\nÃÂ¢ÃÂÃÂ¢\tThe issuance of this Terms of Reference does not constitute a commitment on the part of FAO to make any award.\nÃÂ¢ÃÂÃÂ¢\tFAO shall not be responsible for any costs incurred by the interested companies in preparing and submitting a proposal.\nÃÂ¢ÃÂÃÂ¢\tThe selected Contractor shall comply with FAOÃÂ¢ÃÂÃÂs standards of conduct, including provisions on fraud, corruption, sexual exploitation and abuse, and harassment.",
       "moreReqs": "No",
       "survey": "No",
       "surveyResults": "Test",
@@ -45,8 +45,31 @@
       "updated": "2026-04-24",
       "id": "2",
       "created": "2026-04-24"
+    },
+    {
+      "entity": "HQ",
+      "country": "",
+      "type": "Emergency planning",
+      "typeOther": "",
+      "risk": "Critical",
+      "desc": "WDWD",
+      "csloFP": "Vincenzo",
+      "coFP": "",
+      "plannedHrs": "5",
+      "status": "prospect",
+      "actualHrs": "",
+      "surge": "",
+      "supportDesc": "",
+      "outcome": "",
+      "moreReqs": "",
+      "survey": "",
+      "surveyResults": "",
+      "updatedBy": "Vincenzo",
+      "updated": "2026-04-24",
+      "id": "3",
+      "created": "2026-04-24"
     }
   ],
   "version": 1,
-  "sha": "5e2852e44da7a8a20e175785a922e35af55ffec9"
+  "sha": "12e12ed614587231f4b832192241186fad1a1a83"
 }
