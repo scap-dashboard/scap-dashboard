@@ -535,8 +535,21 @@
       "linked": [],
       "created": "2026-04-23",
       "updated": "2026-04-23"
+    },
+    {
+      "id": "log_1777025496206",
+      "date": "2026-04-24",
+      "desc": "To do: Move weekly status update to Tuesday and SAG to next Wednesday",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-24",
+      "updated": "2026-04-24"
     }
   ],
   "version": 1,
-  "sha": "be27c9cf1192658f44b0190d40c10060546e198f"
+  "sha": "165e11f3be9e39efbb03d2e599b6872afdddc938"
 }
