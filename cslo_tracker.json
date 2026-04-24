@@ -45,31 +45,8 @@
       "updated": "2026-04-24",
       "id": "2",
       "created": "2026-04-24"
-    },
-    {
-      "entity": "HQ",
-      "country": "",
-      "type": "Emergency planning",
-      "typeOther": "",
-      "risk": "Critical",
-      "desc": "WDWD",
-      "csloFP": "Vincenzo",
-      "coFP": "",
-      "plannedHrs": "5",
-      "status": "prospect",
-      "actualHrs": "",
-      "surge": "",
-      "supportDesc": "WRW",
-      "outcome": "WRW",
-      "moreReqs": "Yes",
-      "survey": "",
-      "surveyResults": "E",
-      "updatedBy": "Vincenzo",
-      "updated": "2026-04-24",
-      "id": "3",
-      "created": "2026-04-24"
     }
   ],
   "version": 1,
-  "sha": "8f858ed059787e44b3b2d12d8311bfd6756267cd"
+  "sha": "c8009147f1dce39809a743baa8f566a4597c0c15"
 }
