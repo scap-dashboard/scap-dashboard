@@ -10,7 +10,7 @@
       "csloFP": "Tim",
       "coFP": "Oxana",
       "plannedHrs": "10",
-      "status": "onhold",
+      "status": "cancelled",
       "actualHrs": "1",
       "surge": "No",
       "supportDesc": "TEST\nâ¢\tThe contract is subject to FAOâs General Terms and Conditions for the Procurement of Services.\nâ¢\tAll intellectual property, deliverables, reports, tools, dashboards, SOPs, and other outputs produced under this contract shall be the exclusive property of FAO.\nâ¢\tThe Contractor shall treat all information obtained in connection with this assignment as confidential and shall not disclose such information to third parties without prior written authorization from FAO.\nâ¢\tFAO reserves the right to accept or reject any or all proposals and is not obliged to award a contract.\nâ¢\tThe issuance of this Terms of Reference does not constitute a commitment on the part of FAO to make any award.\nâ¢\tFAO shall not be responsible for any costs incurred by the interested companies in preparing and submitting a proposal.\nâ¢\tThe selected Contractor shall comply with FAOâs standards of conduct, including provisions on fraud, corruption, sexual exploitation and abuse, and harassment.",
@@ -48,5 +48,5 @@
     }
   ],
   "version": 1,
-  "sha": "bc9ebf66f8213fe0c5a7d7ee2ef39dcd5464726e"
+  "sha": "6158b809c27b228409516fe477034b0cbe27f1bb"
 }
