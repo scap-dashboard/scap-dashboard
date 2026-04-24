@@ -13,13 +13,13 @@
       "status": "prospect",
       "actualHrs": "1",
       "surge": "No",
-      "supportDesc": "Test",
-      "outcome": "Test",
+      "supportDesc": "View more / expand row — each row has a \"▼ More\" button on the right. Clicking it expands an inline panel below that row with a grey background (#F2F6FA), showing all the detail fields: full description, CO focal point, actual hours, surge, support provided, outcome, more CO requests, survey sent, survey results, last updated, updated by. Clicking \"▲ Less\" collapses it. Only one row can be expanded at a time.\nEdit modal — clicking \"Edit\" opens the same modal but pre-filled, with the delivery fields (grey section) visible. A \"Delete entry\" button appears only in edit mode. The modal is clean and properly grid-aligned — two-column for short fields, full-width for textareas, clear section labels, consistent border and spacing.",
+      "outcome": "View more / expand row — each row has a \"▼ More\" button on the right. Clicking it expands an inline panel below that row with a grey background (#F2F6FA), showing all the detail fields: full description, CO focal point, actual hours, surge, support provided, outcome, more CO requests, survey sent, survey results, last updated, updated by. Clicking \"▲ Less\" collapses it. Only one row can be expanded at a time.\nEdit modal — clicking \"Edit\" opens the same modal but pre-filled, with the delivery fields (grey section) visible. A \"Delete entry\" button appears only in edit mode. The modal is clean and properly grid-aligned — two-column for short fields, full-width for textareas, clear section labels, consistent border and spacing.",
       "moreReqs": "No",
       "survey": "No",
       "surveyResults": "Test",
       "updatedBy": "Vincenzo",
-      "updated": "2026-04-22",
+      "updated": "2026-04-24",
       "id": "1",
       "created": "2026-04-22"
     },
@@ -48,5 +48,5 @@
     }
   ],
   "version": 1,
-  "sha": "91ececb16fb8f14f4958b8a69472db819a52f5c5"
+  "sha": "6b7b49b10a2d6d877a3257cca6d084d0c91a632d"
 }
