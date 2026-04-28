@@ -578,7 +578,7 @@
     {
       "id": "log_1777383406158",
       "date": "2026-04-28",
-      "desc": "<b>Update from Arslen:</b> Had a meeting with OER. Haiti is asking for support on log. Contrarily to what we initially talked, send email to Haiti to discuss terms of mission of Tim to Haiti. Money has been received and they will place POs in the next 2 weeks.&nbsp; Not sure if a second logistician will be hired, but we can act as orchestrator. Mission as soon as possible",
+      "desc": "<b>Update from Arslen:</b> Had a meeting with OER.&nbsp; Contrarily to what we initially talked, send email to Haiti to discuss terms of mission of Tim to Haiti. Money has been received and they will place POs in the next 2 weeks.&nbsp; Not sure if a second logistician will be hired, but we can act as orchestrator. Mission as soon as possible",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -590,5 +590,5 @@
     }
   ],
   "version": 1,
-  "sha": "388af2504b95714b2cebce4e395b30d76fd9c554"
+  "sha": "9f927bea314da7c60cc9c29f693d34d5e5aba4ed"
 }
