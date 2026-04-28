@@ -552,7 +552,7 @@
     {
       "id": "log_1777361219664",
       "date": "2026-04-28",
-      "desc": "<b style=\"font-size: 18.86px;\"><u>Agenda for Weekly Status Update:&nbsp;</u></b><div style=\"font-size: 18.86px;\">- Update on meeting with Haiti and proposed way forward. Q: Should we still consider Haiti as a pilot CO?</div><div style=\"font-size: 18.86px;\">- Selection of pilot COs. Proposed COs (Haiti, Afghanistan, Nigeria or Madagascar, Pakistan). Should we continue with the plan of making Haiti a pilot CO? By when can we confirm the selection of pilots?&nbsp;</div><div style=\"font-size: 18.86px;\">- Proposed dates for next trip to Rome: 26th - 28th of May</div><div style=\"font-size: 18.86px;\">- Confirm plan for FAO visit to UNFPA on the 2nd of July</div><div style=\"font-size: 18.86px;\">- Now that final draft of the external action plan has been finalized, how should we proceed with internal approval (within SAG) before initiating the 12 stages coms approval process?&nbsp;</div><div style=\"font-size: 18.86px;\">- CSLO operating model has been drafted and will be shared with Arslen by the end of the week</div>",
+      "desc": "<b style=\"font-size: 18.86px;\"><u>Agenda for Weekly Status Update:&nbsp;</u></b><div style=\"font-size: 18.86px;\">- Update on meeting with Haiti and proposed way forward. Q: Should we still consider Haiti as a pilot CO?</div><div style=\"font-size: 18.86px;\">- Selection of pilot COs. Proposed COs (Haiti, Afghanistan, Nigeria or Madagascar, Pakistan). Should we continue with the plan of making Haiti a pilot CO? By when can we confirm the selection of pilots? --&gt; <b>remove Haiti from the pilot COs list</b></div><div style=\"font-size: 18.86px;\">- Proposed dates for next trip to Rome: 26th - 28th of May</div><div style=\"font-size: 18.86px;\">- Confirm plan for FAO visit to UNFPA on the 2nd of July</div><div style=\"font-size: 18.86px;\">- Now that final draft of the external action plan has been finalized, how should we proceed with internal approval (within SAG) before initiating the 12 stages coms approval process?&nbsp;</div><div style=\"font-size: 18.86px;\">- CSLO operating model has been drafted and will be shared with Arslen by the end of the week</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -577,5 +577,5 @@
     }
   ],
   "version": 1,
-  "sha": "d23525e4b6217f53c5895a7d32c6bd39244ceeae"
+  "sha": "8e7a782f314c03f6cdf74f245d94060096631867"
 }
