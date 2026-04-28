@@ -565,7 +565,7 @@
     {
       "id": "log_1777371064846",
       "date": "2026-04-28",
-      "desc": "CT functional requirements: Share initial draft with Tim/Laura by Wed midday for review",
+      "desc": "<b>CT functional requirements: </b>Share initial draft with Tim/Laura by Wed midday for review",
       "status": "open",
       "owner": "Vincenzo",
       "priority": true,
@@ -577,5 +577,5 @@
     }
   ],
   "version": 1,
-  "sha": "d87c1e5fd6e819aa9a78b071283c789535e4b7f7"
+  "sha": "e6ff1215e62fd5afe9fca123795e2110985607a3"
 }
