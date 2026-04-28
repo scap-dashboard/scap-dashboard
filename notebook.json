@@ -561,8 +561,21 @@
       "linked": [],
       "created": "2026-04-28",
       "updated": "2026-04-28"
+    },
+    {
+      "id": "log_1777371064846",
+      "date": "2026-04-28",
+      "desc": "CT functional requirements: Share initial draft with Tim/Laura by Wed midday for review",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": true,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-28",
+      "updated": "2026-04-28"
     }
   ],
   "version": 1,
-  "sha": "866498cb993455a826ef9bd8ed04c2380d901b55"
+  "sha": "d87c1e5fd6e819aa9a78b071283c789535e4b7f7"
 }
