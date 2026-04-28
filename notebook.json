@@ -344,7 +344,7 @@
     {
       "id": "log_1776427805523",
       "date": "2026-04-17",
-      "desc": "Ensure that the external action plan goes through the approval process<div><br></div><div><b>Update: </b>Vincenzo to share the final draft with Arslen and the SAG for a final round of validation before going through the formal approval process. Chris to share final draft&nbsp;</div>",
+      "desc": "Ensure that the external action plan goes through the approval process<div><br></div><div><b>Update: </b>Share final draft with SAG mentioning that the external action plan will go through the formal approval process shortly</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -352,7 +352,7 @@
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-17",
-      "updated": "2026-04-22"
+      "updated": "2026-04-28"
     },
     {
       "id": "log_1776671291081",
@@ -564,5 +564,5 @@
     }
   ],
   "version": 1,
-  "sha": "636de3207ac8159ac4b61679eb5413dc1a2a6bb9"
+  "sha": "42da19af919e9106da77f49dfb7a0bffbd50569e"
 }
