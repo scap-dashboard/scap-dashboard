@@ -578,7 +578,7 @@
     {
       "id": "log_1777383406158",
       "date": "2026-04-28",
-      "desc": "<b>Update from Arslen:</b>&nbsp;<div>- Had a meeting with OER.&nbsp; Contrarily to what we initially talked, send email to Haiti to discuss terms of mission of Tim to Haiti. Money has been received and they will place POs in the next 2 weeks.&nbsp; Not sure if a second logistician will be hired, but we can act as orchestrator. Mission as soon as possible. CO organize visa. Next steps: update TOR, share it with draft mail with Arslen and then Haiti (valentina, oxana, pierre and Vinet in CC)<div><br></div><div>- Issues on Inventory tool that Oracle would develop. Issue on budgeting and capacity of Oracle to build tool to meet requirements. HELP/Ultreia to develop an interim solution for inventory as a corporate tool? Team to put together a MVP of such tool based on requirements collection from CSLDL. Where would the funding for this come from?&nbsp;</div></div>",
+      "desc": "<b>Update from Arslen:</b>&nbsp;<div>- Had a meeting with OER.&nbsp; Contrarily to what we initially talked, send email to Haiti to discuss terms of mission of Tim to Haiti. Money has been received and they will place POs in the next 2 weeks.&nbsp; Not sure if a second logistician will be hired, but we can act as orchestrator. Mission as soon as possible. CO organize visa. Next steps: update TOR, share it with draft mail with Arslen and then Haiti (valentina, oxana, pierre and Vinet in CC)<div><br></div><div>- Issues on Inventory tool that Oracle would develop. Issue on budgeting and capacity of Oracle to build tool to meet requirements. HELP/Ultreia to develop an interim solution for inventory as a corporate tool? Team to put together a MVP of such tool based on requirements collection from CSLDL. MVP development would be covered within current funding agreement</div></div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -590,5 +590,5 @@
     }
   ],
   "version": 1,
-  "sha": "ca2af0e771e7353d77e7b0ed92a737ecc08ba0c5"
+  "sha": "2a2dc48d39af61e3db27859ae2ec1eb6e66fb70e"
 }
