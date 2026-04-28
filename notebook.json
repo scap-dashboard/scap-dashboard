@@ -565,7 +565,7 @@
     {
       "id": "log_1777363069469",
       "date": "2026-04-28",
-      "desc": "<b style=\"font-size: 20.24px;\">Areas of support to Haiti:&nbsp;</b><div style=\"font-size: 20.24px;\">- Participate in the monthly operations coordination meetings to review existing or new challenges and come up with mitigation plan</div><div style=\"font-size: 20.24px;\">&nbsp;- Review and finalize log and distribution plan with CSLDL</div><div style=\"font-size: 20.24px;\">- Support Haiti to define FAO's stance in the ongoing UN 80 SC cell pilot initiative in the country</div><div style=\"font-size: 20.24px;\">- Review the draft agreement with WFP that colleagues are working on</div>",
+      "desc": "<b style=\"font-size: 20.24px;\">Areas of support to Haiti (other than US OCHA Projects):&nbsp;</b><div style=\"font-size: 20.24px;\">- Participate in the monthly operations coordination meetings to review existing or new challenges and come up with mitigation plan</div><div style=\"font-size: 20.24px;\">&nbsp;- Review and finalize log and distribution plan with CSLDL</div><div style=\"font-size: 20.24px;\">- Support Haiti to define FAO's stance in the ongoing UN 80 SC cell pilot initiative in the country</div><div style=\"font-size: 20.24px;\">- Review the draft agreement with WFP that colleagues are working on</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -577,5 +577,5 @@
     }
   ],
   "version": 1,
-  "sha": "8e7a782f314c03f6cdf74f245d94060096631867"
+  "sha": "7508ae6141b1f6b7b83364284ca8fb1e1b0fd0d9"
 }
