@@ -561,8 +561,21 @@
       "linked": [],
       "created": "2026-04-28",
       "updated": "2026-04-28"
+    },
+    {
+      "id": "log_1777363069469",
+      "date": "2026-04-28",
+      "desc": "<b style=\"font-size: 20.24px;\">Areas of support to Haiti:&nbsp;</b><div style=\"font-size: 20.24px;\">- Participate in the monthly operations coordination meetings to review existing or new challenges and come up with mitigation plan</div><div style=\"font-size: 20.24px;\">&nbsp;- Review and finalize log and distribution plan with CSLDL</div><div style=\"font-size: 20.24px;\">- Support Haiti to define FAO's stance in the ongoing UN 80 SC cell pilot initiative in the country</div><div style=\"font-size: 20.24px;\">- Review the draft agreement with WFP that colleagues are working on</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-28",
+      "updated": "2026-04-28"
     }
   ],
   "version": 1,
-  "sha": "2300edc73417f86fe152ad7ed249cd673082d1da"
+  "sha": "4e5b2af7fbff9069b11014ed2122f8e6b4dbfa1c"
 }
