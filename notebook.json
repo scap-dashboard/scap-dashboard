@@ -371,14 +371,14 @@
       "id": "log_1776672092197",
       "date": "2026-04-20",
       "desc": "<b>To do by Friday:&nbsp;</b><div>- Tim&nbsp; + Adi&nbsp; to prepare first portion of the CT assessment defining scope and functional requirements of the FAO control tower</div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": true,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-20",
-      "updated": "2026-04-22"
+      "updated": "2026-04-28"
     },
     {
       "id": "log_1776675780206",
@@ -564,5 +564,5 @@
     }
   ],
   "version": 1,
-  "sha": "cfe165b054ed8c15f898200633ba56c7e039d91f"
+  "sha": "866498cb993455a826ef9bd8ed04c2380d901b55"
 }
