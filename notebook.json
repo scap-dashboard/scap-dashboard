@@ -550,19 +550,6 @@
       "updated": "2026-04-25"
     },
     {
-      "id": "log_1777361219664",
-      "date": "2026-04-28",
-      "desc": "<b style=\"font-size: 18.86px;\"><u>Agenda for Weekly Status Update:&nbsp;</u></b><div style=\"font-size: 18.86px;\">- Update on meeting with Haiti and proposed way forward. Q: Should we still consider Haiti as a pilot CO?</div><div style=\"font-size: 18.86px;\">- Selection of pilot COs. Proposed COs (Haiti, Afghanistan, Nigeria or Madagascar, Pakistan). Should we continue with the plan of making Haiti a pilot CO? By when can we confirm the selection of pilots? --&gt; <b>remove Haiti from the pilot COs list. Send email with the shortlisted COs to SAG for validation and then proceed. If haiti is dropped, it will</b></div><div style=\"font-size: 18.86px;\">- Proposed dates for next trip to Rome: 26th - 28th of May</div><div style=\"font-size: 18.86px;\">- Confirm plan for FAO visit to UNFPA on the 2nd of July</div><div style=\"font-size: 18.86px;\">- Now that final draft of the external action plan has been finalized, how should we proceed with internal approval (within SAG) before initiating the 12 stages coms approval process? --&gt; no need to go back to SAG (communicate to Chris)&nbsp;</div><div style=\"font-size: 18.86px;\">- CSLO operating model has been drafted and will be shared with Arslen by the end of the week</div>",
-      "status": "open",
-      "owner": "Vincenzo",
-      "priority": false,
-      "isNote": true,
-      "author": "Vincenzo",
-      "linked": [],
-      "created": "2026-04-28",
-      "updated": "2026-04-28"
-    },
-    {
       "id": "log_1777366085356",
       "date": "2026-04-28",
       "desc": "<b>Proposed pilot COs:</b> Afgh, Colombia, Pakistan, Madagascar, and&nbsp; Nigeria. Send email to SAG with the proposal list, mentioning that Haiti is proposed to be dropped and replaced in line with what discussed with OER",
@@ -577,5 +564,5 @@
     }
   ],
   "version": 1,
-  "sha": "f4fd74f35360aa13b1ed899b5634bb0f0e5657d8"
+  "sha": "636de3207ac8159ac4b61679eb5413dc1a2a6bb9"
 }
