@@ -578,7 +578,7 @@
     {
       "id": "log_1777383406158",
       "date": "2026-04-28",
-      "desc": "<b>Update from Arslen:</b> Had a meeting with OER.&nbsp; Contrarily to what we initially talked, send email to Haiti to discuss terms of mission of Tim to Haiti. Money has been received and they will place POs in the next 2 weeks.&nbsp; Not sure if a second logistician will be hired, but we can act as orchestrator. Mission as soon as possible",
+      "desc": "<b>Update from Arslen:</b> Had a meeting with OER.&nbsp; Contrarily to what we initially talked, send email to Haiti to discuss terms of mission of Tim to Haiti. Money has been received and they will place POs in the next 2 weeks.&nbsp; Not sure if a second logistician will be hired, but we can act as orchestrator. Mission as soon as possible. CO organize visa&nbsp;",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -590,5 +590,5 @@
     }
   ],
   "version": 1,
-  "sha": "9f927bea314da7c60cc9c29f693d34d5e5aba4ed"
+  "sha": "680668a83f4029c6d671a5f4b2a5d7a32f46f9cf"
 }
