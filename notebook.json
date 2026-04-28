@@ -332,14 +332,14 @@
       "id": "log_1776427714483",
       "date": "2026-04-17",
       "desc": "Confirm with Arslen on 21/04 our plan to be in Rome from the 26th until the 28th&nbsp;",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-17",
-      "updated": "2026-04-17"
+      "updated": "2026-04-28"
     },
     {
       "id": "log_1776427805523",
@@ -564,5 +564,5 @@
     }
   ],
   "version": 1,
-  "sha": "81a9f0d80a928f797a84d26f441b29ca1fea8b88"
+  "sha": "cfe165b054ed8c15f898200633ba56c7e039d91f"
 }
