@@ -587,8 +587,21 @@
       "linked": [],
       "created": "2026-04-28",
       "updated": "2026-04-28"
+    },
+    {
+      "id": "log_1777384803766",
+      "date": "2026-04-28",
+      "desc": "<b>to do:&nbsp;</b><div>- Share proposed pilot COs list with decision of dropping Haiti with SAG mentioning that we'll have to agree by next SAG</div><div>- Prepare material for presentation to COs</div><div>- Work with Arslen at setting up meetings with pilot COs</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-28",
+      "updated": "2026-04-28"
     }
   ],
   "version": 1,
-  "sha": "2a2dc48d39af61e3db27859ae2ec1eb6e66fb70e"
+  "sha": "0c75f992f4fbfbcf534feaeda3addc14186f8a30"
 }
