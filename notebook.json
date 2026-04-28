@@ -565,7 +565,7 @@
     {
       "id": "log_1777366085356",
       "date": "2026-04-28",
-      "desc": "<b>Proposed pilot COs:</b> Afgh, Colombia, Pakistan, Madagascar, and&nbsp; Nigeria&nbsp;",
+      "desc": "<b>Proposed pilot COs:</b> Afgh, Colombia, Pakistan, Madagascar, and&nbsp; Nigeria. Send email to SAG with the proposal list, mentioning that Haiti is proposed to be dropped and replaced in line with what discussed with OER",
       "status": "open",
       "owner": "Vincenzo",
       "priority": true,
@@ -577,5 +577,5 @@
     }
   ],
   "version": 1,
-  "sha": "0116fe494465f1a0de52dc941dc81278ace7ddab"
+  "sha": "f4fd74f35360aa13b1ed899b5634bb0f0e5657d8"
 }
