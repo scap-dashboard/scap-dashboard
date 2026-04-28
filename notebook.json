@@ -574,8 +574,21 @@
       "linked": [],
       "created": "2026-04-28",
       "updated": "2026-04-28"
+    },
+    {
+      "id": "log_1777366085356",
+      "date": "2026-04-28",
+      "desc": "Proposed pilot COs: Afgh, Colombia, Pakistan,&nbsp;",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-28",
+      "updated": "2026-04-28"
     }
   ],
   "version": 1,
-  "sha": "6935a34dddce05458000341d96b0802a89c99eb8"
+  "sha": "62937c7abca13dd76da8932237f4438d43dcd2f9"
 }
