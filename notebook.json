@@ -548,8 +548,21 @@
       "linked": [],
       "created": "2026-04-24",
       "updated": "2026-04-25"
+    },
+    {
+      "id": "log_1777361219664",
+      "date": "2026-04-28",
+      "desc": "<b style=\"font-size: 18.86px;\"><u>Agenda for Weekly Status Update:&nbsp;</u></b><div style=\"font-size: 18.86px;\">- Update on meeting with Haiti and proposed way forward. Q: Should we still consider Haiti as a pilot CO?</div><div style=\"font-size: 18.86px;\">- Selection of pilot COs. Proposed COs (Haiti, Afghanistan, Nigeria or Madagascar, Pakistan). Should we continue with the plan of making Haiti a pilot CO? By when can we confirm the selection of pilots?&nbsp;</div><div style=\"font-size: 18.86px;\">- Proposed dates for next trip to Rome: 26th - 28th of May</div><div style=\"font-size: 18.86px;\">- Confirm plan for FAO visit to UNFPA on the 2nd of July</div><div style=\"font-size: 18.86px;\">- Now that final draft of the external action plan has been finalized, how should we proceed with internal approval (within SAG) before initiating the 12 stages coms approval process?&nbsp;</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-04-28",
+      "updated": "2026-04-28"
     }
   ],
   "version": 1,
-  "sha": "b422938d93e25217f68ed696706db2aa4f37f17f"
+  "sha": "12fe4680d288bec333b988bd94e8a064243d226f"
 }
