@@ -449,14 +449,14 @@
       "id": "log_1776845474427",
       "date": "2026-04-22",
       "desc": "Cross-functional OCHA meeting cadence to be shared with us by CSLDL in the upcoming days (make sure CSLO is involved)",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-22",
-      "updated": "2026-04-22"
+      "updated": "2026-04-28"
     },
     {
       "id": "log_1776849840565",
@@ -564,5 +564,5 @@
     }
   ],
   "version": 1,
-  "sha": "e959f7637b853336c2035ba80b9a04b290a3ec78"
+  "sha": "79aa1413f573078fef674fddf760bdc4fdf5bb19"
 }
