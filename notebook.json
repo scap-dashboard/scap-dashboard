@@ -594,7 +594,7 @@
       "desc": "<b>to do:&nbsp;</b><div>- Share proposed pilot COs list with decision of dropping Haiti with SAG mentioning that we'll have to agree by next SAG (by 04/05)</div><div>- <u>Ask Chris to share external action plan with SAG and to proceed with the approval proces</u></div><div>- Prepare material for presentation to COs (By 15/05)</div><div>- Work with Arslen at setting up meetings with pilot COs (bring it up by 08/05)</div><div>- Share operating model with Arslen by next week</div>",
       "status": "open",
       "owner": "Vincenzo",
-      "priority": false,
+      "priority": true,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
@@ -603,5 +603,5 @@
     }
   ],
   "version": 1,
-  "sha": "e812c9f8811efdec10e5abe8aae061dd0bf83370"
+  "sha": "ad68269f004a24eb07d9c714ec549cfb523641ea"
 }
