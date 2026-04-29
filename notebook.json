@@ -383,7 +383,7 @@
     {
       "id": "log_1776675780206",
       "date": "2026-04-20",
-      "desc": "Confirm trip to CPH with FAO delegation on the 2nd of July<div><br></div><div><b>Update:</b> double check with Jonas if UNFPA is aware and supports this initiative and then confirm plan for the visit</div>",
+      "desc": "Confirm trip to CPH with FAO delegation on the 2nd of July<div><br></div><div><b>Update:</b> pending update from Nik on UNFPA's response</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -391,7 +391,7 @@
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-20",
-      "updated": "2026-04-28"
+      "updated": "2026-04-29"
     },
     {
       "id": "log_1776760840413",
@@ -603,5 +603,5 @@
     }
   ],
   "version": 1,
-  "sha": "278c8fb9424f3b30d02463e633999d2140e9ad6a"
+  "sha": "e945defb8684ca6d6c1f58d7e6a9c7493438440a"
 }
