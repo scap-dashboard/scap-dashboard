@@ -591,7 +591,7 @@
     {
       "id": "log_1777384803766",
       "date": "2026-04-28",
-      "desc": "<b>to do:&nbsp;</b><div>- Share proposed pilot COs list with decision of dropping Haiti with SAG mentioning that we'll have to agree by next SAG</div><div>- Ask Chris to share external action plan with SAG and to proceed with the approval proces</div><div>- Prepare material for presentation to COs</div><div>- Work with Arslen at setting up meetings with pilot COs</div>",
+      "desc": "<b>to do:&nbsp;</b><div>- Share proposed pilot COs list with decision of dropping Haiti with SAG mentioning that we'll have to agree by next SAG</div><div>- <u>Ask Chris to share external action plan with SAG and to proceed with the approval proces</u></div><div>- Prepare material for presentation to COs</div><div>- Work with Arslen at setting up meetings with pilot COs</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -599,9 +599,9 @@
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-28",
-      "updated": "2026-04-28"
+      "updated": "2026-04-29"
     }
   ],
   "version": 1,
-  "sha": "7a37362f357acda0d9243452539b2235de8691bc"
+  "sha": "278c8fb9424f3b30d02463e633999d2140e9ad6a"
 }
