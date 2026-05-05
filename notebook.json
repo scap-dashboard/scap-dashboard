@@ -527,14 +527,14 @@
       "id": "log_1776946148066",
       "date": "2026-04-23",
       "desc": "<b>Communication: </b>do another review of the coms plan once funding is approved to increase focus on publishing and disseminating&nbsp;",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-23",
-      "updated": "2026-04-23"
+      "updated": "2026-05-05"
     },
     {
       "id": "log_1777025496206",
@@ -616,5 +616,5 @@
     }
   ],
   "version": 1,
-  "sha": "c193fd9e019731631c96cdc0dc50b2e10aeb474e"
+  "sha": "41816dd2471da9b1e47b6f8cc49964074e5cb4e9"
 }
