@@ -600,8 +600,21 @@
       "linked": [],
       "created": "2026-04-28",
       "updated": "2026-05-05"
+    },
+    {
+      "id": "log_1777968921687",
+      "date": "2026-05-05",
+      "desc": "<b>Plan for tomorrow's SAG:&nbsp;</b><div>1) General update from Rodrigo and Arslen on the action plan, CAPEX, CSLO recruitment process, etc.&nbsp;</div><div>2) Selection of pilot COs</div><div>3) Plan for next SAG meeting and trip to Rome</div><div>4) Next steps for the coms plan</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": true,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-05-05",
+      "updated": "2026-05-05"
     }
   ],
   "version": 1,
-  "sha": "390af67b3c54e3ef758b2a8d42004fb9d3cf9efe"
+  "sha": "774a7a9f4a7615d332bb0c6b27430a0ed9bea954"
 }
