@@ -384,14 +384,14 @@
       "id": "log_1776675780206",
       "date": "2026-04-20",
       "desc": "Confirm trip to CPH with FAO delegation on the 2nd of July<div><br></div><div><b>Update:</b> pending update from Nik on UNFPA's response</div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-20",
-      "updated": "2026-04-29"
+      "updated": "2026-05-05"
     },
     {
       "id": "log_1776760840413",
@@ -629,5 +629,5 @@
     }
   ],
   "version": 1,
-  "sha": "773cf585429a0ec5637a0c36d9953dad16f65d01"
+  "sha": "66baebc355d2e461fabe24ca9ec0c74b427794f1"
 }
