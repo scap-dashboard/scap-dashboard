@@ -345,14 +345,14 @@
       "id": "log_1776427805523",
       "date": "2026-04-17",
       "desc": "Ensure that the external action plan goes through the approval process<div><br></div><div><b>Update: </b>Share final draft with SAG mentioning that the external action plan will go through the formal approval process shortly</div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-17",
-      "updated": "2026-04-28"
+      "updated": "2026-05-05"
     },
     {
       "id": "log_1776671291081",
@@ -616,5 +616,5 @@
     }
   ],
   "version": 1,
-  "sha": "41816dd2471da9b1e47b6f8cc49964074e5cb4e9"
+  "sha": "6d450b0da0848204389a9bf23288bf287299633b"
 }
