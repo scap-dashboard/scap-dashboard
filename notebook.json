@@ -613,8 +613,21 @@
       "linked": [],
       "created": "2026-05-05",
       "updated": "2026-05-05"
+    },
+    {
+      "id": "log_1777983226928",
+      "date": "2026-05-05",
+      "desc": "On FAO's visit to CPH:&nbsp;",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-05-05",
+      "updated": "2026-05-05"
     }
   ],
   "version": 1,
-  "sha": "6d450b0da0848204389a9bf23288bf287299633b"
+  "sha": "1beb043b81637de1eb68c4b69e4ac5b7453f68fd"
 }
