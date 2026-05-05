@@ -617,7 +617,7 @@
     {
       "id": "log_1777983226928",
       "date": "2026-05-05",
-      "desc": "On FAO's visit to CPH:&nbsp;",
+      "desc": "<b>On FAO's visit to CPH:</b> UNFPA proposed for the meeting to be held in August. Check for CSL availability before continuing with the plan",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -629,5 +629,5 @@
     }
   ],
   "version": 1,
-  "sha": "1beb043b81637de1eb68c4b69e4ac5b7453f68fd"
+  "sha": "773cf585429a0ec5637a0c36d9953dad16f65d01"
 }
