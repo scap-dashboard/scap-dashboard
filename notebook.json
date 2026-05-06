@@ -626,8 +626,21 @@
       "linked": [],
       "created": "2026-05-05",
       "updated": "2026-05-05"
+    },
+    {
+      "id": "log_1778062567345",
+      "date": "2026-05-06",
+      "desc": "<b>On CSLO: </b>Create new interim organigramme to reflect latest update from Rodrigo and present it to Arslen tomorrow",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": true,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-05-06",
+      "updated": "2026-05-06"
     }
   ],
   "version": 1,
-  "sha": "ac8a957cfadb86f93708b61e249d2fd67049a8ec"
+  "sha": "9afcd9cca5e288bf010f3765e8753aed8c626aae"
 }
