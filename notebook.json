@@ -631,14 +631,14 @@
       "id": "log_1778062567345",
       "date": "2026-05-06",
       "desc": "<b>On CSLO: </b>Create new interim organigramme to reflect latest update from Rodrigo and present it to Arslen tomorrow",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": true,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-05-06",
-      "updated": "2026-05-06"
+      "updated": "2026-05-07"
     },
     {
       "id": "log_1778062606467",
@@ -668,5 +668,5 @@
     }
   ],
   "version": 1,
-  "sha": "9928f600724ec16d5b036f55c3871ed5b721596c"
+  "sha": "fd13400060ee33e39360b291a4fa5e97e33f96d4"
 }
