@@ -592,14 +592,14 @@
       "id": "log_1777384803766",
       "date": "2026-04-28",
       "desc": "<b>Internal update:&nbsp;</b><div><u>- agree on plan for tomorrow's&nbsp; SAG</u></div><div><u>- Follow up with Arslen on Haiti' TOR and plan (Laura to pass by his office)</u><br><div><u>- Share proposed pilot COs list with decision of dropping Haiti with SAG mentioning that we'll have to agree by next SAG (by 04/05)</u></div><div>- Prepare and share pre-read on CT scope and functional requirements by 11/05. This will be presented to the next SAG meeting 15/05</div><div>- Laura to set up internal mock up reviews for tomorrow and the 15th</div><div>- Prepare material for presentation to COs (By 15/05)</div><div>- Work with Arslen at setting up meetings with pilot COs</div><div>- Share operating model with Arslen by the end of the week</div></div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
-      "priority": true,
+      "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-04-28",
-      "updated": "2026-05-05"
+      "updated": "2026-05-07"
     },
     {
       "id": "log_1777968921687",
@@ -668,5 +668,5 @@
     }
   ],
   "version": 1,
-  "sha": "15a5da8e1790ae7565869d205174e990f6f2d376"
+  "sha": "20d6ee5a1df90582a32d424eca6ee84e949a4860"
 }
