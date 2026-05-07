@@ -652,8 +652,21 @@
       "linked": [],
       "created": "2026-05-06",
       "updated": "2026-05-06"
+    },
+    {
+      "id": "log_1778138389732",
+      "date": "2026-05-07",
+      "desc": "<b>Agenda CSLO alignment:&nbsp;</b><div>1) Support to Haiti - Tim has followed up with Valentina/Oxana but hasn't heard back from them. Next steps?&nbsp;</div><div>2) UNFPA proposed to move FAO visit to August - tentative dates 6-7. Check for availability</div><div>3) Adjusted project team structure based on latest update on funding and staff restrictions. Confirm governance set up, prospected capacity from part-timers, and initiate interim CSLO coordination meetings&nbsp;</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": true,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-05-07",
+      "updated": "2026-05-07"
     }
   ],
   "version": 1,
-  "sha": "c224e2fce5057568f49f77de77d0f78a77087499"
+  "sha": "9928f600724ec16d5b036f55c3871ed5b721596c"
 }
