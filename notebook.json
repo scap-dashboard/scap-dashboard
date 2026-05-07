@@ -656,7 +656,7 @@
     {
       "id": "log_1778138389732",
       "date": "2026-05-07",
-      "desc": "<b>Agenda CSLO alignment:&nbsp;</b><div>1) Support to Haiti - Tim has followed up with Valentina/Oxana but hasn't heard back from them. Next steps?&nbsp;</div><div>2) UNFPA proposed to move FAO visit to August - tentative dates 6-7. Check for availability</div><div>3) Adjusted project team structure based on latest update on funding and staff restrictions. Confirm governance set up, prospected capacity from part-timers, and initiate interim CSLO coordination meetings&nbsp;</div>",
+      "desc": "<b>Agenda CSLO alignment:&nbsp;</b><div>1) Support to Haiti - Tim has followed up with Valentina/Oxana but hasn't heard back from them. Next steps?&nbsp;</div><div>2) UNFPA proposed to move FAO visit to August - tentative dates 6-7. Check for availability</div><div>3) Adjusted project team structure based on latest update on funding and staff restrictions. Confirm governance set up, prospected capacity from part-timers, and initiate interim CSLO coordination meetings&nbsp;</div><div>4) Clarify 3rd job post opening (SC specialist)</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -668,5 +668,5 @@
     }
   ],
   "version": 1,
-  "sha": "ea8b2b0397d0c78bb367d2761b676cb6f173a6c9"
+  "sha": "4b015054e379ae256114ef47b2523645424ace09"
 }
