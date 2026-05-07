@@ -644,14 +644,14 @@
       "id": "log_1778062606467",
       "date": "2026-05-06",
       "desc": "<b>On pilot COs selection:</b> share update to OER and PSS requesting their approval",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-05-06",
-      "updated": "2026-05-06"
+      "updated": "2026-05-07"
     },
     {
       "id": "log_1778138389732",
@@ -681,5 +681,5 @@
     }
   ],
   "version": 1,
-  "sha": "2f5cd2f3dc58cb9d4c5c5356e14ff848b17b4a6d"
+  "sha": "b037efc883030424be39dd235ee2b150296a3e82"
 }
