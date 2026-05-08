@@ -678,8 +678,21 @@
       "linked": [],
       "created": "2026-05-07",
       "updated": "2026-05-07"
+    },
+    {
+      "id": "log_1778228334494",
+      "date": "2026-05-08",
+      "desc": "<b>To do: </b>develop pilot CO outreach package (invitation, deck, next steps) and outline detailed plan for pilot implementation",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-05-08",
+      "updated": "2026-05-08"
     }
   ],
   "version": 1,
-  "sha": "b037efc883030424be39dd235ee2b150296a3e82"
+  "sha": "0c8451ca78a0725fb54da3e829380a0dd769dcd4"
 }
