@@ -696,14 +696,14 @@
       "id": "log_1778594328887",
       "date": "2026-05-12",
       "desc": "check with Chris progress on internal launch email",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-05-12",
-      "updated": "2026-05-12"
+      "updated": "2026-05-15"
     },
     {
       "id": "log_1778686283763",
@@ -720,5 +720,5 @@
     }
   ],
   "version": 1,
-  "sha": "b6561c31a4f7bd3d47fcaebe2d69cbdf76c09e94"
+  "sha": "584a37d628d27507504c9326904e5e25fbe243c3"
 }
