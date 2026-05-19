@@ -730,8 +730,21 @@
       "linked": [],
       "created": "2026-05-19",
       "updated": "2026-05-19"
+    },
+    {
+      "id": "log_1779194860757",
+      "date": "2026-05-19",
+      "desc": "Ask Arslen to support setting up meeting with CSI to discuss CT technical requirements and solution architecture",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-05-19",
+      "updated": "2026-05-19"
     }
   ],
   "version": 1,
-  "sha": "fbf29a616239069dfc7f99f0c1bd07127a51135f"
+  "sha": "1ec4f3e909e901687018f999a857b78f4dc673b6"
 }
