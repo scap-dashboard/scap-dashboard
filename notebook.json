@@ -721,7 +721,7 @@
     {
       "id": "log_1779265940996",
       "date": "2026-05-20",
-      "desc": "<b>Meetings to schedule:&nbsp;</b><div>- V to schedule meeting with Moto for next week to discuss CSLP support to the action plan&nbsp;</div><div>- V to schedule meeting with Arslen for next week to discuss his interim role</div><div>- L to schedule meeting with CSI on technical requirements and systems layer</div>",
+      "desc": "<b>Meetings to schedule:&nbsp;</b><div>-<u> V to schedule meeting with Moto for next week to discuss CSLP support to the action plan&nbsp;</u></div><div>- V to schedule meeting with Arslen for next week to discuss his interim role</div><div>- L to schedule meeting with CSI on technical requirements and systems layer</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -733,5 +733,5 @@
     }
   ],
   "version": 1,
-  "sha": "6d2c57b4e9cbfc74efb40e3fc93d220c4411b031"
+  "sha": "0604220c2e1477a0c1c2cc8e2841fa187d20da46"
 }
