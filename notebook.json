@@ -719,19 +719,6 @@
       "updated": "2026-05-13"
     },
     {
-      "id": "log_1779177040300",
-      "date": "2026-05-19",
-      "desc": "Set up meeting for next week with CSLP to align on their contribution to the action plan implementation",
-      "status": "open",
-      "owner": "Vincenzo",
-      "priority": false,
-      "isNote": false,
-      "author": "Vincenzo",
-      "linked": [],
-      "created": "2026-05-19",
-      "updated": "2026-05-19"
-    },
-    {
       "id": "log_1779194860757",
       "date": "2026-05-19",
       "desc": "Ask Arslen to support setting up meeting with CSI to discuss CT technical requirements and solution architecture",
@@ -759,5 +746,5 @@
     }
   ],
   "version": 1,
-  "sha": "e6ba00e8dad94f48f05b995bb3a219c2d14b70b1"
+  "sha": "cd3506d1055bb42c94b7bec4f47acdcea1942949"
 }
