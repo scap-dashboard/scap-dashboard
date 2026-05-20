@@ -747,7 +747,7 @@
     {
       "id": "log_1779292646286",
       "date": "2026-05-20",
-      "desc": "<b>Agenda for weekly CSLO alignment:&nbsp;</b><div>- Update on Haiti and plan forward (consider calling off support to a OCHA funded CO or identify another potential candidate)</div><div>- Meetings planned for next week&nbsp;</div><div>- CSLP contribution to the action plan</div><div>- Check if a meeting with CSI can be scheduled for Thursday&nbsp;</div><div>-&nbsp;</div><div><br></div>",
+      "desc": "<b>Agenda for weekly CSLO alignment:&nbsp;</b><div>- Update on Haiti and plan forward (consider calling off support to a OCHA funded CO or identify another potential candidate)</div><div>- Meetings planned for next week&nbsp;</div><div>- CSLP contribution to the action plan</div><div>- Check if a meeting with CSI can be scheduled for Thursday&nbsp;</div><div>- Update on the recruitment process of the senior SC consultant</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -759,5 +759,5 @@
     }
   ],
   "version": 1,
-  "sha": "08398a7dd6c61fcb3a0d323587d8c66a39356e83"
+  "sha": "16620012a97b064d78922322f55abab75e2a7135"
 }
