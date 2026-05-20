@@ -751,7 +751,7 @@
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
-      "isNote": false,
+      "isNote": true,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-05-20",
@@ -759,5 +759,5 @@
     }
   ],
   "version": 1,
-  "sha": "16620012a97b064d78922322f55abab75e2a7135"
+  "sha": "b5a9e2febec64b711f70d0235717ae57e13039d6"
 }
