@@ -743,8 +743,21 @@
       "linked": [],
       "created": "2026-05-19",
       "updated": "2026-05-19"
+    },
+    {
+      "id": "log_1779265940996",
+      "date": "2026-05-20",
+      "desc": "<b>Meetings to schedule:&nbsp;</b><div>- V to schedule meeting with Moto for next week to discuss CSLP support to the action plan&nbsp;</div><div>- V to schedule meeting with Arslen for next week to discuss his interim role</div><div>- L to schedule meeting with CSI on technical requirements and systems layer</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-05-20",
+      "updated": "2026-05-20"
     }
   ],
   "version": 1,
-  "sha": "1ec4f3e909e901687018f999a857b78f4dc673b6"
+  "sha": "e6ba00e8dad94f48f05b995bb3a219c2d14b70b1"
 }
