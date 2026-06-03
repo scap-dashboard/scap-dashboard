@@ -735,14 +735,14 @@
       "id": "log_1779286117621",
       "date": "2026-05-20",
       "desc": "<b>On planning guidelines:</b> identify log and proc CSLO focal point that would support this initiative and set up a meeting with Eida on the week of June 1st to go through overall plan, policy review, and high level approach. Intention is to validate the integrated planning blueprint with CSL/PSS during our next trip to Rome (week of June 15th)",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": true,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-05-20",
-      "updated": "2026-05-20"
+      "updated": "2026-06-03"
     },
     {
       "id": "log_1779292646286",
@@ -759,5 +759,5 @@
     }
   ],
   "version": 1,
-  "sha": "82ab7a1bc7dd4ead4c73c51d79600339c1e0ba54"
+  "sha": "e2d085b48e693eee5e5e91adb81150dbd21cf57a"
 }
