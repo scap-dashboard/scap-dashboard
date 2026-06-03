@@ -709,14 +709,14 @@
       "id": "log_1778686283763",
       "date": "2026-05-13",
       "desc": "Update refined project team structure based on latest update to the Capex proposal",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-05-13",
-      "updated": "2026-05-13"
+      "updated": "2026-06-03"
     },
     {
       "id": "log_1779265940996",
@@ -759,5 +759,5 @@
     }
   ],
   "version": 1,
-  "sha": "b5a9e2febec64b711f70d0235717ae57e13039d6"
+  "sha": "779993cae29712320adb4a62033016734ad45bb0"
 }
