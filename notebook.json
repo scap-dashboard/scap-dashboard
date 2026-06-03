@@ -769,8 +769,21 @@
       "linked": [],
       "created": "2026-06-03",
       "updated": "2026-06-03"
+    },
+    {
+      "id": "log_1780479215651",
+      "date": "2026-06-03",
+      "desc": "<b>Plan for the Control Tower Assessment:&nbsp;</b><div>- Adi to update</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": true,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-03",
+      "updated": "2026-06-03"
     }
   ],
   "version": 1,
-  "sha": "01722ab71d736158e57e8d769f46c9cbd2107c83"
+  "sha": "b81ab5a89332fe6331eb4e79cd612bdd9869b292"
 }
