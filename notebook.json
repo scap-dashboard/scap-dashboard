@@ -773,7 +773,7 @@
     {
       "id": "log_1780479215651",
       "date": "2026-06-03",
-      "desc": "<b>Plan for the Control Tower Assessment:&nbsp;</b><div>- Adi to update</div>",
+      "desc": "<b>Plan for the Control Tower Assessment:&nbsp;</b><div>- Inputs from Adi<br>- Understand the scope, timeline and deliverables of the Procurement CAPEX initiatives (as there are multiple: sourcing, procurement and Order tracking)</div><div>- Learn more about the Order tracking (OT) system CSLP is developing and how it can integrate/ compliment the work on the Control Tower and the broader Supply Chain Action Plan (SCAP)</div><div>- Discuss the functional requirements for Planning (Procurement influenced planning) and Procurement relevant for the control tower.</div><div>- Align on how we can jointly shape the mockup to show country offices and to CSI to assess feasibility, resources and development plan required<br>- This will influence and shape how we should move forward. Therefore it is critical to Align with CSLP and CSI</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": true,
@@ -785,5 +785,5 @@
     }
   ],
   "version": 1,
-  "sha": "53de1754d9f08aff5656171e3a952faad7dd8385"
+  "sha": "419cf04ddaa8c389a8462618ea63db7bd42f8c34"
 }
