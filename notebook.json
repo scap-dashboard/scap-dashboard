@@ -670,14 +670,14 @@
       "id": "log_1778152037016",
       "date": "2026-05-07",
       "desc": "<b>Plan for CT assessment:&nbsp;</b><div><u>1) Finalize and reach internal agreement on CT scope and functional requirements by 13/05</u></div><div>2<u>) Agree on a UI architecture by 15/05</u></div><div><u>3) Share scope and functional requirements via email with SAG by 18/05 for offline review and validation</u></div><div>3) Develop a first version of the mock-up to be reviewed internally by 20/05</div><div>4) Outline high-level system architecture, including underlying systems/data sources and data integration layer by 20/05</div><div>5) Come up with high-level implementation plan to review during visit to Rome by 22/05</div><div>6) Finalize v1 mock-up by 22/05 and prepare user narratives for presentation&nbsp;</div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": true,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-05-07",
-      "updated": "2026-05-19"
+      "updated": "2026-06-03"
     },
     {
       "id": "log_1778228334494",
@@ -759,5 +759,5 @@
     }
   ],
   "version": 1,
-  "sha": "7a5799f710228a2d207a460c2df5d9d00dbcce30"
+  "sha": "e178a1bdc5e345d6c59026cf12599d9e104c7c19"
 }
