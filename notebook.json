@@ -756,8 +756,21 @@
       "linked": [],
       "created": "2026-05-20",
       "updated": "2026-05-20"
+    },
+    {
+      "id": "log_1780479095522",
+      "date": "2026-06-03",
+      "desc": "Agenda for Weekly alignment:&nbsp;<div>- Collect inputs on the CO outreach package (email + pre-read)&nbsp;</div><div>- Check in w/ Arslen on the usage of the CSLO acronym and divulgation of the existence of this function</div><div>- Aling with Katherine and Fathima on plan for the next 3 weeks: As agreed, they will focus on the high priority logistics guidelines while contribution to our work. Afterwards, they will be dedicated to the action plan</div><div>-&nbsp;</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-03",
+      "updated": "2026-06-03"
     }
   ],
   "version": 1,
-  "sha": "e2d085b48e693eee5e5e91adb81150dbd21cf57a"
+  "sha": "1d02e1c142d2769982090ca687f3847b8e07cb93"
 }
