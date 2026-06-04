@@ -782,8 +782,21 @@
       "linked": [],
       "created": "2026-06-03",
       "updated": "2026-06-04"
+    },
+    {
+      "id": "log_1780582117342",
+      "date": "2026-06-04",
+      "desc": "Adi/Laura to set up follow up meetings with Procurement on CT",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-04",
+      "updated": "2026-06-04"
     }
   ],
   "version": 1,
-  "sha": "ef109a335cdab82991a28b3946b0161196ee475a"
+  "sha": "711ac216aa9b692f4ffaca3604f17f694be6e349"
 }
