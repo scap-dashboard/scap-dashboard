@@ -786,7 +786,7 @@
     {
       "id": "log_1780582117342",
       "date": "2026-06-04",
-      "desc": "Adi/Laura to set up follow up meetings with Procurement on CT",
+      "desc": "<b>Control tower assessment </b>--&gt; Adi/Laura to set up follow up meetings with Procurement on CT for week of 08/06",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -798,5 +798,5 @@
     }
   ],
   "version": 1,
-  "sha": "711ac216aa9b692f4ffaca3604f17f694be6e349"
+  "sha": "0e27a894d209fef115be2ca9ab8f28890729e298"
 }
