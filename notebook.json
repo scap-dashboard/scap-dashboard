@@ -760,7 +760,7 @@
     {
       "id": "log_1780479095522",
       "date": "2026-06-03",
-      "desc": "<b>Agenda for Weekly alignment:&nbsp;</b><div>- Collect inputs on the CO outreach package (email + pre-read)&nbsp;</div><div>- Check in w/ Arslen on the usage of the CSLO acronym and divulgation of the existence of this function</div><div>- Confirm that Nigeria replaces Madagascar and that we'll begin reaching out only to the 1st wave COs (Afgh, PAK, Colombia)</div><div>- Get an update on the recruitment of the senior consultant</div><div>- Aling with Katherine and Fathima on plan for the next 3 weeks: As agreed, they will focus on the high priority logistics guidelines while contribution to our work. Afterwards, they will be dedicated to the action plan</div>",
+      "desc": "<b>Agenda for Weekly alignment:&nbsp;</b><div>- Collect inputs on the CO outreach package (email + pre-read)&nbsp;</div><div>- Check in w/ Arslen on the usage of the CSLO acronym and divulgation of the existence of this function</div><div>- Update on control tower discussions</div><div>- Confirm that Nigeria replaces Madagascar and that we'll begin reaching out only to the 1st wave COs (Afgh, PAK, Colombia)</div><div>- Get an update on the recruitment of the senior consultant</div><div>- Aling with Katherine and Fathima on plan for the next 3 weeks: As agreed, they will focus on the high priority logistics guidelines while contribution to our work. Afterwards, they will be dedicated to the action plan</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -768,7 +768,7 @@
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-06-03",
-      "updated": "2026-06-03"
+      "updated": "2026-06-04"
     },
     {
       "id": "log_1780479215651",
@@ -785,5 +785,5 @@
     }
   ],
   "version": 1,
-  "sha": "6e889ded870738fd2ebfad091f074103901a56c8"
+  "sha": "540877bd98236fdbe420f60818a130f6e4cbfce0"
 }
