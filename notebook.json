@@ -802,7 +802,7 @@
       "desc": "<b>On CO outreach package:</b> Update deck with shared feedback and share it back by Monday morning at the latest&nbsp;",
       "status": "open",
       "owner": "Vincenzo",
-      "priority": false,
+      "priority": true,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
@@ -811,5 +811,5 @@
     }
   ],
   "version": 1,
-  "sha": "aacffc0a405db9f7c3f5071e737e66215228a2e2"
+  "sha": "9d0e4cc9ab1f0a6cfa50c8ecfe09611d96cd36b5"
 }
