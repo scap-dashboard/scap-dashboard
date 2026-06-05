@@ -795,8 +795,21 @@
       "linked": [],
       "created": "2026-06-04",
       "updated": "2026-06-04"
+    },
+    {
+      "id": "log_1780643560458",
+      "date": "2026-06-05",
+      "desc": "<b>On CO outreach package:</b> Update deck with shared feedback and share it back by today (friday) end of day",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-05",
+      "updated": "2026-06-05"
     }
   ],
   "version": 1,
-  "sha": "e9133f6fcb566ec4fccb14120f69d0192286ba48"
+  "sha": "f3d779b70d7ed338d8a10609400bbf7b92c730fc"
 }
