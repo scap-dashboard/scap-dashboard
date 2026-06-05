@@ -799,7 +799,7 @@
     {
       "id": "log_1780643560458",
       "date": "2026-06-05",
-      "desc": "<b>On CO outreach package:</b> Update deck with shared feedback and share it back by today (friday) end of day",
+      "desc": "<b>On CO outreach package:</b> Update deck with shared feedback and share it back by Monday morning at the latest&nbsp;",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -811,5 +811,5 @@
     }
   ],
   "version": 1,
-  "sha": "f3d779b70d7ed338d8a10609400bbf7b92c730fc"
+  "sha": "aacffc0a405db9f7c3f5071e737e66215228a2e2"
 }
