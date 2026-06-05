@@ -776,12 +776,12 @@
       "desc": "<b>Plan for the Control Tower Assessment:&nbsp;</b><div>- Understand the scope, timeline and deliverables of the Procurement CAPEX initiatives (as there are multiple: sourcing, procurement and Order tracking)</div><div>- Learn more about the Order tracking (OT) system CSLP is developing and how it can integrate/ compliment the work on the Control Tower and the broader Supply Chain Action Plan (SCAP)</div><div>- Discuss the functional requirements for Planning (Procurement influenced planning) and Procurement relevant for the control tower.</div><div>- Align on how we can jointly shape the mockup to show country offices and to CSI to assess feasibility, resources and development plan required<br>- This will influence and shape how we should move forward. Therefore it is critical to Align with CSLP and CSI</div>",
       "status": "open",
       "owner": "Vincenzo",
-      "priority": true,
-      "isNote": false,
+      "priority": false,
+      "isNote": true,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-06-03",
-      "updated": "2026-06-04"
+      "updated": "2026-06-05"
     },
     {
       "id": "log_1780582117342",
@@ -824,5 +824,5 @@
     }
   ],
   "version": 1,
-  "sha": "375d8d262bccbecc9e895befcee5bbfc30106b48"
+  "sha": "5d0221cfc649b837e80afebfd9a5ef60c5d73c4b"
 }
