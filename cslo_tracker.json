@@ -10,7 +10,7 @@
       "csloFP": "Tim",
       "coFP": "Oxana",
       "plannedHrs": "10",
-      "status": "notstarted",
+      "status": "cancelled",
       "actualHrs": "1",
       "surge": "No",
       "supportDesc": "",
@@ -19,7 +19,7 @@
       "survey": "",
       "surveyResults": "",
       "updatedBy": "Vincenzo",
-      "updated": "2026-04-24",
+      "updated": "2026-06-08",
       "id": "1",
       "created": "2026-04-22"
     },
@@ -48,5 +48,5 @@
     }
   ],
   "version": 1,
-  "sha": "513db8f2a88195fc347bb61c536c79df216aab70"
+  "sha": "0be07bc91fb432415ca1ee72392b5791dd595145"
 }
