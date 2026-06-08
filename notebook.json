@@ -834,8 +834,21 @@
       "linked": [],
       "created": "2026-06-08",
       "updated": "2026-06-08"
+    },
+    {
+      "id": "log_1780906803367",
+      "date": "2026-06-08",
+      "desc": "<b>on CT interview with CSLP</b> --&gt; Provide context and guiding questions for CSLP by today",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-08",
+      "updated": "2026-06-08"
     }
   ],
   "version": 1,
-  "sha": "ea79de477c0bae6c01325fae02a5580ae38d6315"
+  "sha": "bd84e5cf07284f53092ac3e5d8a089ec2244fe01"
 }
