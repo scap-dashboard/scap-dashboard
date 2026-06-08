@@ -821,8 +821,21 @@
       "linked": [],
       "created": "2026-06-05",
       "updated": "2026-06-05"
+    },
+    {
+      "id": "log_1780906750312",
+      "date": "2026-06-08",
+      "desc": "Decide if we want to keep SAG alignment for this friday",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-08",
+      "updated": "2026-06-08"
     }
   ],
   "version": 1,
-  "sha": "5d0221cfc649b837e80afebfd9a5ef60c5d73c4b"
+  "sha": "15b194533f254309a0e06372e8c47c92153d0f2c"
 }
