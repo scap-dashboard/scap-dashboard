@@ -787,14 +787,14 @@
       "id": "log_1780582117342",
       "date": "2026-06-04",
       "desc": "<b>Control tower assessment </b>--&gt; Adi/Laura to set up follow up meetings with Procurement on CT for week of 08/06",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-06-04",
-      "updated": "2026-06-04"
+      "updated": "2026-06-08"
     },
     {
       "id": "log_1780643560458",
@@ -837,5 +837,5 @@
     }
   ],
   "version": 1,
-  "sha": "9f63acabd3f2fe8703ae1289cf89958a60272733"
+  "sha": "ea79de477c0bae6c01325fae02a5580ae38d6315"
 }
