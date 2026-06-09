@@ -912,8 +912,21 @@
       "linked": [],
       "created": "2026-06-09",
       "updated": "2026-06-09"
+    },
+    {
+      "id": "log_1781036450243",
+      "date": "2026-06-09",
+      "desc": "Align with team on interim IMS solution. Important pre-requisite for the CT. Most likely it will have to be a sharepoint solution",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-09",
+      "updated": "2026-06-09"
     }
   ],
   "version": 1,
-  "sha": "85d77f2565790b79b458231cb1db2e8eb32a9bbe"
+  "sha": "fc03a55deb9f601e0ac468b6cea92187455b51fd"
 }
