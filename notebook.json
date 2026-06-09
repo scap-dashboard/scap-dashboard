@@ -860,8 +860,21 @@
       "linked": [],
       "created": "2026-06-08",
       "updated": "2026-06-08"
+    },
+    {
+      "id": "log_1781013628811",
+      "date": "2026-06-09",
+      "desc": "Send summary of alignment discussions to Massimo and Nicole after debriefing Internally",
+      "status": "open",
+      "owner": "Adi",
+      "priority": false,
+      "isNote": false,
+      "author": "Adi",
+      "linked": [],
+      "created": "2026-06-09",
+      "updated": "2026-06-09"
     }
   ],
   "version": 1,
-  "sha": "ca7e6ddfeabb78f77dce9f56b95a886062b5c250"
+  "sha": "fcf3b1aff516a4898b5749427b0fafcd8de1528b"
 }
