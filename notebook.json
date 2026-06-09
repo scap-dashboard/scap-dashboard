@@ -873,8 +873,21 @@
       "linked": [],
       "created": "2026-06-09",
       "updated": "2026-06-09"
+    },
+    {
+      "id": "log_1781013734363",
+      "date": "2026-06-09",
+      "desc": "Come up with a high-level direction for where/ how the control tower adds value to FAO<br>",
+      "status": "open",
+      "owner": "Adi",
+      "priority": false,
+      "isNote": false,
+      "author": "Adi",
+      "linked": [],
+      "created": "2026-06-09",
+      "updated": "2026-06-09"
     }
   ],
   "version": 1,
-  "sha": "fcf3b1aff516a4898b5749427b0fafcd8de1528b"
+  "sha": "0a617faba001987c8c335e9680117f95b39f7ed8"
 }
