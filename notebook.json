@@ -938,8 +938,21 @@
       "linked": [],
       "created": "2026-06-09",
       "updated": "2026-06-09"
+    },
+    {
+      "id": "log_1781036654155",
+      "date": "2026-06-09",
+      "desc": "<b>On CO outreach: </b>Prepare presentation for COs introductory meeting",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-09",
+      "updated": "2026-06-09"
     }
   ],
   "version": 1,
-  "sha": "49f98b9872dc96888d4719d11b46aa75c11259ac"
+  "sha": "bcbe1b46d31a231008a6f5ff9b0399965f0669c1"
 }
