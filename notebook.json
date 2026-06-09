@@ -903,7 +903,7 @@
     {
       "id": "log_1781034709478",
       "date": "2026-06-09",
-      "desc": "<b>Agenda for team alignment:&nbsp;</b><div>- Brief overview</div><div>- Adi to provide update on CT discussion and plan to engage with CSLDL for logistics module scoping</div><div>- Vincenzo to provide update on integrated planning</div><div>- Align on plan of cancelling this week's SAG and sharing an update via email</div><div>- Agree with Fathima and Katherina on their attendance for these team alignment over the next 2/3 weeks (until high priority guidelines are completed)</div>",
+      "desc": "<b>Agenda for team alignment:&nbsp;</b><div>- Brief overview</div><div>- Adi to provide update on CT discussion and plan to engage with CSLDL for logistics module scoping</div><div>- Vincenzo to provide update on integrated planning</div><div>- Check by when CO outreach package can be shared with COs</div><div>- Align on plan of cancelling this week's SAG and sharing an update via email</div><div>- Agree with Fathima and Katherina on their attendance for these team alignment over the next 2/3 weeks (until high priority guidelines are completed)</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -915,5 +915,5 @@
     }
   ],
   "version": 1,
-  "sha": "8f99146557066bf2faf69809e27caa06b311f309"
+  "sha": "85d77f2565790b79b458231cb1db2e8eb32a9bbe"
 }
