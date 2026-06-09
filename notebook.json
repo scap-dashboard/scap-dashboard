@@ -886,8 +886,21 @@
       "linked": [],
       "created": "2026-06-09",
       "updated": "2026-06-09"
+    },
+    {
+      "id": "log_1781013825010",
+      "date": "2026-06-09",
+      "desc": "Engage with broader CSLP team on necessary functional requirements and data points they'd like to make visible to others.<br>Understand how they'd like to use the control tower - keep this different from the ERP to reduce overlaps in Functionalities",
+      "status": "open",
+      "owner": "Adi",
+      "priority": false,
+      "isNote": false,
+      "author": "Adi",
+      "linked": [],
+      "created": "2026-06-09",
+      "updated": "2026-06-09"
     }
   ],
   "version": 1,
-  "sha": "0a617faba001987c8c335e9680117f95b39f7ed8"
+  "sha": "bcf7dd94b462ce6b245e7fc16a74dde1b8166138"
 }
