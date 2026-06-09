@@ -812,7 +812,7 @@
     {
       "id": "log_1780687610147",
       "date": "2026-06-05",
-      "desc": "<b>On integrated planning:&nbsp;</b><div>- Finalize high level approach and validate internally by 10/06</div><div>- Set up meeting with CSLDL to review principles of the approach (12/06)</div><div>- Set up meeting with CSLP focal point to review principles of the approach (12/06)</div>",
+      "desc": "<b>On integrated planning:&nbsp;</b><div>- Fi<u>nalize high level approach and validate internally by 10/06</u></div><div><u>- Set up meeting with CSLDL to review principles of the approach (12/06)</u></div><div>- Set up meeting with CSLP focal point to review principles of the approach (12/06)</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -820,7 +820,7 @@
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-06-05",
-      "updated": "2026-06-05"
+      "updated": "2026-06-09"
     },
     {
       "id": "log_1780906750312",
@@ -902,5 +902,5 @@
     }
   ],
   "version": 1,
-  "sha": "bcf7dd94b462ce6b245e7fc16a74dde1b8166138"
+  "sha": "35cfb8993df26408b1ebee9ca464d7f17aee00ef"
 }
