@@ -852,14 +852,14 @@
       "id": "log_1780924176951",
       "date": "2026-06-08",
       "desc": "<div><font color=\"#000000\" face=\"Aptos, Aptos_MSFontService, -apple-system, Roboto, Arial, Helvetica, sans-serif\"><span style=\"font-size: 16px;\">Align with Massimo and Nicole on:</span></font></div><ul data-editing-info=\"{&quot;applyListStyleFromLevel&quot;:true}\" style=\"direction: ltr;\"><li style=\"font-family: Aptos, Aptos_MSFontService, -apple-system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0); margin-top: 1em; margin-bottom: 1em;\"><p role=\"presentation\" data-olk-copy-source=\"MailCompose\" style=\"direction: ltr; line-height: 1.2;\">a shared understanding of where Control Tower and ERP/OT can complement each other,</p></li><li style=\"font-family: Aptos, Aptos_MSFontService, -apple-system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0); margin-top: 1em; margin-bottom: 1em;\"><p role=\"presentation\" style=\"direction: ltr; line-height: 1.2;\">an initial list of overlaps with the CAPEX proposals to address, and</p></li><li style=\"font-family: Aptos, Aptos_MSFontService, -apple-system, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0); margin-top: 1em; margin-bottom: 1em;\"><p role=\"presentation\" style=\"direction: ltr; line-height: 1.2;\">agreement on what we take forward to the broader CSLP team to scope the functional requirement related to procurement</p></li></ul>",
-      "status": "open",
+      "status": "closed",
       "owner": "Adi",
       "priority": false,
       "isNote": false,
       "author": "Adi",
       "linked": [],
       "created": "2026-06-08",
-      "updated": "2026-06-08"
+      "updated": "2026-06-09"
     },
     {
       "id": "log_1781013628811",
@@ -915,5 +915,5 @@
     }
   ],
   "version": 1,
-  "sha": "fd68c8c7ecbe6c62f49e3c20c53f694dfa8e9a23"
+  "sha": "8f99146557066bf2faf69809e27caa06b311f309"
 }
