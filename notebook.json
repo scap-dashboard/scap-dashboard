@@ -945,12 +945,12 @@
       "desc": "<b>Prepare SAG bi-weekly update</b> which should be sent out on 11/06",
       "status": "open",
       "owner": "Vincenzo",
-      "priority": false,
+      "priority": true,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-06-09",
-      "updated": "2026-06-09"
+      "updated": "2026-06-11"
     },
     {
       "id": "log_1781167926083",
@@ -980,5 +980,5 @@
     }
   ],
   "version": 1,
-  "sha": "77a31aa7ae895beccaf902c997a31cf1a0c96a65"
+  "sha": "92d0348964871ed83b66b4678157a59c0c2030dd"
 }
