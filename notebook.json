@@ -958,7 +958,7 @@
       "desc": "<b>On integrated planning: </b>Reach out to CSLP (Christian and Davide) to set up meeting to go through preliminary review",
       "status": "open",
       "owner": "Vincenzo",
-      "priority": false,
+      "priority": true,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
@@ -980,5 +980,5 @@
     }
   ],
   "version": 1,
-  "sha": "a081073ff73b6d85d8008f8417fad0ba71c896c0"
+  "sha": "77a31aa7ae895beccaf902c997a31cf1a0c96a65"
 }
