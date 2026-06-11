@@ -904,14 +904,14 @@
       "id": "log_1781034709478",
       "date": "2026-06-09",
       "desc": "<b>Agenda for team alignment:&nbsp;</b><div>- Brief overview</div><div>- Adi to provide update on CT discussion and plan to engage with CSLDL for logistics module scoping</div><div>- Vincenzo to provide update on integrated planning</div><div>- Check by when CO outreach package can be shared with COs</div><div>- Align on plan of cancelling this week's SAG and sharing an update via email</div><div>- Agree with Fathima and Katherina on their attendance for these team alignment over the next 2/3 weeks (until high priority guidelines are completed)</div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-06-09",
-      "updated": "2026-06-09"
+      "updated": "2026-06-11"
     },
     {
       "id": "log_1781036450243",
@@ -967,5 +967,5 @@
     }
   ],
   "version": 1,
-  "sha": "7d73cb45a3c247ae6478cb18310f62e1f1c400ad"
+  "sha": "47e166e031af43fc534dc056691cea8b55fd0122"
 }
