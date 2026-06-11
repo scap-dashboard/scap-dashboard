@@ -951,8 +951,21 @@
       "linked": [],
       "created": "2026-06-09",
       "updated": "2026-06-09"
+    },
+    {
+      "id": "log_1781167926083",
+      "date": "2026-06-11",
+      "desc": "<b>On integrated planning: </b>Reach out to CSLP (Christian and Davide) to set up meeting to go through preliminary review",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-11",
+      "updated": "2026-06-11"
     }
   ],
   "version": 1,
-  "sha": "fb01eb6b217c02092041a0303c2de695ede0f6b8"
+  "sha": "7459d355b9c8023b2fecdf29c7aad40f06fa4090"
 }
