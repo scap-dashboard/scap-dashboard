@@ -932,7 +932,7 @@
       "desc": "<b>On CO outreach: </b>Prepare presentation for COs introductory meeting&nbsp;<div>- Tim to develop outline of the presentation by 16/06<br><div><br></div></div>",
       "status": "open",
       "owner": "Vincenzo",
-      "priority": false,
+      "priority": true,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
@@ -980,5 +980,5 @@
     }
   ],
   "version": 1,
-  "sha": "4827570d737121bebcb39797a7406165ecb84323"
+  "sha": "a081073ff73b6d85d8008f8417fad0ba71c896c0"
 }
