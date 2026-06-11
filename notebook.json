@@ -914,19 +914,6 @@
       "updated": "2026-06-11"
     },
     {
-      "id": "log_1781036450243",
-      "date": "2026-06-09",
-      "desc": "Align with team on interim IMS solution. Important pre-requisite for the CT. Most likely it will have to be a sharepoint solution",
-      "status": "open",
-      "owner": "Vincenzo",
-      "priority": false,
-      "isNote": false,
-      "author": "Vincenzo",
-      "linked": [],
-      "created": "2026-06-09",
-      "updated": "2026-06-09"
-    },
-    {
       "id": "log_1781036481125",
       "date": "2026-06-09",
       "desc": "<b>On CT activities:</b> Adi to update CT activities in the implementation tracker",
@@ -967,5 +954,5 @@
     }
   ],
   "version": 1,
-  "sha": "47e166e031af43fc534dc056691cea8b55fd0122"
+  "sha": "46063846219de287392b6238c60f4b959376cd30"
 }
