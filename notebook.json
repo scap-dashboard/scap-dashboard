@@ -917,14 +917,14 @@
       "id": "log_1781036481125",
       "date": "2026-06-09",
       "desc": "<b>On CT activities:</b> Adi to update CT activities in the implementation tracker",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-06-09",
-      "updated": "2026-06-09"
+      "updated": "2026-06-12"
     },
     {
       "id": "log_1781036654155",
@@ -980,5 +980,5 @@
     }
   ],
   "version": 1,
-  "sha": "983ee7ab1b79b9cd9042eee28a91f863dd1a4da6"
+  "sha": "fce244981746e41e193a14ef40164ea3a04992f5"
 }
