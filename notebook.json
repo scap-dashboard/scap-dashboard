@@ -942,7 +942,7 @@
     {
       "id": "log_1781036725578",
       "date": "2026-06-09",
-      "desc": "<b>Prepare SAG bi-weekly update</b> which should be sent out on 11/06",
+      "desc": "<b>Prepare SAG bi-weekly update</b> which should be sent out on 15/06",
       "status": "open",
       "owner": "Vincenzo",
       "priority": true,
@@ -950,7 +950,7 @@
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-06-09",
-      "updated": "2026-06-11"
+      "updated": "2026-06-12"
     },
     {
       "id": "log_1781167926083",
@@ -980,5 +980,5 @@
     }
   ],
   "version": 1,
-  "sha": "f89d1a49a823d12bc49aa0623b880136fd7f65bb"
+  "sha": "0cc4624214c77f8ffe109bacc462980511f138b1"
 }
