@@ -33,7 +33,7 @@
       "csloFP": "Laura",
       "coFP": "",
       "plannedHrs": "10",
-      "status": "ongoing",
+      "status": "cancelled",
       "actualHrs": "2",
       "surge": "No",
       "supportDesc": "",
@@ -42,11 +42,11 @@
       "survey": "",
       "surveyResults": "",
       "updatedBy": "Vincenzo",
-      "updated": "2026-04-24",
+      "updated": "2026-06-15",
       "id": "2",
       "created": "2026-04-24"
     }
   ],
   "version": 1,
-  "sha": "0be07bc91fb432415ca1ee72392b5791dd595145"
+  "sha": "b8f51d6e39728354d9ca4cd2c50e9880ea571acf"
 }
