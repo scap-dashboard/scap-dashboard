@@ -982,7 +982,7 @@
       "id": "log_1781601307790",
       "date": "2026-06-16",
       "desc": "<b>Agenda for internal status update:&nbsp;</b><div>- Update on CT assessment</div><div>- Update on integrated planning approach</div><div>- Follow up on CT outreach plan. Set expectation on when COs can be reached out and preliminary meeting set up</div><div>- Update on recruitment of senior SC consultant</div><div>- Set up a meeting with CSLDL to unpack logistics plan</div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": true,
@@ -993,5 +993,5 @@
     }
   ],
   "version": 1,
-  "sha": "7086b3a1fa0ff752e4fb4044c147902336fd7221"
+  "sha": "115cdd241e99c593fa04693790ebdee8c59ab96a"
 }
