@@ -977,8 +977,21 @@
       "linked": [],
       "created": "2026-06-16",
       "updated": "2026-06-16"
+    },
+    {
+      "id": "log_1781772709972",
+      "date": "2026-06-18",
+      "desc": "<b>On CO outreach:</b> Email to be sent to COs through Rodrigo. Close item once this is done",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": true,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-18",
+      "updated": "2026-06-18"
     }
   ],
   "version": 1,
-  "sha": "ed72fd70e7b5c001a433010ca23e10c4fcd2f0aa"
+  "sha": "e9f496c43aeacc643503952f49b1e4befba6ba44"
 }
