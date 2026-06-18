@@ -940,19 +940,6 @@
       "updated": "2026-06-11"
     },
     {
-      "id": "log_1781036725578",
-      "date": "2026-06-09",
-      "desc": "<b>Prepare SAG bi-weekly update</b> which should be sent out on 15/06",
-      "status": "open",
-      "owner": "Vincenzo",
-      "priority": true,
-      "isNote": false,
-      "author": "Vincenzo",
-      "linked": [],
-      "created": "2026-06-09",
-      "updated": "2026-06-12"
-    },
-    {
       "id": "log_1781167926083",
       "date": "2026-06-11",
       "desc": "<b>On integrated planning: </b>Reach out to CSLP (Christian and Davide) to set up meeting to go through preliminary review.&nbsp;<div>- Update: Schedule meeting once internal alignment has been reached ~23/06</div>",
@@ -993,5 +980,5 @@
     }
   ],
   "version": 1,
-  "sha": "115cdd241e99c593fa04693790ebdee8c59ab96a"
+  "sha": "ed72fd70e7b5c001a433010ca23e10c4fcd2f0aa"
 }
