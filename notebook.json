@@ -990,8 +990,21 @@
       "linked": [],
       "created": "2026-06-18",
       "updated": "2026-06-18"
+    },
+    {
+      "id": "log_1781772774430",
+      "date": "2026-06-18",
+      "desc": "<b>On integrated planning:</b> Share draft approach report by friday, june 19th&nbsp;",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-18",
+      "updated": "2026-06-18"
     }
   ],
   "version": 1,
-  "sha": "e9f496c43aeacc643503952f49b1e4befba6ba44"
+  "sha": "920fb91c606655b0c3d56459a859a661413a2c64"
 }
