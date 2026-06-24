@@ -1003,8 +1003,21 @@
       "linked": [],
       "created": "2026-06-18",
       "updated": "2026-06-19"
+    },
+    {
+      "id": "log_1782290710465",
+      "date": "2026-06-24",
+      "desc": "<b>Agenda for internal alignment</b><div>- CO outreach plan / update</div><div>- update on the planning and next steps</div><div>- brief update on CT</div><div>- Plan for next trip to Rome (23/24th of july) and check for his availability</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-24",
+      "updated": "2026-06-24"
     }
   ],
   "version": 1,
-  "sha": "98fbb63685552d5747e97c770220db6b226379cc"
+  "sha": "1d634cc850341c693717306a3762ba41e10f7273"
 }
