@@ -1042,8 +1042,21 @@
       "linked": [],
       "created": "2026-06-24",
       "updated": "2026-06-24"
+    },
+    {
+      "id": "log_1782291161612",
+      "date": "2026-06-24",
+      "desc": "<b>On CT:&nbsp;</b><div>- Internal sequenced review of the CT assessment to be concluded by July 10th</div><div><br></div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-24",
+      "updated": "2026-06-24"
     }
   ],
   "version": 1,
-  "sha": "93f216b74e24dc86e2e0551a013ec5adeb4a7c2c"
+  "sha": "95563149b2e520cb20ddd1d3592cb1470428a616"
 }
