@@ -956,14 +956,14 @@
       "id": "log_1781169045885",
       "date": "2026-06-11",
       "desc": "Update implementation tracker",
-      "status": "open",
+      "status": "closed",
       "owner": "Adi",
       "priority": false,
       "isNote": false,
       "author": "Adi",
       "linked": [],
       "created": "2026-06-11",
-      "updated": "2026-06-12"
+      "updated": "2026-06-24"
     },
     {
       "id": "log_1781601307790",
@@ -995,14 +995,14 @@
       "id": "log_1781772774430",
       "date": "2026-06-18",
       "desc": "<b>On integrated planning:</b> Share draft approach report by monday, june 22nd",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-06-18",
-      "updated": "2026-06-19"
+      "updated": "2026-06-24"
     },
     {
       "id": "log_1782290710465",
@@ -1032,5 +1032,5 @@
     }
   ],
   "version": 1,
-  "sha": "06262cf7c66c20a4913afdd132800a570eb9aec9"
+  "sha": "6eb49df140767dfc92ab881aed2f5e2205146322"
 }
