@@ -930,14 +930,14 @@
       "id": "log_1781036654155",
       "date": "2026-06-09",
       "desc": "<b>On CO outreach: </b>Prepare presentation for COs introductory meeting&nbsp;<div>- Tim to develop outline of the presentation by 16/06<br><div><br></div></div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": true,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-06-09",
-      "updated": "2026-06-11"
+      "updated": "2026-06-24"
     },
     {
       "id": "log_1781167926083",
@@ -1032,5 +1032,5 @@
     }
   ],
   "version": 1,
-  "sha": "a83a9dc636fe669f70b0b4ba84ca2cd763e0c1dc"
+  "sha": "69e60660fe50bb99737b209b6c93a09bd8abde74"
 }
