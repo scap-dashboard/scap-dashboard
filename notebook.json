@@ -1007,7 +1007,7 @@
     {
       "id": "log_1782290710465",
       "date": "2026-06-24",
-      "desc": "<b>Agenda for internal alignment</b><div>- CO outreach plan / update</div><div>- update on the planning and next steps</div><div>- brief update on CT</div><div>- Plan for next trip to Rome (23/24th of july) and check for his availability</div>",
+      "desc": "<b>Agenda for internal alignment</b><div>- CO outreach plan / update</div><div>- update on the planning and next steps</div><div>- brief update on CT</div><div>- Plan for next trip to Rome (23/24th of july) and check for his availability (come up with agenda for this)&nbsp;</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -1058,5 +1058,5 @@
     }
   ],
   "version": 1,
-  "sha": "95563149b2e520cb20ddd1d3592cb1470428a616"
+  "sha": "c7599e19c693a38ac9bf5905433b1abb8961583a"
 }
