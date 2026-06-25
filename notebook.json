@@ -1055,8 +1055,21 @@
       "linked": [],
       "created": "2026-06-24",
       "updated": "2026-06-25"
+    },
+    {
+      "id": "log_1782393744485",
+      "date": "2026-06-25",
+      "desc": "<b>On CO engagement - preliminary sessions:&nbsp;</b><div>- Colombia responded. July 9th</div><div>- Sudan responded. Proposed 23rd week</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": true,
+      "isNote": true,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-25",
+      "updated": "2026-06-25"
     }
   ],
   "version": 1,
-  "sha": "c6918565cde68322afced6cc655e3b2b6e4049b7"
+  "sha": "0c7a47aa61c018101dddef4e8657a78f4a409974"
 }
