@@ -1072,7 +1072,7 @@
     {
       "id": "log_1782398382593",
       "date": "2026-06-25",
-      "desc": "On communications --&gt; set up session with Chris, Kieto, Fathima, and Dina to discuss possibility of having a dedicated panel during the WFF. Tentative dates: 16th of July",
+      "desc": "<b>On communications --&gt;</b> set up session with Chris, Kieto, Fathima, and Dina to discuss possibility of having a dedicated panel during the WFF. Tentative dates: 16th of July",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -1084,5 +1084,5 @@
     }
   ],
   "version": 1,
-  "sha": "fe564aec0cc36f4ad2c4275ba6bc4d178fbcfc56"
+  "sha": "d445776e89fd1f1aefd79a3b104d918bc5cee8a6"
 }
