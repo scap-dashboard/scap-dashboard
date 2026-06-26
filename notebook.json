@@ -1081,8 +1081,21 @@
       "linked": [],
       "created": "2026-06-25",
       "updated": "2026-06-25"
+    },
+    {
+      "id": "log_1782481826827",
+      "date": "2026-06-26",
+      "desc": "<b>From latest SAG --&gt;&nbsp;</b><span data-teams=\"true\">On the governance, this opened up some discussion. I believe we should propose a few options for governance, what a way forward could look like; it was also discussed that an updated TOR of the SAG would be desired, and for me this is part of the same discussion (for example, if CSLO is not formally established, more responsibilities and oversight should go in the SC SAG TOR)</span>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-26",
+      "updated": "2026-06-26"
     }
   ],
   "version": 1,
-  "sha": "d445776e89fd1f1aefd79a3b104d918bc5cee8a6"
+  "sha": "2e95992d6344998bebfd9229525ceaceb6be880f"
 }
