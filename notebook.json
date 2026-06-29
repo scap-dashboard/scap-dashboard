@@ -1094,8 +1094,21 @@
       "linked": [],
       "created": "2026-06-26",
       "updated": "2026-06-26"
+    },
+    {
+      "id": "log_1782743086072",
+      "date": "2026-06-29",
+      "desc": "<b>Sudan focal points:&nbsp;</b><div>- Omer</div><div>- Niyi</div><div><br></div><div>Set up session with them to walk them through the detailed action plan and discuss high level roadmap specific to Sudan</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-06-29",
+      "updated": "2026-06-29"
     }
   ],
   "version": 1,
-  "sha": "2e95992d6344998bebfd9229525ceaceb6be880f"
+  "sha": "84724d42fbbbbf9ebeb17e2c117f84d120fb313d"
 }
