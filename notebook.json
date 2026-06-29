@@ -1020,7 +1020,7 @@
     {
       "id": "log_1782291024723",
       "date": "2026-06-24",
-      "desc": "<b>On integrated planning (updated plan):&nbsp;</b><div>- Work on executive summary of the integrated planning approach (+ demand planning)&nbsp;</div><div>- Share executive summary with working group by Monday 29th</div><div>- Set up session with CSLP focal points to discuss screening and other aspects of the integrated planning approach (30/06)</div><div>- Set up review session with working group (focal points from CSLDL, CSLP, PSS, OER) for Friday 3rd&nbsp;</div><div>- Align on blueprint of the approach before engaging COs on the topic</div>",
+      "desc": "<b>On integrated planning (updated plan):&nbsp;</b><div><u>- Work on executive summary of the integrated planning approach (+ demand planning)&nbsp;</u></div><div><u>- Share executive summary with working group by Monday 29th</u></div><div>- Set up review session with working group (focal points from CSLDL, CSLP, PSS, OER) for Thursday 2nd&nbsp;</div><div>- Align on general approach before engaging COs on the topic</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -1028,7 +1028,7 @@
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-06-24",
-      "updated": "2026-06-24"
+      "updated": "2026-06-29"
     },
     {
       "id": "log_1782291116632",
@@ -1110,5 +1110,5 @@
     }
   ],
   "version": 1,
-  "sha": "8d0959bb5202d574fbfb8407f487cba5047ec5d2"
+  "sha": "8ca59109b852e3ce5815375d164f95cf12a5e572"
 }
