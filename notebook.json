@@ -1098,7 +1098,7 @@
     {
       "id": "log_1782743086072",
       "date": "2026-06-29",
-      "desc": "<b>Sudan focal points:&nbsp;</b><div>- Omer</div><div>- Niyi</div><div><br></div><div>Set up session with them to walk them through the detailed action plan and discuss high level roadmap specific to Sudan</div>",
+      "desc": "<b>Sudan focal points:&nbsp;&nbsp;</b><span style=\"font-size: 0.82rem;\">- Omer and Niyi.&nbsp;</span><div>To do:&nbsp;</div><div>- Identify project team focal points that would interface and be the reference point for Sudan<br><div>- Set up session with them to walk them through the detailed action plan and discuss high level roadmap specific to Sudan</div></div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -1110,5 +1110,5 @@
     }
   ],
   "version": 1,
-  "sha": "84724d42fbbbbf9ebeb17e2c117f84d120fb313d"
+  "sha": "8d0959bb5202d574fbfb8407f487cba5047ec5d2"
 }
