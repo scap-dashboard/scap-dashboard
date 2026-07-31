@@ -1146,8 +1146,21 @@
       "linked": [],
       "created": "2026-07-31",
       "updated": "2026-07-31"
+    },
+    {
+      "id": "log_1785505943347",
+      "date": "2026-07-31",
+      "desc": "<b>On CT assessment:&nbsp;</b><div>- Check with Laura if PDF has been shared with SAG</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-07-31",
+      "updated": "2026-07-31"
     }
   ],
   "version": 1,
-  "sha": "efb5eb012ba4c58f24cca9bb56107738e7e47a5d"
+  "sha": "8c2b0c157b3994973679443eeedf97b88984b7be"
 }
