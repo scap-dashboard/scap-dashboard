@@ -1099,16 +1099,16 @@
       "id": "log_1782743086072",
       "date": "2026-06-29",
       "desc": "<b>Sudan focal points:&nbsp;&nbsp;</b><span style=\"font-size: 0.82rem;\">- Omer and Niyi.&nbsp;</span><div>To do:&nbsp;</div><div>- Identify project team focal points that would interface and be the reference point for Sudan<br><div>- Set up session with them to walk them through the detailed action plan and discuss high level roadmap specific to Sudan</div></div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-06-29",
-      "updated": "2026-06-29"
+      "updated": "2026-07-31"
     }
   ],
   "version": 1,
-  "sha": "bf0ec95b63f6e10d72e1bacbef1b60a6fd40848d"
+  "sha": "c7acdb73e887ed9ed9a0680fdb8d005a447ef03b"
 }
