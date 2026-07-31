@@ -1107,8 +1107,21 @@
       "linked": [],
       "created": "2026-06-29",
       "updated": "2026-07-31"
+    },
+    {
+      "id": "log_1785505586830",
+      "date": "2026-07-31",
+      "desc": "<b>On integrated planning:&nbsp;</b><div>- Share response to Christian by Monday, August 3rd at the latest</div><div>- Discuss with CSLDL on monday proposed changes to questions text&nbsp;</div><div>- Set up call with Christian by Wednesday</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-07-31",
+      "updated": "2026-07-31"
     }
   ],
   "version": 1,
-  "sha": "c7acdb73e887ed9ed9a0680fdb8d005a447ef03b"
+  "sha": "5b0482fd3469b515974b5a7048bb54b7a67e52a0"
 }
