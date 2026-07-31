@@ -1047,14 +1047,14 @@
       "id": "log_1782291161612",
       "date": "2026-06-24",
       "desc": "<b>On CT:&nbsp;</b><div>- Internal sequenced review of the CT assessment to be concluded by July 10th</div><div>- Control Tower assessment to be presented to SAG during next trip to Rome (15-17 July)</div><div>- Time to be provided for technical review following presentation</div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-06-24",
-      "updated": "2026-06-25"
+      "updated": "2026-07-31"
     },
     {
       "id": "log_1782393744485",
@@ -1110,5 +1110,5 @@
     }
   ],
   "version": 1,
-  "sha": "f28d29d663c4f3150cf2e75748d61f34ecf8167c"
+  "sha": "02ad7f54fe2a65720174c82eb391ad699f81b424"
 }
