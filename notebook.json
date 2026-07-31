@@ -1159,8 +1159,21 @@
       "linked": [],
       "created": "2026-07-31",
       "updated": "2026-07-31"
+    },
+    {
+      "id": "log_1785506009994",
+      "date": "2026-07-31",
+      "desc": "<b>On comms:&nbsp;</b><div>- Check with Rodrigo about having a session on the SCAP during the WFF</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-07-31",
+      "updated": "2026-07-31"
     }
   ],
   "version": 1,
-  "sha": "8c2b0c157b3994973679443eeedf97b88984b7be"
+  "sha": "8f1f0ff27402c281776e5e565cb6e7edb6e6847f"
 }
