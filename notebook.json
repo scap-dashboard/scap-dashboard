@@ -1133,8 +1133,21 @@
       "linked": [],
       "created": "2026-07-31",
       "updated": "2026-07-31"
+    },
+    {
+      "id": "log_1785505793302",
+      "date": "2026-07-31",
+      "desc": "<b>A<span style=\"font-size: 0.82rem;\">genda for internal standup:</span></b><div><span style=\"font-size: 0.82rem;\">&nbsp;</span><span style=\"font-size: 0.82rem;\">- Go through deck for meeting with CO focal points.&nbsp;</span><div><div>- Mention that the 2 focal points are responsible to facilitate discussion with focal points.&nbsp;<span style=\"font-size: 0.82rem;\">Session should be attended by the 2 focal points + Vincenzo or Tim</span></div><div><span style=\"font-size: 0.82rem;\">- Plan for the integrated planning work. Ask CSLDL what type of adjustments can be made to questions based on what shared by Christian</span></div></div></div><div><span style=\"font-size: 0.82rem;\">-&nbsp;</span></div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-07-31",
+      "updated": "2026-07-31"
     }
   ],
   "version": 1,
-  "sha": "0cd9c13c10530508948a2aa1110acc8d73a6a555"
+  "sha": "b0e52baf57c00222f208ba87a571d9787bb10747"
 }
