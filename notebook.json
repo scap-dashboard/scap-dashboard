@@ -1021,14 +1021,14 @@
       "id": "log_1782291024723",
       "date": "2026-06-24",
       "desc": "<b>On integrated planning (updated plan):&nbsp;</b><div><u>- Work on executive summary of the integrated planning approach (+ demand planning)&nbsp;</u></div><div><u>- Share executive summary with working group by Monday 29th</u></div><div>- Set up review session with working group (focal points from CSLDL, CSLP, PSS, OER) for Thursday 2nd&nbsp;</div><div>- Align on general approach before engaging COs on the topic</div>",
-      "status": "open",
+      "status": "closed",
       "owner": "Vincenzo",
       "priority": false,
       "isNote": false,
       "author": "Vincenzo",
       "linked": [],
       "created": "2026-06-24",
-      "updated": "2026-06-29"
+      "updated": "2026-07-31"
     },
     {
       "id": "log_1782291116632",
@@ -1110,5 +1110,5 @@
     }
   ],
   "version": 1,
-  "sha": "8ca59109b852e3ce5815375d164f95cf12a5e572"
+  "sha": "f28d29d663c4f3150cf2e75748d61f34ecf8167c"
 }
