@@ -1120,8 +1120,21 @@
       "linked": [],
       "created": "2026-07-31",
       "updated": "2026-07-31"
+    },
+    {
+      "id": "log_1785505628822",
+      "date": "2026-07-31",
+      "desc": "<b>On CT - CSI:&nbsp;</b><div>- Check with Adi and Laura that the requirements collection within CSI's template has been concluded</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": true,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-07-31",
+      "updated": "2026-07-31"
     }
   ],
   "version": 1,
-  "sha": "5b0482fd3469b515974b5a7048bb54b7a67e52a0"
+  "sha": "0cd9c13c10530508948a2aa1110acc8d73a6a555"
 }
