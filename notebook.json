@@ -1172,8 +1172,21 @@
       "linked": [],
       "created": "2026-07-31",
       "updated": "2026-07-31"
+    },
+    {
+      "id": "log_1785751245023",
+      "date": "2026-08-03",
+      "desc": "<div><span style=\"font-size: 0.82rem;\"><b>On CO engagement:&nbsp;</b></span></div><div><span style=\"font-size: 0.82rem;\">- Pakistan: Introductory session planned for Wednesday (presenters: Vincenzo + Tim)&nbsp;</span><div>- Sudan: Focal point came back with availability. Should be go for Wednesday?&nbsp;</div><div>- Follow up with focal points if we don't get a response by Thursday</div></div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": true,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-08-03",
+      "updated": "2026-08-03"
     }
   ],
   "version": 1,
-  "sha": "8f1f0ff27402c281776e5e565cb6e7edb6e6847f"
+  "sha": "0caa09874a50a8ee765267425112a1c177a22a14"
 }
