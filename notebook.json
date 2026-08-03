@@ -1189,7 +1189,7 @@
     {
       "id": "log_1785754294610",
       "date": "2026-08-03",
-      "desc": "Agenda for internal alignment:&nbsp;<div>- Update on CT requirements discussion with CSI</div><div>- Align on how to continue with the dissemination of the CT assessment&nbsp;</div><div>- update on SC screening. Christian has made changes to his feedback. Any remaining question? When to set up meeting (needed?)?</div><div>- CO engagement (presentation, responsabilities for next session, this week)</div>",
+      "desc": "<b>Agenda for internal alignment:&nbsp;</b><div>- Update on CT requirements discussion with CSI</div><div>- Align on how to continue with the dissemination of the CT assessment&nbsp;</div><div>- update on SC screening. Christian has made changes to his feedback. Any remaining question? When to set up meeting (needed?)?</div><div>- CO engagement (presentation, responsabilities for next session, this week)</div>",
       "status": "open",
       "owner": "Vincenzo",
       "priority": false,
@@ -1201,5 +1201,5 @@
     }
   ],
   "version": 1,
-  "sha": "9bda9e535ef26cdf784cbb83ed5e90756a013d94"
+  "sha": "175dfc5b1e119cf891bdc6714e8c4de7bebd4192"
 }
