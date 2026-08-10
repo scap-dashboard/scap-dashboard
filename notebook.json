@@ -1224,8 +1224,21 @@
       "linked": [],
       "created": "2026-08-10",
       "updated": "2026-08-10"
+    },
+    {
+      "id": "log_1786374269973",
+      "date": "2026-08-10",
+      "desc": "<b>On integrated planning:&nbsp;</b><div>- Eida/Vin to respond to Fathima/Katherine's feedback</div><div>- Internal alignment on a semi-final proposal on screening questions, engagement governance, and notification logic --&gt; by 14/08</div><div>- Set up follow up call with CSLP by 21/08 to align on proposal and discuss how to go about engaging PSS</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-08-10",
+      "updated": "2026-08-10"
     }
   ],
   "version": 1,
-  "sha": "99cc7391e1407e77bcd5dbb7dc5f42671c132e27"
+  "sha": "01c8896af9491a832af793878c2daa34af56e5a4"
 }
