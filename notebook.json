@@ -1250,8 +1250,21 @@
       "linked": [],
       "created": "2026-08-10",
       "updated": "2026-08-10"
+    },
+    {
+      "id": "log_1786374544606",
+      "date": "2026-08-10",
+      "desc": "<b>On CSI engagement:&nbsp;</b><div>- Check with Adi/Laura next steps for this engagement&nbsp;</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-08-10",
+      "updated": "2026-08-10"
     }
   ],
   "version": 1,
-  "sha": "4b9a928597fc34533e42c50edf5c12f20b9a7e6e"
+  "sha": "f245bb5d12d7e20d4847e234b720358215d8bf4d"
 }
