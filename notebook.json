@@ -1198,8 +1198,21 @@
       "linked": [],
       "created": "2026-08-03",
       "updated": "2026-08-03"
+    },
+    {
+      "id": "log_1786373991914",
+      "date": "2026-08-10",
+      "desc": "<b>On Nigeria:&nbsp;</b><div>- Share data request with focal points</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-08-10",
+      "updated": "2026-08-10"
     }
   ],
   "version": 1,
-  "sha": "df90a1d40e7e0b27e6228683e37c68b862f7b968"
+  "sha": "6a693d6b7b335bcb11e488c983bb8867707ea0c2"
 }
