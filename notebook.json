@@ -1211,8 +1211,21 @@
       "linked": [],
       "created": "2026-08-10",
       "updated": "2026-08-10"
+    },
+    {
+      "id": "log_1786374059138",
+      "date": "2026-08-10",
+      "desc": "<b>On Pakistan:</b>&nbsp;<div>- Follow up with CO to appoint focal points and set up follow up discussions</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-08-10",
+      "updated": "2026-08-10"
     }
   ],
   "version": 1,
-  "sha": "892c985604d305a96c03e9026e7e1428b545eaf6"
+  "sha": "99cc7391e1407e77bcd5dbb7dc5f42671c132e27"
 }
