@@ -1237,8 +1237,21 @@
       "linked": [],
       "created": "2026-08-10",
       "updated": "2026-08-10"
+    },
+    {
+      "id": "log_1786374359540",
+      "date": "2026-08-10",
+      "desc": "<b>On planning for CO mission:&nbsp;</b><div>- Laura/Vin to come up with a draft SOP for pre-during-post CO mission by 17/08</div><div>- Internal review of the SOP by 21/08</div><div>- Mgmt review / clearance of the SOP by August-end</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-08-10",
+      "updated": "2026-08-10"
     }
   ],
   "version": 1,
-  "sha": "ce9019fa6201aca91befd7863c2423c2e46a5c9d"
+  "sha": "4b9a928597fc34533e42c50edf5c12f20b9a7e6e"
 }
