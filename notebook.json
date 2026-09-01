@@ -1276,8 +1276,21 @@
       "linked": [],
       "created": "2026-09-01",
       "updated": "2026-09-01"
+    },
+    {
+      "id": "log_1788276314118",
+      "date": "2026-09-01",
+      "desc": "<b>On Coms:&nbsp;</b><div>- We need to work on coms updates</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-09-01",
+      "updated": "2026-09-01"
     }
   ],
   "version": 1,
-  "sha": "fa3e3c709bcb4eab1b9290fc398cc1a472990d4c"
+  "sha": "a8fe2ffcb32d69cc6485b8c3d430f7be634d99e6"
 }
