@@ -1263,8 +1263,21 @@
       "linked": [],
       "created": "2026-08-10",
       "updated": "2026-08-10"
+    },
+    {
+      "id": "log_1788276300229",
+      "date": "2026-09-01",
+      "desc": "<b>On Sudan:&nbsp;</b><div>- Discuss possibility of us being involved in the OCHA project that is about to start&nbsp;</div>",
+      "status": "open",
+      "owner": "Vincenzo",
+      "priority": false,
+      "isNote": false,
+      "author": "Vincenzo",
+      "linked": [],
+      "created": "2026-09-01",
+      "updated": "2026-09-01"
     }
   ],
   "version": 1,
-  "sha": "f245bb5d12d7e20d4847e234b720358215d8bf4d"
+  "sha": "fa3e3c709bcb4eab1b9290fc398cc1a472990d4c"
 }
